@@ -1,0 +1,85 @@
+{
+ "overrides": {
+  "min_gap": 20
+ },
+ "results": {
+  "occlusion": {
+   "v41+sup-s0": {
+    "survived": 0.875,
+    "safe": 0.3333333333333333,
+    "est_th_deg": 1.7690359919500125,
+    "est_dth_degs": 69.1578806450398,
+    "track_violation": 0.041666666666666664,
+    "calls_per_s": 26.47264357373511,
+    "interventions": 0.7595435845021692,
+    "false_interventions": 0.07548611111111111,
+    "n": 24
+   }
+  },
+  "nominal": {
+   "v41+sup-s0": {
+    "survived": 0.9642857142857143,
+    "safe": 0.6428571428571429,
+    "est_th_deg": 1.3609286162711765,
+    "est_dth_degs": 69.69489815442702,
+    "track_violation": 0.03571428571428571,
+    "calls_per_s": 26.11842105263158,
+    "interventions": 0.7972223357306308,
+    "false_interventions": 0.1467857142857143,
+    "n": 28
+   }
+  },
+  "dropped_events": {
+   "v41+sup-s0": {
+    "survived": 1.0,
+    "safe": 0.5,
+    "est_th_deg": 2.1559545542897647,
+    "est_dth_degs": 74.13533317412168,
+    "track_violation": 0.0,
+    "calls_per_s": 31.5625,
+    "interventions": 0.8057291666666666,
+    "false_interventions": 0.2040625,
+    "n": 16
+   }
+  },
+  "low_light": {
+   "v41+sup-s0": {
+    "survived": 1.0,
+    "safe": 0.5625,
+    "est_th_deg": 1.7412860509791988,
+    "est_dth_degs": 65.83251637059527,
+    "track_violation": 0.0,
+    "calls_per_s": 35.9375,
+    "interventions": 0.8051041666666667,
+    "false_interventions": 0.15901041666666665,
+    "n": 16
+   }
+  },
+  "ood_plant": {
+   "v41+sup-s0": {
+    "survived": 0.875,
+    "safe": 0.5,
+    "est_th_deg": 1.052415146901784,
+    "est_dth_degs": 50.57409601516366,
+    "track_violation": 0.125,
+    "calls_per_s": 25.79299285358161,
+    "interventions": 0.7923573746578125,
+    "false_interventions": 0.12682291666666667,
+    "n": 16
+   }
+  },
+  "combo": {
+   "v41+sup-s0": {
+    "survived": 0.4166666666666667,
+    "safe": 0.125,
+    "est_th_deg": 22.62592237507869,
+    "est_dth_degs": 221.86486789933204,
+    "track_violation": 0.16666666666666666,
+    "calls_per_s": 38.32162726662236,
+    "interventions": 0.9575163554691669,
+    "false_interventions": 0.3748784326874995,
+    "n": 24
+   }
+  }
+ }
+}

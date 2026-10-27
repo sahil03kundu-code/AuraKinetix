@@ -11,11 +11,11 @@
 ![Validation](https://img.shields.io/badge/validation-simulation%20only-eb6834)
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-CPU-EE4C2C?logo=pytorch&logoColor=white)
-![Versions](https://img.shields.io/badge/versions-v1%20→%20v4-1baf7a)
+![Versions](https://img.shields.io/badge/versions-v1%20→%20v4.1-1baf7a)
 
 <img src="images/demo_v1.gif" width="720" alt="AuraSync-Engine demo: event camera tracking a pole through an impulse"/>
 
-[Results](#-headline-results) · [How it works](#-how-it-works) · [Version history](#-version-history) · [Key findings](#-key-findings) · [Repository map](#-repository-map) · [Quick start](#-quick-start) · [Limitations](#-limitations--integrity)
+[Results](#-headline-results) · [V4.1 update](#-latest-v41-does-the-network-earn-its-place) · [How it works](#-how-it-works) · [Version history](#-version-history) · [Key findings](#-key-findings) · [Repository map](#-repository-map) · [Quick start](#-quick-start) · [Limitations](#-limitations--integrity)
 
 </div>
 
@@ -44,7 +44,42 @@ The headline of the latest version (**V4: Detect → Correct → Recover**):
 
 ---
 
-## 📊 Headline results
+## 🆕 Latest: V4.1, does the network earn its place?
+
+V4 showed that a network-free geometry baseline matched it in most conditions. V4.1 tested this head-on:
+- a **geometry-first, evidence-aware** estimator that tells *quiet*, *unobserved*, *contradictory* and *corrupt*
+  evidence apart;
+- **selective neural help**, called only when the geometry struggles (≤ 100 calls/s, gated, positions only);
+- **evaluation on fresh held-out seeds** (4000+), with the design frozen beforehand.
+
+<div align="center">
+<img src="images/v41_results.png" width="860" alt="V4.1 held-out results"/>
+</div>
+
+Paired differences over **272 held-out stress trials** (percentage points, 95% CI):
+
+| Comparison | Survival | Safe recovery |
+|:--|:--:|:--:|
+| **Evidence fix alone** (D-ev vs D) | **+7.7 [+2, +13]** | **+9.2 [+4, +14]** |
+| Network on top of the fix (V4.1 vs D-ev) | −1.8 [−7, +3] | −0.4 [−6, +5] |
+| V4.1 vs V4 | **+7.7 [+2, +14]** | **+10.7 [+5, +17]** |
+
+**The finding:** the evidence fix is the real gain, with occlusion survival rising from **45% to 84%** and no network
+involved. **The selective neural assistant added no measurable benefit.** It reads the same blinded sensor as the
+geometry, so it cannot supply what the geometry is missing.
+
+The recommended default is now the network-free D-ev estimator. It needs **0.73 CPU cores**, against V4's 1.83.
+Full analysis: **[`docs/V41_REPORT.md`](docs/V41_REPORT.md)**.
+
+<details>
+<summary><b>V4.1 failure cases</b></summary>
+<br/>
+<img src="images/fig_v41_cases.png" width="860" alt="V4.1 failure cases"/>
+</details>
+
+---
+
+## 📊 Headline results (V4)
 
 <div align="center">
 <img src="images/v4_envelope.png" width="820" alt="Survival per condition for V4 and baselines"/>
@@ -107,6 +142,7 @@ position, and wrong. V4 adds three things:
 | [**v2**](versions/v2) | A **learned** frame-camera estimator (30/60/120 fps) trained on the same data, for a fair comparison. | The event stack beat 30 fps, tied 60 fps and **lost to 120 fps** (70% vs 91% survival). |
 | [**v3**](versions/v3) | Confidence-aware observer (variance head, ensemble, consistency monitor), CBF safety shield, event-triggered scheduling with deadlines, 3-seed benchmark, 9 stress conditions. | The learned confidence could not rank its own errors. The shield **lowered** survival on wrong estimates. Triggered scheduling matched dense at 45% of the compute. |
 | [**v4**](versions/v4) | **Detect → Correct → Recover:** event-geometry measurement, CUSUM detector, gated correction, position-only neural fusion, re-tuned supervisor, 124-configuration benchmark, 6 fault scenarios, ablations, latency report. | Survival 55% → **96%**, and the injected faults are fixed. The network-free geometry baseline matches V4 in most conditions. |
+| [**v4.1**](versions/v4.1) | **Geometry-first, evidence-aware estimation** with selective neural assistance (≤ 100 calls/s, gated, positions only). Exact reproduction check of V4, held-out evaluation on fresh seeds, CPU latency, failure cases. | The evidence fix gives **+7.7 survival / +9.2 safe recovery**, and occlusion goes 45% → 84%. **The network adds no measurable benefit** on top. New default: the network-free D-ev estimator. |
 
 <details>
 <summary><b>Earlier figures (v1 to v3)</b></summary>
@@ -159,14 +195,16 @@ AuraKinetix/
 │   ├── v1/          event simulator, observer, LQR, first benchmark
 │   ├── v2/          + learned frame-camera baseline (fair comparison)
 │   ├── v3/          + uncertainty, safety shield, triggered scheduling, multi-seed benchmark
-│   └── v4/          + detect → correct → recover, full benchmark and docs
+│   ├── v4/          + detect → correct → recover, full benchmark and docs
 │       ├── aurasync/v4/        geometry, detector, V4 pipeline, geometry-only baseline
 │       ├── benchmark_v4.py     baselines, ablations, stress conditions, fault scenarios
 │       ├── analyze_v4.py       statistics and figures
 │       ├── docs/               design, latency report, hardware-validation plan
-│       └── results/v4/         raw results, report JSON, figures
+│   │   └── results/v4/         raw results, report JSON, figures
+│   └── v4.1/        + evidence-aware geometry, selective neural assistance, held-out test
 ├── docs/
-│   └── V4_REPORT.md            research-style technical report
+│   ├── V4_REPORT.md            V4 technical report
+│   └── V41_REPORT.md           V4.1 technical report
 ├── images/                     figures from every version
 └── research-paper/             paper draft
 ```
@@ -179,14 +217,14 @@ Each version folder is self-contained and has its own README.
 
 ```bash
 git clone https://github.com/sahil03kundu-code/AuraKinetix.git
-cd AuraKinetix/versions/v4
+cd AuraKinetix/versions/v4.1
 pip install torch numpy matplotlib
 
 python -m unittest discover -s tests -v   # unit and integration tests
-python analyze_v4.py                      # rebuild tables and figures from the stored results
+python analyze_v41.py                     # rebuild V4.1 tables and figures from the stored results
 ```
 
-Re-running the full benchmark (`WHICH=all python benchmark_v4.py`) takes about 2 hours on 2 CPU cores and can be
+Re-running the V4.1 held-out benchmark (`python benchmark_v41.py`) takes about 1 hour; the V4 one, about 2 hours, on 2 CPU cores and can be
 resumed if interrupted. The large training and development datasets are not in the repository; the scripts in each
 version regenerate them.
 
@@ -209,9 +247,10 @@ version regenerate them.
 
 1. **Real-sensor check:** record a real pendulum with an event camera and an encoder, and test the event-geometry
    measurement open loop.
-2. **Make the geometry pipeline the default**, and use the neural observer only as a fallback when geometry loses
-   sight of the pole.
-3. **Raise uncertainty when evidence goes missing:** the cause of V4's occlusion failures.
+2. ~~Make geometry the default and raise uncertainty when evidence goes missing~~: **done in V4.1**, which made
+   occlusion survival go from 45% to 84%.
+3. **Fix the issues V4.1 exposed:** tell real fast motion from sensor noise; never accept a helper's answer drawn
+   from the same blinded sensor without corroboration; make the supervisor robust to plant changes.
 4. **Closed-loop hardware validation**, following `versions/v4/docs/V4_HARDWARE_PLAN.md`.
 
 ---

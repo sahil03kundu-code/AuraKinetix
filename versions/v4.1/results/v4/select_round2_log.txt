@@ -1,0 +1,13 @@
+v4-s0          score 0.950  survival  85.9%  safe  26.6%  est error 1.48 deg  (n=64)
+v4-kf-s0       score 0.959  survival  89.1%  safe  21.9%  est error 1.52 deg  (n=64)
+v4-kp-s0       score 0.950  survival  85.9%  safe  26.6%  est error 1.48 deg  (n=64)
+v4-kp+fb-s0    score 0.950  survival  85.9%  safe  26.6%  est error 1.49 deg  (n=64)
+v4-kp+sup-s0   score 0.924  survival  73.4%  safe  45.3%  est error 1.47 deg  (n=64)
+geo+fb         score 1.174  survival 100.0%  safe  40.6%  est error 1.54 deg  (n=64)
+
+[exited with code 0]
+v4-kp-s0       score 1.118  survival  98.4%  safe  32.8%  est error 1.19 deg  (n=64)
+v4-kp+fb-s0    score 1.134  survival  98.4%  safe  35.9%  est error 1.19 deg  (n=64)
+v4-kp+sup-s0   score 1.158  survival  98.4%  safe  40.6%  est error 1.38 deg  (n=64)
+
+[exited with code 0]

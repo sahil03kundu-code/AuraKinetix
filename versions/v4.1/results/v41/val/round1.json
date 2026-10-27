@@ -1,0 +1,215 @@
+{
+ "overrides": {},
+ "results": {
+  "nominal": {
+   "geo+sup": {
+    "survived": 1.0,
+    "safe": 0.7142857142857143,
+    "est_th_deg": 1.474462817926219,
+    "est_dth_degs": 82.48001219061845,
+    "track_violation": 0.0,
+    "calls_per_s": 0.0,
+    "interventions": 0.9418452380952382,
+    "false_interventions": 0.3698809523809524,
+    "n": 28
+   },
+   "geoev+sup": {
+    "survived": 1.0,
+    "safe": 0.7142857142857143,
+    "est_th_deg": 1.3615107329606777,
+    "est_dth_degs": 68.43279256232185,
+    "track_violation": 0.0,
+    "calls_per_s": 0.0,
+    "interventions": 0.8017261904761902,
+    "false_interventions": 0.21988095238095237,
+    "n": 28
+   },
+   "v41+sup-s0": {
+    "survived": 1.0,
+    "safe": 0.6785714285714286,
+    "est_th_deg": 1.3396675186210356,
+    "est_dth_degs": 68.28284005808763,
+    "track_violation": 0.0,
+    "calls_per_s": 35.50595238095239,
+    "interventions": 0.8010119047619048,
+    "false_interventions": 0.24369047619047615,
+    "n": 28
+   }
+  },
+  "occlusion": {
+   "geo+sup": {
+    "survived": 0.3333333333333333,
+    "safe": 0.125,
+    "est_th_deg": 9.40108053359226,
+    "est_dth_degs": 230.07468776629128,
+    "track_violation": 0.041666666666666664,
+    "calls_per_s": 0.0,
+    "interventions": 0.9185457319581785,
+    "false_interventions": 0.39827712571601365,
+    "n": 24
+   },
+   "geoev+sup": {
+    "survived": 0.7916666666666666,
+    "safe": 0.16666666666666666,
+    "est_th_deg": 1.968533705399996,
+    "est_dth_degs": 68.1404560139901,
+    "track_violation": 0.08333333333333333,
+    "calls_per_s": 0.0,
+    "interventions": 0.7468162039298955,
+    "false_interventions": 0.08545138888888888,
+    "n": 24
+   },
+   "v41+sup-s0": {
+    "survived": 0.8333333333333334,
+    "safe": 0.375,
+    "est_th_deg": 1.700903524778193,
+    "est_dth_degs": 60.06287255213417,
+    "track_violation": 0.08333333333333333,
+    "calls_per_s": 36.39850056250324,
+    "interventions": 0.7555277318826525,
+    "false_interventions": 0.1295138888888889,
+    "n": 24
+   }
+  },
+  "dropped_events": {
+   "geo+sup": {
+    "survived": 1.0,
+    "safe": 0.4375,
+    "est_th_deg": 2.190405286669392,
+    "est_dth_degs": 93.39949021094361,
+    "track_violation": 0.0,
+    "calls_per_s": 0.0,
+    "interventions": 0.9527604166666666,
+    "false_interventions": 0.3626041666666666,
+    "n": 16
+   },
+   "geoev+sup": {
+    "survived": 1.0,
+    "safe": 0.5625,
+    "est_th_deg": 2.1001104330501317,
+    "est_dth_degs": 75.757221358241,
+    "track_violation": 0.0,
+    "calls_per_s": 0.0,
+    "interventions": 0.8009375,
+    "false_interventions": 0.28369791666666666,
+    "n": 16
+   },
+   "v41+sup-s0": {
+    "survived": 1.0,
+    "safe": 0.5,
+    "est_th_deg": 1.7055061866896395,
+    "est_dth_degs": 66.36450376841395,
+    "track_violation": 0.0,
+    "calls_per_s": 46.97916666666667,
+    "interventions": 0.8046354166666666,
+    "false_interventions": 0.28369791666666666,
+    "n": 16
+   }
+  },
+  "low_light": {
+   "geo+sup": {
+    "survived": 1.0,
+    "safe": 0.4375,
+    "est_th_deg": 2.3617449219914697,
+    "est_dth_degs": 95.71794486942501,
+    "track_violation": 0.0,
+    "calls_per_s": 0.0,
+    "interventions": 0.9447395833333334,
+    "false_interventions": 0.3765625,
+    "n": 16
+   },
+   "geoev+sup": {
+    "survived": 1.0,
+    "safe": 0.5625,
+    "est_th_deg": 2.0135130722370267,
+    "est_dth_degs": 77.5253691321518,
+    "track_violation": 0.0,
+    "calls_per_s": 0.0,
+    "interventions": 0.7962500000000001,
+    "false_interventions": 0.27166666666666667,
+    "n": 16
+   },
+   "v41+sup-s0": {
+    "survived": 1.0,
+    "safe": 0.375,
+    "est_th_deg": 1.7465978344131614,
+    "est_dth_degs": 64.34203499579685,
+    "track_violation": 0.0,
+    "calls_per_s": 58.020833333333336,
+    "interventions": 0.7969270833333333,
+    "false_interventions": 0.25869791666666664,
+    "n": 16
+   }
+  },
+  "combo": {
+   "geo+sup": {
+    "survived": 0.375,
+    "safe": 0.0,
+    "est_th_deg": 53.57607978048352,
+    "est_dth_degs": 459.5302269800004,
+    "track_violation": 0.16666666666666666,
+    "calls_per_s": 0.0,
+    "interventions": 0.9417230177147832,
+    "false_interventions": 0.3477101064815227,
+    "n": 24
+   },
+   "geoev+sup": {
+    "survived": 0.375,
+    "safe": 0.08333333333333333,
+    "est_th_deg": 41.86488573219754,
+    "est_dth_degs": 339.1624396774394,
+    "track_violation": 0.125,
+    "calls_per_s": 0.0,
+    "interventions": 0.9351800679545551,
+    "false_interventions": 0.3691888245669183,
+    "n": 24
+   },
+   "v41+sup-s0": {
+    "survived": 0.5416666666666666,
+    "safe": 0.16666666666666666,
+    "est_th_deg": 12.334531336081833,
+    "est_dth_degs": 154.26331783607213,
+    "track_violation": 0.25,
+    "calls_per_s": 62.32530657977738,
+    "interventions": 0.8107902213168847,
+    "false_interventions": 0.2260035634057107,
+    "n": 24
+   }
+  },
+  "ood_plant": {
+   "geo+sup": {
+    "survived": 0.9375,
+    "safe": 0.5,
+    "est_th_deg": 1.1854445083327012,
+    "est_dth_degs": 65.33337990414924,
+    "track_violation": 0.0625,
+    "calls_per_s": 0.0,
+    "interventions": 0.9490559372207328,
+    "false_interventions": 0.36478161304736373,
+    "n": 16
+   },
+   "geoev+sup": {
+    "survived": 0.8125,
+    "safe": 0.5,
+    "est_th_deg": 1.673771558700916,
+    "est_dth_degs": 56.103354936701336,
+    "track_violation": 0.1875,
+    "calls_per_s": 0.0,
+    "interventions": 0.7830857015649398,
+    "false_interventions": 0.22875,
+    "n": 16
+   },
+   "v41+sup-s0": {
+    "survived": 0.875,
+    "safe": 0.5,
+    "est_th_deg": 1.0852750039384733,
+    "est_dth_degs": 52.16462093928753,
+    "track_violation": 0.125,
+    "calls_per_s": 31.922204641350213,
+    "interventions": 0.791310917721519,
+    "false_interventions": 0.21203124999999998,
+    "n": 16
+   }
+  }
+ }
+}

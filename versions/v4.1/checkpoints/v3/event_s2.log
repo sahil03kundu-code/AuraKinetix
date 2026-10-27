@@ -1,0 +1,40 @@
+params: 286624 seed 2 aps True
+params: 286624 seed 2 aps True
+resumed at step 51
+step 100 T=48 loss 0.0370 nll -0.628 {'data': 0.09968813508749008, 'kin': 0.001518433098681271, 'reg': 0.0010156393982470036} 329s
+step 200 T=48 loss 0.0393 nll -0.592 {'data': 0.09440726041793823, 'kin': 0.08040911704301834, 'reg': 0.02417919412255287} 862s
+step 300 T=48 loss 0.1014 nll -0.426 {'data': 0.14265500009059906, 'kin': 0.0275249183177948, 'reg': 0.015573267824947834} 1257s
+params: 286624 seed 2 aps True
+resumed at step 351
+params: 286624 seed 2 aps True
+resumed at step 351
+step 400 T=48 loss 0.0379 nll -0.570 {'data': 0.09307868778705597, 'kin': 0.03496118634939194, 'reg': 0.11117161810398102} 1506s
+step 500 T=48 loss 0.0174 nll -0.775 {'data': 0.08915279805660248, 'kin': 0.11241784691810608, 'reg': 0.0858796015381813} 1724s
+/root/aurasync-engine/train_v3.py:28: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  surf = torch.from_numpy(val.surf[a:a + n]).float()[None]
+  val: {"mae_x_mm": 168.947, "mae_xd": 0.318, "mae_th_deg": 3.167, "mae_thd_degs": 25.072, "th_cov1": 0.483, "th_cov2": 0.838, "th_z_rms": 1.458, "step": 500} | sparse th 3.53
+step 600 T=48 loss -0.0669 nll -1.203 {'data': 0.04689139500260353, 'kin': 0.12729597091674805, 'reg': 0.16247031092643738} 2093s
+step 700 T=48 loss -0.0750 nll -1.146 {'data': 0.03545062243938446, 'kin': 0.07955452054738998, 'reg': 0.18452903628349304} 2318s
+step 800 T=128 loss 0.0045 nll -0.630 {'data': 0.06446623802185059, 'kin': 0.058908987790346146, 'reg': 0.1586161106824875} 2527s
+step 900 T=128 loss -0.0546 nll -1.053 {'data': 0.04550598934292793, 'kin': 0.10179606825113297, 'reg': 0.14539402723312378} 3161s
+step 1000 T=128 loss -0.1071 nll -1.353 {'data': 0.023589977994561195, 'kin': 0.09080985188484192, 'reg': 0.1461590677499771} 3804s
+  val: {"mae_x_mm": 52.407, "mae_xd": 0.123, "mae_th_deg": 0.875, "mae_thd_degs": 12.852, "th_cov1": 0.7, "th_cov2": 0.96, "th_z_rms": 0.971, "step": 1000} | sparse th 1.03
+step 1100 T=128 loss -0.1100 nll -1.389 {'data': 0.02591679058969021, 'kin': 0.05733627453446388, 'reg': 0.13930675387382507} 4460s
+step 1200 T=128 loss -0.1136 nll -1.429 {'data': 0.023819057270884514, 'kin': 0.10659009218215942, 'reg': 0.2041916400194168} 5106s
+step 1300 T=128 loss -0.0908 nll -1.272 {'data': 0.030188346281647682, 'kin': 0.12091951817274094, 'reg': 0.2321363091468811} 5774s
+step 1400 T=128 loss -0.0985 nll -1.330 {'data': 0.028764979913830757, 'kin': 0.10934575647115707, 'reg': 0.24382703006267548} 6419s
+step 1500 T=128 loss -0.1248 nll -1.490 {'data': 0.020731523633003235, 'kin': 0.06842026114463806, 'reg': 0.10875099152326584} 7040s
+  val: {"mae_x_mm": 32.476, "mae_xd": 0.091, "mae_th_deg": 0.84, "mae_thd_degs": 11.225, "th_cov1": 0.476, "th_cov2": 0.707, "th_z_rms": 1.823, "step": 1500} | sparse th 1.28
+step 1600 T=256 loss -0.1037 nll -1.405 {'data': 0.03346830606460571, 'kin': 0.061763305217027664, 'reg': 0.24159450829029083} 7706s
+params: 286624 seed 2 aps True
+resumed at step 1601
+step 1700 T=256 loss -0.1105 nll -1.409 {'data': 0.02562582679092884, 'kin': 0.09015294164419174, 'reg': 0.2267971783876419} 8446s
+params: 286624 seed 2 aps True
+resumed at step 1751
+step 1800 T=256 loss -0.1675 nll -1.841 {'data': 0.014354611746966839, 'kin': 0.04207564517855644, 'reg': 0.15785707533359528} 9113s
+step 1900 T=256 loss -0.1461 nll -1.702 {'data': 0.018259184435009956, 'kin': 0.11312111467123032, 'reg': 0.24473810195922852} 9723s
+step 2000 T=256 loss -0.1909 nll -2.004 {'data': 0.007027056533843279, 'kin': 0.04367164149880409, 'reg': 0.2393355816602707} 10363s
+/root/aurasync-engine/train_v3.py:28: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
+  surf = torch.from_numpy(val.surf[a:a + n]).float()[None]
+  val: {"mae_x_mm": 22.68, "mae_xd": 0.084, "mae_th_deg": 0.887, "mae_thd_degs": 11.401, "th_cov1": 0.352, "th_cov2": 0.565, "th_z_rms": 2.55, "step": 2000} | sparse th 1.16
+done 10401.375393867493 best 3.1547549843788145

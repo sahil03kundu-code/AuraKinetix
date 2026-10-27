@@ -1,0 +1,1442 @@
+[
+ {
+  "file": "ev-trig+shield-s0_300_1.5.npz",
+  "fail": -1,
+  "max_err": 6.491289427540618,
+  "conf_wrong_ticks": 397,
+  "sign_err_ticks": 95,
+  "first_conf_wrong": 713,
+  "max_err_over_sigma": 4.498741927284564
+ },
+ {
+  "file": "ev-trig+shield-s0_300_2.5.npz",
+  "fail": 721,
+  "max_err": 51.830937044231625,
+  "conf_wrong_ticks": 456,
+  "sign_err_ticks": 387,
+  "first_conf_wrong": 265,
+  "max_err_over_sigma": 33.23023930171773
+ },
+ {
+  "file": "ev-trig+shield-s0_300_3.0.npz",
+  "fail": 650,
+  "max_err": 52.655445471547054,
+  "conf_wrong_ticks": 394,
+  "sign_err_ticks": 329,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 32.01252613598183
+ },
+ {
+  "file": "ev-trig+shield-s0_300_3.5.npz",
+  "fail": 593,
+  "max_err": 52.933204624044905,
+  "conf_wrong_ticks": 344,
+  "sign_err_ticks": 289,
+  "first_conf_wrong": 250,
+  "max_err_over_sigma": 30.836417067441058
+ },
+ {
+  "file": "ev-trig+shield-s0_300_4.0.npz",
+  "fail": 547,
+  "max_err": 52.737905419723695,
+  "conf_wrong_ticks": 304,
+  "sign_err_ticks": 245,
+  "first_conf_wrong": 244,
+  "max_err_over_sigma": 30.64242775148155
+ },
+ {
+  "file": "ev-trig+shield-s0_301_1.5.npz",
+  "fail": -1,
+  "max_err": 5.586922787183941,
+  "conf_wrong_ticks": 58,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": 1142,
+  "max_err_over_sigma": 4.050298374444976
+ },
+ {
+  "file": "ev-trig+shield-s0_301_2.5.npz",
+  "fail": 967,
+  "max_err": 58.431063904465326,
+  "conf_wrong_ticks": 654,
+  "sign_err_ticks": 400,
+  "first_conf_wrong": 309,
+  "max_err_over_sigma": 20.347952047890665
+ },
+ {
+  "file": "ev-trig+shield-s0_301_3.0.npz",
+  "fail": 882,
+  "max_err": 58.93915772060986,
+  "conf_wrong_ticks": 601,
+  "sign_err_ticks": 565,
+  "first_conf_wrong": 282,
+  "max_err_over_sigma": 21.09826158802826
+ },
+ {
+  "file": "ev-trig+shield-s0_301_3.5.npz",
+  "fail": 815,
+  "max_err": 59.820787261771315,
+  "conf_wrong_ticks": 555,
+  "sign_err_ticks": 492,
+  "first_conf_wrong": 259,
+  "max_err_over_sigma": 22.291770296612334
+ },
+ {
+  "file": "ev-trig+shield-s0_301_4.0.npz",
+  "fail": 703,
+  "max_err": 60.214261352874786,
+  "conf_wrong_ticks": 464,
+  "sign_err_ticks": 381,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 20.27544677833221
+ },
+ {
+  "file": "ev-trig+shield-s0_302_1.5.npz",
+  "fail": -1,
+  "max_err": 5.713936229497435,
+  "conf_wrong_ticks": 168,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": 683,
+  "max_err_over_sigma": 3.7971208299935593
+ },
+ {
+  "file": "ev-trig+shield-s0_302_2.5.npz",
+  "fail": 719,
+  "max_err": 49.16599108771873,
+  "conf_wrong_ticks": 352,
+  "sign_err_ticks": 288,
+  "first_conf_wrong": 265,
+  "max_err_over_sigma": 32.13015949449014
+ },
+ {
+  "file": "ev-trig+shield-s0_302_3.0.npz",
+  "fail": 631,
+  "max_err": 52.013803176251514,
+  "conf_wrong_ticks": 387,
+  "sign_err_ticks": 328,
+  "first_conf_wrong": 242,
+  "max_err_over_sigma": 31.731304028798146
+ },
+ {
+  "file": "ev-trig+shield-s0_302_3.5.npz",
+  "fail": 582,
+  "max_err": 53.824060113207274,
+  "conf_wrong_ticks": 346,
+  "sign_err_ticks": 258,
+  "first_conf_wrong": 235,
+  "max_err_over_sigma": 32.24934698874945
+ },
+ {
+  "file": "ev-trig+shield-s0_302_4.0.npz",
+  "fail": 545,
+  "max_err": 53.89627620524416,
+  "conf_wrong_ticks": 315,
+  "sign_err_ticks": 211,
+  "first_conf_wrong": 231,
+  "max_err_over_sigma": 30.891621613830534
+ },
+ {
+  "file": "ev-trig+shield-s0_303_1.5.npz",
+  "fail": -1,
+  "max_err": 6.36273589781185,
+  "conf_wrong_ticks": 178,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": 374,
+  "max_err_over_sigma": 4.703616775996503
+ },
+ {
+  "file": "ev-trig+shield-s0_303_2.5.npz",
+  "fail": 923,
+  "max_err": 57.973865746565565,
+  "conf_wrong_ticks": 636,
+  "sign_err_ticks": 624,
+  "first_conf_wrong": 286,
+  "max_err_over_sigma": 20.39762637578353
+ },
+ {
+  "file": "ev-trig+shield-s0_303_3.0.npz",
+  "fail": 812,
+  "max_err": 59.50102633410968,
+  "conf_wrong_ticks": 548,
+  "sign_err_ticks": 508,
+  "first_conf_wrong": 263,
+  "max_err_over_sigma": 21.22806148562024
+ },
+ {
+  "file": "ev-trig+shield-s0_303_3.5.npz",
+  "fail": 713,
+  "max_err": 59.85713327171747,
+  "conf_wrong_ticks": 474,
+  "sign_err_ticks": 401,
+  "first_conf_wrong": 235,
+  "max_err_over_sigma": 20.680064366547317
+ },
+ {
+  "file": "ev-trig+shield-s0_303_4.0.npz",
+  "fail": 580,
+  "max_err": 58.12157011893002,
+  "conf_wrong_ticks": 352,
+  "sign_err_ticks": 268,
+  "first_conf_wrong": 229,
+  "max_err_over_sigma": 18.321763958600062
+ },
+ {
+  "file": "ev-trig+shield-s0_304_1.5.npz",
+  "fail": -1,
+  "max_err": 8.448725020311645,
+  "conf_wrong_ticks": 382,
+  "sign_err_ticks": 53,
+  "first_conf_wrong": 538,
+  "max_err_over_sigma": 5.083652086680936
+ },
+ {
+  "file": "ev-trig+shield-s0_304_2.5.npz",
+  "fail": 823,
+  "max_err": 49.41225262445639,
+  "conf_wrong_ticks": 351,
+  "sign_err_ticks": 256,
+  "first_conf_wrong": 471,
+  "max_err_over_sigma": 30.76611617393765
+ },
+ {
+  "file": "ev-trig+shield-s0_304_3.0.npz",
+  "fail": 695,
+  "max_err": 51.92499844324227,
+  "conf_wrong_ticks": 340,
+  "sign_err_ticks": 320,
+  "first_conf_wrong": 316,
+  "max_err_over_sigma": 32.714949621520304
+ },
+ {
+  "file": "ev-trig+shield-s0_304_3.5.npz",
+  "fail": 632,
+  "max_err": 53.07541041817484,
+  "conf_wrong_ticks": 352,
+  "sign_err_ticks": 343,
+  "first_conf_wrong": 280,
+  "max_err_over_sigma": 31.523579339685348
+ },
+ {
+  "file": "ev-trig+shield-s0_304_4.0.npz",
+  "fail": 587,
+  "max_err": 53.60691086077614,
+  "conf_wrong_ticks": 331,
+  "sign_err_ticks": 303,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 31.14898667104898
+ },
+ {
+  "file": "ev-trig+shield-s0_305_1.5.npz",
+  "fail": -1,
+  "max_err": 4.964074609594891,
+  "conf_wrong_ticks": 0,
+  "sign_err_ticks": 2,
+  "first_conf_wrong": null,
+  "max_err_over_sigma": 3.49496333287581
+ },
+ {
+  "file": "ev-trig+shield-s0_305_2.5.npz",
+  "fail": 1053,
+  "max_err": 57.86501152821941,
+  "conf_wrong_ticks": 719,
+  "sign_err_ticks": 689,
+  "first_conf_wrong": 326,
+  "max_err_over_sigma": 21.618316447467613
+ },
+ {
+  "file": "ev-trig+shield-s0_305_3.0.npz",
+  "fail": 872,
+  "max_err": 59.08437352652095,
+  "conf_wrong_ticks": 586,
+  "sign_err_ticks": 530,
+  "first_conf_wrong": 284,
+  "max_err_over_sigma": 19.10535428908039
+ },
+ {
+  "file": "ev-trig+shield-s0_305_3.5.npz",
+  "fail": 791,
+  "max_err": 63.08515495149321,
+  "conf_wrong_ticks": 540,
+  "sign_err_ticks": 418,
+  "first_conf_wrong": 252,
+  "max_err_over_sigma": 21.051230231408365
+ },
+ {
+  "file": "ev-trig+shield-s0_305_4.0.npz",
+  "fail": 653,
+  "max_err": 59.35182747312724,
+  "conf_wrong_ticks": 416,
+  "sign_err_ticks": 276,
+  "first_conf_wrong": 238,
+  "max_err_over_sigma": 16.86807305216762
+ },
+ {
+  "file": "ev-trig+shield-s0_306_1.5.npz",
+  "fail": -1,
+  "max_err": 15.89321027952343,
+  "conf_wrong_ticks": 766,
+  "sign_err_ticks": 237,
+  "first_conf_wrong": 434,
+  "max_err_over_sigma": 9.348545364521646
+ },
+ {
+  "file": "ev-trig+shield-s0_306_2.5.npz",
+  "fail": 987,
+  "max_err": 49.871934529292034,
+  "conf_wrong_ticks": 481,
+  "sign_err_ticks": 250,
+  "first_conf_wrong": 496,
+  "max_err_over_sigma": 31.241150095626978
+ },
+ {
+  "file": "ev-trig+shield-s0_306_3.0.npz",
+  "fail": 776,
+  "max_err": 53.11219369463045,
+  "conf_wrong_ticks": 413,
+  "sign_err_ticks": 434,
+  "first_conf_wrong": 271,
+  "max_err_over_sigma": 33.75146674603741
+ },
+ {
+  "file": "ev-trig+shield-s0_306_3.5.npz",
+  "fail": 680,
+  "max_err": 52.983445494784,
+  "conf_wrong_ticks": 429,
+  "sign_err_ticks": 341,
+  "first_conf_wrong": 252,
+  "max_err_over_sigma": 32.084021108051985
+ },
+ {
+  "file": "ev-trig+shield-s0_306_4.0.npz",
+  "fail": 617,
+  "max_err": 52.91854738612567,
+  "conf_wrong_ticks": 378,
+  "sign_err_ticks": 278,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 30.352000029702246
+ },
+ {
+  "file": "ev-trig+shield-s0_307_1.5.npz",
+  "fail": -1,
+  "max_err": 5.224363265547974,
+  "conf_wrong_ticks": 0,
+  "sign_err_ticks": 27,
+  "first_conf_wrong": null,
+  "max_err_over_sigma": 3.2253451221819405
+ },
+ {
+  "file": "ev-trig+shield-s0_307_2.5.npz",
+  "fail": 955,
+  "max_err": 59.216806705394376,
+  "conf_wrong_ticks": 645,
+  "sign_err_ticks": 631,
+  "first_conf_wrong": 303,
+  "max_err_over_sigma": 22.820742001283264
+ },
+ {
+  "file": "ev-trig+shield-s0_307_3.0.npz",
+  "fail": 906,
+  "max_err": 59.20552526931207,
+  "conf_wrong_ticks": 668,
+  "sign_err_ticks": 576,
+  "first_conf_wrong": 233,
+  "max_err_over_sigma": 18.708922037147417
+ },
+ {
+  "file": "ev-trig+shield-s0_307_3.5.npz",
+  "fail": 743,
+  "max_err": 59.890680383983266,
+  "conf_wrong_ticks": 517,
+  "sign_err_ticks": 399,
+  "first_conf_wrong": 227,
+  "max_err_over_sigma": 16.701458131646323
+ },
+ {
+  "file": "ev-trig+shield-s0_307_4.0.npz",
+  "fail": 644,
+  "max_err": 58.389078837350375,
+  "conf_wrong_ticks": 425,
+  "sign_err_ticks": 288,
+  "first_conf_wrong": 220,
+  "max_err_over_sigma": 17.250826514145945
+ },
+ {
+  "file": "ev-trig+shield-s0_308_1.5.npz",
+  "fail": -1,
+  "max_err": 9.858301012110012,
+  "conf_wrong_ticks": 407,
+  "sign_err_ticks": 38,
+  "first_conf_wrong": 579,
+  "max_err_over_sigma": 6.927271257521967
+ },
+ {
+  "file": "ev-trig+shield-s0_308_2.5.npz",
+  "fail": 774,
+  "max_err": 50.00541044600716,
+  "conf_wrong_ticks": 345,
+  "sign_err_ticks": 312,
+  "first_conf_wrong": 305,
+  "max_err_over_sigma": 32.224451315824105
+ },
+ {
+  "file": "ev-trig+shield-s0_308_3.0.npz",
+  "fail": 668,
+  "max_err": 53.00204639500364,
+  "conf_wrong_ticks": 406,
+  "sign_err_ticks": 380,
+  "first_conf_wrong": 261,
+  "max_err_over_sigma": 32.15244686788422
+ },
+ {
+  "file": "ev-trig+shield-s0_308_3.5.npz",
+  "fail": 601,
+  "max_err": 53.52476236873137,
+  "conf_wrong_ticks": 352,
+  "sign_err_ticks": 321,
+  "first_conf_wrong": 250,
+  "max_err_over_sigma": 32.20783322980411
+ },
+ {
+  "file": "ev-trig+shield-s0_308_4.0.npz",
+  "fail": 559,
+  "max_err": 53.36773228047404,
+  "conf_wrong_ticks": 320,
+  "sign_err_ticks": 289,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 30.59080079500829
+ },
+ {
+  "file": "ev-trig+shield-s0_309_1.5.npz",
+  "fail": -1,
+  "max_err": 11.082901353504582,
+  "conf_wrong_ticks": 236,
+  "sign_err_ticks": 191,
+  "first_conf_wrong": 963,
+  "max_err_over_sigma": 7.919755377247778
+ },
+ {
+  "file": "ev-trig+shield-s0_309_2.5.npz",
+  "fail": 916,
+  "max_err": 58.16275207694483,
+  "conf_wrong_ticks": 558,
+  "sign_err_ticks": 265,
+  "first_conf_wrong": 357,
+  "max_err_over_sigma": 20.225032043399764
+ },
+ {
+  "file": "ev-trig+shield-s0_309_3.0.npz",
+  "fail": 827,
+  "max_err": 60.05388466091715,
+  "conf_wrong_ticks": 527,
+  "sign_err_ticks": 452,
+  "first_conf_wrong": 271,
+  "max_err_over_sigma": 19.18141125676875
+ },
+ {
+  "file": "ev-trig+shield-s0_309_3.5.npz",
+  "fail": 811,
+  "max_err": 61.00033260040644,
+  "conf_wrong_ticks": 554,
+  "sign_err_ticks": 490,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 21.349067153867942
+ },
+ {
+  "file": "ev-trig+shield-s0_309_4.0.npz",
+  "fail": 727,
+  "max_err": 60.561386395207734,
+  "conf_wrong_ticks": 486,
+  "sign_err_ticks": 404,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 24.02465345771192
+ },
+ {
+  "file": "ev-trig+shield-s0_310_1.5.npz",
+  "fail": -1,
+  "max_err": 6.146480311993777,
+  "conf_wrong_ticks": 130,
+  "sign_err_ticks": 21,
+  "first_conf_wrong": 311,
+  "max_err_over_sigma": 3.6976678911660494
+ },
+ {
+  "file": "ev-trig+shield-s0_310_2.5.npz",
+  "fail": 763,
+  "max_err": 50.282582480299084,
+  "conf_wrong_ticks": 496,
+  "sign_err_ticks": 378,
+  "first_conf_wrong": 267,
+  "max_err_over_sigma": 33.02809717810757
+ },
+ {
+  "file": "ev-trig+shield-s0_310_3.0.npz",
+  "fail": 678,
+  "max_err": 53.02455578847158,
+  "conf_wrong_ticks": 422,
+  "sign_err_ticks": 385,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 33.203744117467785
+ },
+ {
+  "file": "ev-trig+shield-s0_310_3.5.npz",
+  "fail": 616,
+  "max_err": 53.70560738933628,
+  "conf_wrong_ticks": 367,
+  "sign_err_ticks": 347,
+  "first_conf_wrong": 250,
+  "max_err_over_sigma": 32.00163517345161
+ },
+ {
+  "file": "ev-trig+shield-s0_310_4.0.npz",
+  "fail": 573,
+  "max_err": 53.39182966940661,
+  "conf_wrong_ticks": 330,
+  "sign_err_ticks": 334,
+  "first_conf_wrong": 244,
+  "max_err_over_sigma": 31.243683277817755
+ },
+ {
+  "file": "ev-trig+shield-s0_311_1.5.npz",
+  "fail": -1,
+  "max_err": 3.866797312711588,
+  "conf_wrong_ticks": 0,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": null,
+  "max_err_over_sigma": 3.0154814663831107
+ },
+ {
+  "file": "ev-trig+shield-s0_311_2.5.npz",
+  "fail": 1000,
+  "max_err": 57.126326158909315,
+  "conf_wrong_ticks": 652,
+  "sign_err_ticks": 385,
+  "first_conf_wrong": 344,
+  "max_err_over_sigma": 20.750742615695007
+ },
+ {
+  "file": "ev-trig+shield-s0_311_3.0.npz",
+  "fail": 943,
+  "max_err": 57.913300395538975,
+  "conf_wrong_ticks": 646,
+  "sign_err_ticks": 636,
+  "first_conf_wrong": 294,
+  "max_err_over_sigma": 19.461406425985004
+ },
+ {
+  "file": "ev-trig+shield-s0_311_3.5.npz",
+  "fail": 807,
+  "max_err": 59.33886949875429,
+  "conf_wrong_ticks": 551,
+  "sign_err_ticks": 486,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 21.19471288090962
+ },
+ {
+  "file": "ev-trig+shield-s0_311_4.0.npz",
+  "fail": 668,
+  "max_err": 59.149092480289006,
+  "conf_wrong_ticks": 434,
+  "sign_err_ticks": 351,
+  "first_conf_wrong": 235,
+  "max_err_over_sigma": 18.559039393321783
+ },
+ {
+  "file": "ev-trig+shield-s0_312_1.5.npz",
+  "fail": -1,
+  "max_err": 48.57050325723656,
+  "conf_wrong_ticks": 614,
+  "sign_err_ticks": 472,
+  "first_conf_wrong": 318,
+  "max_err_over_sigma": 26.629653920770146
+ },
+ {
+  "file": "ev-trig+shield-s0_312_2.5.npz",
+  "fail": 762,
+  "max_err": 51.44862147976823,
+  "conf_wrong_ticks": 485,
+  "sign_err_ticks": 504,
+  "first_conf_wrong": 277,
+  "max_err_over_sigma": 34.83180344216787
+ },
+ {
+  "file": "ev-trig+shield-s0_312_3.0.npz",
+  "fail": 666,
+  "max_err": 52.801274556533684,
+  "conf_wrong_ticks": 406,
+  "sign_err_ticks": 405,
+  "first_conf_wrong": 261,
+  "max_err_over_sigma": 32.65391953097746
+ },
+ {
+  "file": "ev-trig+shield-s0_312_3.5.npz",
+  "fail": 603,
+  "max_err": 53.14967811753965,
+  "conf_wrong_ticks": 352,
+  "sign_err_ticks": 333,
+  "first_conf_wrong": 252,
+  "max_err_over_sigma": 32.20708610325523
+ },
+ {
+  "file": "ev-trig+shield-s0_312_4.0.npz",
+  "fail": 556,
+  "max_err": 53.074737323598555,
+  "conf_wrong_ticks": 313,
+  "sign_err_ticks": 284,
+  "first_conf_wrong": 244,
+  "max_err_over_sigma": 30.216614703260625
+ },
+ {
+  "file": "ev-trig+shield-s0_313_1.5.npz",
+  "fail": -1,
+  "max_err": 5.079094139854929,
+  "conf_wrong_ticks": 2,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": 1198,
+  "max_err_over_sigma": 3.220965945677585
+ },
+ {
+  "file": "ev-trig+shield-s0_313_2.5.npz",
+  "fail": 1017,
+  "max_err": 58.722365069886656,
+  "conf_wrong_ticks": 647,
+  "sign_err_ticks": 547,
+  "first_conf_wrong": 366,
+  "max_err_over_sigma": 22.689528367993574
+ },
+ {
+  "file": "ev-trig+shield-s0_313_3.0.npz",
+  "fail": 905,
+  "max_err": 59.649749873974045,
+  "conf_wrong_ticks": 587,
+  "sign_err_ticks": 565,
+  "first_conf_wrong": 301,
+  "max_err_over_sigma": 19.5300418559201
+ },
+ {
+  "file": "ev-trig+shield-s0_313_3.5.npz",
+  "fail": 745,
+  "max_err": 59.13528347346662,
+  "conf_wrong_ticks": 478,
+  "sign_err_ticks": 402,
+  "first_conf_wrong": 267,
+  "max_err_over_sigma": 17.748427339509213
+ },
+ {
+  "file": "ev-trig+shield-s0_313_4.0.npz",
+  "fail": 693,
+  "max_err": 59.1523049664042,
+  "conf_wrong_ticks": 454,
+  "sign_err_ticks": 343,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 15.901538775543898
+ },
+ {
+  "file": "ev-trig+shield-s0_314_1.5.npz",
+  "fail": -1,
+  "max_err": 6.658801316313242,
+  "conf_wrong_ticks": 62,
+  "sign_err_ticks": 48,
+  "first_conf_wrong": 244,
+  "max_err_over_sigma": 3.4902787334128202
+ },
+ {
+  "file": "ev-trig+shield-s0_314_2.5.npz",
+  "fail": 697,
+  "max_err": 50.75628546770129,
+  "conf_wrong_ticks": 365,
+  "sign_err_ticks": 231,
+  "first_conf_wrong": 222,
+  "max_err_over_sigma": 30.725676498601224
+ },
+ {
+  "file": "ev-trig+shield-s0_314_3.0.npz",
+  "fail": 625,
+  "max_err": 53.62468638325624,
+  "conf_wrong_ticks": 407,
+  "sign_err_ticks": 294,
+  "first_conf_wrong": 218,
+  "max_err_over_sigma": 34.69268027111272
+ },
+ {
+  "file": "ev-trig+shield-s0_314_3.5.npz",
+  "fail": 578,
+  "max_err": 54.487576118926405,
+  "conf_wrong_ticks": 363,
+  "sign_err_ticks": 248,
+  "first_conf_wrong": 216,
+  "max_err_over_sigma": 31.749140600258247
+ },
+ {
+  "file": "ev-trig+shield-s0_314_4.0.npz",
+  "fail": 539,
+  "max_err": 53.616268732507656,
+  "conf_wrong_ticks": 326,
+  "sign_err_ticks": 212,
+  "first_conf_wrong": 214,
+  "max_err_over_sigma": 30.650999580529167
+ },
+ {
+  "file": "ev-trig+shield-s0_315_1.5.npz",
+  "fail": -1,
+  "max_err": 5.839781154326505,
+  "conf_wrong_ticks": 0,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": null,
+  "max_err_over_sigma": 3.6536320842497565
+ },
+ {
+  "file": "ev-trig+shield-s0_315_2.5.npz",
+  "fail": 971,
+  "max_err": 60.967274206751064,
+  "conf_wrong_ticks": 743,
+  "sign_err_ticks": 583,
+  "first_conf_wrong": 229,
+  "max_err_over_sigma": 20.82888109717027
+ },
+ {
+  "file": "ev-trig+shield-s0_315_3.0.npz",
+  "fail": 802,
+  "max_err": 59.20519274313573,
+  "conf_wrong_ticks": 587,
+  "sign_err_ticks": 397,
+  "first_conf_wrong": 216,
+  "max_err_over_sigma": 19.727002904812984
+ },
+ {
+  "file": "ev-trig+shield-s0_315_3.5.npz",
+  "fail": 696,
+  "max_err": 59.1919599940456,
+  "conf_wrong_ticks": 485,
+  "sign_err_ticks": 291,
+  "first_conf_wrong": 212,
+  "max_err_over_sigma": 16.223386072960313
+ },
+ {
+  "file": "ev-trig+shield-s0_315_4.0.npz",
+  "fail": 633,
+  "max_err": 59.784491045953345,
+  "conf_wrong_ticks": 422,
+  "sign_err_ticks": 232,
+  "first_conf_wrong": 212,
+  "max_err_over_sigma": 15.530332816565943
+ },
+ {
+  "file": "ev-trig-s0_300_1.5.npz",
+  "fail": -1,
+  "max_err": 12.1852023390925,
+  "conf_wrong_ticks": 428,
+  "sign_err_ticks": 55,
+  "first_conf_wrong": 523,
+  "max_err_over_sigma": 7.766811208127945
+ },
+ {
+  "file": "ev-trig-s0_300_2.5.npz",
+  "fail": -1,
+  "max_err": 10.46091987522048,
+  "conf_wrong_ticks": 511,
+  "sign_err_ticks": 80,
+  "first_conf_wrong": 261,
+  "max_err_over_sigma": 6.572439771257706
+ },
+ {
+  "file": "ev-trig-s0_300_3.0.npz",
+  "fail": 815,
+  "max_err": 51.79306529212239,
+  "conf_wrong_ticks": 564,
+  "sign_err_ticks": 255,
+  "first_conf_wrong": 252,
+  "max_err_over_sigma": 34.760514362459155
+ },
+ {
+  "file": "ev-trig-s0_300_3.5.npz",
+  "fail": 686,
+  "max_err": 58.25693438731007,
+  "conf_wrong_ticks": 442,
+  "sign_err_ticks": 346,
+  "first_conf_wrong": 244,
+  "max_err_over_sigma": 34.305490198772475
+ },
+ {
+  "file": "ev-trig-s0_300_4.0.npz",
+  "fail": 626,
+  "max_err": 57.40080996508808,
+  "conf_wrong_ticks": 387,
+  "sign_err_ticks": 296,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 33.60406071789932
+ },
+ {
+  "file": "ev-trig-s0_301_1.5.npz",
+  "fail": -1,
+  "max_err": 8.036012479812081,
+  "conf_wrong_ticks": 139,
+  "sign_err_ticks": 14,
+  "first_conf_wrong": 1061,
+  "max_err_over_sigma": 5.706108409964947
+ },
+ {
+  "file": "ev-trig-s0_301_2.5.npz",
+  "fail": -1,
+  "max_err": 19.53072207324538,
+  "conf_wrong_ticks": 281,
+  "sign_err_ticks": 188,
+  "first_conf_wrong": 919,
+  "max_err_over_sigma": 12.802404273467495
+ },
+ {
+  "file": "ev-trig-s0_301_3.0.npz",
+  "fail": -1,
+  "max_err": 25.802499829073437,
+  "conf_wrong_ticks": 378,
+  "sign_err_ticks": 174,
+  "first_conf_wrong": 282,
+  "max_err_over_sigma": 14.629397420704958
+ },
+ {
+  "file": "ev-trig-s0_301_3.5.npz",
+  "fail": -1,
+  "max_err": 33.89396024947902,
+  "conf_wrong_ticks": 427,
+  "sign_err_ticks": 97,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 18.451063503269648
+ },
+ {
+  "file": "ev-trig-s0_301_4.0.npz",
+  "fail": 985,
+  "max_err": 32.15915508674342,
+  "conf_wrong_ticks": 538,
+  "sign_err_ticks": 74,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 9.888869221234652
+ },
+ {
+  "file": "ev-trig-s0_302_1.5.npz",
+  "fail": -1,
+  "max_err": 13.347172688252678,
+  "conf_wrong_ticks": 449,
+  "sign_err_ticks": 73,
+  "first_conf_wrong": 491,
+  "max_err_over_sigma": 8.13798342071112
+ },
+ {
+  "file": "ev-trig-s0_302_2.5.npz",
+  "fail": 664,
+  "max_err": 28.911401646171623,
+  "conf_wrong_ticks": 234,
+  "sign_err_ticks": 52,
+  "first_conf_wrong": 263,
+  "max_err_over_sigma": 15.399855480679538
+ },
+ {
+  "file": "ev-trig-s0_302_3.0.npz",
+  "fail": 716,
+  "max_err": 27.532684302484164,
+  "conf_wrong_ticks": 282,
+  "sign_err_ticks": 72,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 14.884944679721759
+ },
+ {
+  "file": "ev-trig-s0_302_3.5.npz",
+  "fail": 835,
+  "max_err": 54.56705867429829,
+  "conf_wrong_ticks": 601,
+  "sign_err_ticks": 220,
+  "first_conf_wrong": 235,
+  "max_err_over_sigma": 33.08529452232652
+ },
+ {
+  "file": "ev-trig-s0_302_4.0.npz",
+  "fail": 640,
+  "max_err": 60.05835365310573,
+  "conf_wrong_ticks": 410,
+  "sign_err_ticks": 318,
+  "first_conf_wrong": 231,
+  "max_err_over_sigma": 36.324152633954725
+ },
+ {
+  "file": "ev-trig-s0_303_1.5.npz",
+  "fail": -1,
+  "max_err": 5.2215122215893075,
+  "conf_wrong_ticks": 14,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": 1186,
+  "max_err_over_sigma": 3.5475179164831845
+ },
+ {
+  "file": "ev-trig-s0_303_2.5.npz",
+  "fail": -1,
+  "max_err": 22.332191913065863,
+  "conf_wrong_ticks": 472,
+  "sign_err_ticks": 173,
+  "first_conf_wrong": 282,
+  "max_err_over_sigma": 12.843539706404316
+ },
+ {
+  "file": "ev-trig-s0_303_3.0.npz",
+  "fail": 1184,
+  "max_err": 53.67020027781255,
+  "conf_wrong_ticks": 735,
+  "sign_err_ticks": 262,
+  "first_conf_wrong": 252,
+  "max_err_over_sigma": 18.139763318395026
+ },
+ {
+  "file": "ev-trig-s0_303_3.5.npz",
+  "fail": 900,
+  "max_err": 42.63227736687677,
+  "conf_wrong_ticks": 501,
+  "sign_err_ticks": 111,
+  "first_conf_wrong": 235,
+  "max_err_over_sigma": 14.313837667796914
+ },
+ {
+  "file": "ev-trig-s0_303_4.0.npz",
+  "fail": 617,
+  "max_err": 26.763486542289492,
+  "conf_wrong_ticks": 303,
+  "sign_err_ticks": 92,
+  "first_conf_wrong": 229,
+  "max_err_over_sigma": 10.388096119265917
+ },
+ {
+  "file": "ev-trig-s0_304_1.5.npz",
+  "fail": -1,
+  "max_err": 7.8594391897915115,
+  "conf_wrong_ticks": 385,
+  "sign_err_ticks": 43,
+  "first_conf_wrong": 579,
+  "max_err_over_sigma": 4.930303983536274
+ },
+ {
+  "file": "ev-trig-s0_304_2.5.npz",
+  "fail": -1,
+  "max_err": 12.221207312038747,
+  "conf_wrong_ticks": 387,
+  "sign_err_ticks": 10,
+  "first_conf_wrong": 605,
+  "max_err_over_sigma": 7.640753741565554
+ },
+ {
+  "file": "ev-trig-s0_304_3.0.npz",
+  "fail": -1,
+  "max_err": 11.7896519426173,
+  "conf_wrong_ticks": 431,
+  "sign_err_ticks": 71,
+  "first_conf_wrong": 338,
+  "max_err_over_sigma": 7.281509482972711
+ },
+ {
+  "file": "ev-trig-s0_304_3.5.npz",
+  "fail": -1,
+  "max_err": 16.498550037784643,
+  "conf_wrong_ticks": 362,
+  "sign_err_ticks": 216,
+  "first_conf_wrong": 280,
+  "max_err_over_sigma": 10.325863387188685
+ },
+ {
+  "file": "ev-trig-s0_304_4.0.npz",
+  "fail": 779,
+  "max_err": 53.66660650888638,
+  "conf_wrong_ticks": 522,
+  "sign_err_ticks": 240,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 33.98677496794715
+ },
+ {
+  "file": "ev-trig-s0_305_1.5.npz",
+  "fail": -1,
+  "max_err": 3.292878366078367,
+  "conf_wrong_ticks": 0,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": null,
+  "max_err_over_sigma": 1.9790935156278517
+ },
+ {
+  "file": "ev-trig-s0_305_2.5.npz",
+  "fail": -1,
+  "max_err": 8.571149595675367,
+  "conf_wrong_ticks": 205,
+  "sign_err_ticks": 131,
+  "first_conf_wrong": 993,
+  "max_err_over_sigma": 5.93565311189413
+ },
+ {
+  "file": "ev-trig-s0_305_3.0.npz",
+  "fail": -1,
+  "max_err": 15.779846409907659,
+  "conf_wrong_ticks": 249,
+  "sign_err_ticks": 116,
+  "first_conf_wrong": 951,
+  "max_err_over_sigma": 10.510131143274995
+ },
+ {
+  "file": "ev-trig-s0_305_3.5.npz",
+  "fail": -1,
+  "max_err": 30.78738430152587,
+  "conf_wrong_ticks": 345,
+  "sign_err_ticks": 164,
+  "first_conf_wrong": 280,
+  "max_err_over_sigma": 15.889290642108254
+ },
+ {
+  "file": "ev-trig-s0_305_4.0.npz",
+  "fail": 1018,
+  "max_err": 44.496970129045906,
+  "conf_wrong_ticks": 545,
+  "sign_err_ticks": 107,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 20.261900894272667
+ },
+ {
+  "file": "ev-trig-s0_306_1.5.npz",
+  "fail": -1,
+  "max_err": 16.17893719608711,
+  "conf_wrong_ticks": 514,
+  "sign_err_ticks": 122,
+  "first_conf_wrong": 421,
+  "max_err_over_sigma": 9.768757311180833
+ },
+ {
+  "file": "ev-trig-s0_306_2.5.npz",
+  "fail": -1,
+  "max_err": 19.754512233035825,
+  "conf_wrong_ticks": 597,
+  "sign_err_ticks": 34,
+  "first_conf_wrong": 496,
+  "max_err_over_sigma": 11.589961139068317
+ },
+ {
+  "file": "ev-trig-s0_306_3.0.npz",
+  "fail": -1,
+  "max_err": 18.6125045142646,
+  "conf_wrong_ticks": 455,
+  "sign_err_ticks": 58,
+  "first_conf_wrong": 583,
+  "max_err_over_sigma": 10.724551283017203
+ },
+ {
+  "file": "ev-trig-s0_306_3.5.npz",
+  "fail": 693,
+  "max_err": 25.508712043320628,
+  "conf_wrong_ticks": 213,
+  "sign_err_ticks": 44,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 14.22066885683748
+ },
+ {
+  "file": "ev-trig-s0_306_4.0.npz",
+  "fail": 604,
+  "max_err": 21.398817658136863,
+  "conf_wrong_ticks": 234,
+  "sign_err_ticks": 80,
+  "first_conf_wrong": 244,
+  "max_err_over_sigma": 9.668286540455659
+ },
+ {
+  "file": "ev-trig-s0_307_1.5.npz",
+  "fail": -1,
+  "max_err": 6.4530539813961045,
+  "conf_wrong_ticks": 47,
+  "sign_err_ticks": 22,
+  "first_conf_wrong": 1151,
+  "max_err_over_sigma": 4.188424257540267
+ },
+ {
+  "file": "ev-trig-s0_307_2.5.npz",
+  "fail": -1,
+  "max_err": 11.25875737660177,
+  "conf_wrong_ticks": 132,
+  "sign_err_ticks": 31,
+  "first_conf_wrong": 1068,
+  "max_err_over_sigma": 7.976147434204876
+ },
+ {
+  "file": "ev-trig-s0_307_3.0.npz",
+  "fail": -1,
+  "max_err": 19.477360831976263,
+  "conf_wrong_ticks": 310,
+  "sign_err_ticks": 218,
+  "first_conf_wrong": 282,
+  "max_err_over_sigma": 13.558285173559035
+ },
+ {
+  "file": "ev-trig-s0_307_3.5.npz",
+  "fail": -1,
+  "max_err": 10.598411733522784,
+  "conf_wrong_ticks": 271,
+  "sign_err_ticks": 52,
+  "first_conf_wrong": 229,
+  "max_err_over_sigma": 5.628919625893106
+ },
+ {
+  "file": "ev-trig-s0_307_4.0.npz",
+  "fail": 1112,
+  "max_err": 43.833314209138024,
+  "conf_wrong_ticks": 708,
+  "sign_err_ticks": 115,
+  "first_conf_wrong": 222,
+  "max_err_over_sigma": 22.38220603496407
+ },
+ {
+  "file": "ev-trig-s0_308_1.5.npz",
+  "fail": -1,
+  "max_err": 11.670475938315471,
+  "conf_wrong_ticks": 431,
+  "sign_err_ticks": 48,
+  "first_conf_wrong": 556,
+  "max_err_over_sigma": 7.941822695842876
+ },
+ {
+  "file": "ev-trig-s0_308_2.5.npz",
+  "fail": -1,
+  "max_err": 23.59988566660061,
+  "conf_wrong_ticks": 602,
+  "sign_err_ticks": 89,
+  "first_conf_wrong": 296,
+  "max_err_over_sigma": 12.541082436307367
+ },
+ {
+  "file": "ev-trig-s0_308_3.0.npz",
+  "fail": 778,
+  "max_err": 32.58572017544422,
+  "conf_wrong_ticks": 331,
+  "sign_err_ticks": 83,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 18.04674230102449
+ },
+ {
+  "file": "ev-trig-s0_308_3.5.npz",
+  "fail": -1,
+  "max_err": 14.403241833312,
+  "conf_wrong_ticks": 602,
+  "sign_err_ticks": 105,
+  "first_conf_wrong": 242,
+  "max_err_over_sigma": 7.86823624105939
+ },
+ {
+  "file": "ev-trig-s0_308_4.0.npz",
+  "fail": 699,
+  "max_err": 57.42305753845434,
+  "conf_wrong_ticks": 463,
+  "sign_err_ticks": 303,
+  "first_conf_wrong": 235,
+  "max_err_over_sigma": 36.53044051971762
+ },
+ {
+  "file": "ev-trig-s0_309_1.5.npz",
+  "fail": -1,
+  "max_err": 8.035337364851008,
+  "conf_wrong_ticks": 360,
+  "sign_err_ticks": 290,
+  "first_conf_wrong": 840,
+  "max_err_over_sigma": 5.6065322258523835
+ },
+ {
+  "file": "ev-trig-s0_309_2.5.npz",
+  "fail": -1,
+  "max_err": 18.084635304788094,
+  "conf_wrong_ticks": 459,
+  "sign_err_ticks": 78,
+  "first_conf_wrong": 500,
+  "max_err_over_sigma": 12.919635371769537
+ },
+ {
+  "file": "ev-trig-s0_309_3.0.npz",
+  "fail": 877,
+  "max_err": 43.77609772561603,
+  "conf_wrong_ticks": 379,
+  "sign_err_ticks": 68,
+  "first_conf_wrong": 271,
+  "max_err_over_sigma": 18.65040239189668
+ },
+ {
+  "file": "ev-trig-s0_309_3.5.npz",
+  "fail": 567,
+  "max_err": 27.313177738582002,
+  "conf_wrong_ticks": 212,
+  "sign_err_ticks": 31,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 10.701163055310538
+ },
+ {
+  "file": "ev-trig-s0_309_4.0.npz",
+  "fail": 555,
+  "max_err": 26.86070772059411,
+  "conf_wrong_ticks": 222,
+  "sign_err_ticks": 49,
+  "first_conf_wrong": 233,
+  "max_err_over_sigma": 10.284105460794008
+ },
+ {
+  "file": "ev-trig-s0_310_1.5.npz",
+  "fail": -1,
+  "max_err": 15.707313526210793,
+  "conf_wrong_ticks": 427,
+  "sign_err_ticks": 61,
+  "first_conf_wrong": 305,
+  "max_err_over_sigma": 9.647126581997341
+ },
+ {
+  "file": "ev-trig-s0_310_2.5.npz",
+  "fail": 687,
+  "max_err": 27.26174448652226,
+  "conf_wrong_ticks": 287,
+  "sign_err_ticks": 95,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 13.300710971944671
+ },
+ {
+  "file": "ev-trig-s0_310_3.0.npz",
+  "fail": 835,
+  "max_err": 30.5573393513845,
+  "conf_wrong_ticks": 412,
+  "sign_err_ticks": 121,
+  "first_conf_wrong": 250,
+  "max_err_over_sigma": 17.31896900178429
+ },
+ {
+  "file": "ev-trig-s0_310_3.5.npz",
+  "fail": 740,
+  "max_err": 57.03394029332456,
+  "conf_wrong_ticks": 499,
+  "sign_err_ticks": 339,
+  "first_conf_wrong": 242,
+  "max_err_over_sigma": 38.31086370104199
+ },
+ {
+  "file": "ev-trig-s0_310_4.0.npz",
+  "fail": 659,
+  "max_err": 59.51085284819128,
+  "conf_wrong_ticks": 422,
+  "sign_err_ticks": 356,
+  "first_conf_wrong": 238,
+  "max_err_over_sigma": 32.65554049259361
+ },
+ {
+  "file": "ev-trig-s0_311_1.5.npz",
+  "fail": -1,
+  "max_err": 4.15224456448288,
+  "conf_wrong_ticks": 0,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": null,
+  "max_err_over_sigma": 3.3273206737097856
+ },
+ {
+  "file": "ev-trig-s0_311_2.5.npz",
+  "fail": -1,
+  "max_err": 4.103312896358748,
+  "conf_wrong_ticks": 0,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": null,
+  "max_err_over_sigma": 2.5868839651752427
+ },
+ {
+  "file": "ev-trig-s0_311_3.0.npz",
+  "fail": -1,
+  "max_err": 14.341174400071488,
+  "conf_wrong_ticks": 280,
+  "sign_err_ticks": 250,
+  "first_conf_wrong": 301,
+  "max_err_over_sigma": 10.735957450128836
+ },
+ {
+  "file": "ev-trig-s0_311_3.5.npz",
+  "fail": -1,
+  "max_err": 30.342052742711665,
+  "conf_wrong_ticks": 265,
+  "sign_err_ticks": 107,
+  "first_conf_wrong": 257,
+  "max_err_over_sigma": 17.923903802766628
+ },
+ {
+  "file": "ev-trig-s0_311_4.0.npz",
+  "fail": 1095,
+  "max_err": 38.04917909862028,
+  "conf_wrong_ticks": 656,
+  "sign_err_ticks": 70,
+  "first_conf_wrong": 235,
+  "max_err_over_sigma": 17.3020751902583
+ },
+ {
+  "file": "ev-trig-s0_312_1.5.npz",
+  "fail": -1,
+  "max_err": 19.67154233181128,
+  "conf_wrong_ticks": 651,
+  "sign_err_ticks": 250,
+  "first_conf_wrong": 334,
+  "max_err_over_sigma": 10.63122548867417
+ },
+ {
+  "file": "ev-trig-s0_312_2.5.npz",
+  "fail": -1,
+  "max_err": 16.928601859237705,
+  "conf_wrong_ticks": 580,
+  "sign_err_ticks": 178,
+  "first_conf_wrong": 277,
+  "max_err_over_sigma": 9.692572374024664
+ },
+ {
+  "file": "ev-trig-s0_312_3.0.npz",
+  "fail": -1,
+  "max_err": 51.631756796694745,
+  "conf_wrong_ticks": 912,
+  "sign_err_ticks": 444,
+  "first_conf_wrong": 263,
+  "max_err_over_sigma": 29.180875675588062
+ },
+ {
+  "file": "ev-trig-s0_312_3.5.npz",
+  "fail": 788,
+  "max_err": 53.20316895573896,
+  "conf_wrong_ticks": 536,
+  "sign_err_ticks": 303,
+  "first_conf_wrong": 252,
+  "max_err_over_sigma": 34.93562028924232
+ },
+ {
+  "file": "ev-trig-s0_312_4.0.npz",
+  "fail": 695,
+  "max_err": 57.9383415829525,
+  "conf_wrong_ticks": 449,
+  "sign_err_ticks": 424,
+  "first_conf_wrong": 247,
+  "max_err_over_sigma": 35.73678535147762
+ },
+ {
+  "file": "ev-trig-s0_313_1.5.npz",
+  "fail": -1,
+  "max_err": 5.142174590140296,
+  "conf_wrong_ticks": 29,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": 1005,
+  "max_err_over_sigma": 3.5474772051053183
+ },
+ {
+  "file": "ev-trig-s0_313_2.5.npz",
+  "fail": -1,
+  "max_err": 3.67589437193557,
+  "conf_wrong_ticks": 0,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": null,
+  "max_err_over_sigma": 2.297374990258493
+ },
+ {
+  "file": "ev-trig-s0_313_3.0.npz",
+  "fail": -1,
+  "max_err": 16.947966593814265,
+  "conf_wrong_ticks": 222,
+  "sign_err_ticks": 199,
+  "first_conf_wrong": 978,
+  "max_err_over_sigma": 12.264053052959257
+ },
+ {
+  "file": "ev-trig-s0_313_3.5.npz",
+  "fail": 1167,
+  "max_err": 50.69510790991485,
+  "conf_wrong_ticks": 428,
+  "sign_err_ticks": 199,
+  "first_conf_wrong": 274,
+  "max_err_over_sigma": 22.66791911405484
+ },
+ {
+  "file": "ev-trig-s0_313_4.0.npz",
+  "fail": 1075,
+  "max_err": 40.55694380333671,
+  "conf_wrong_ticks": 628,
+  "sign_err_ticks": 98,
+  "first_conf_wrong": 250,
+  "max_err_over_sigma": 17.722640490866215
+ },
+ {
+  "file": "ev-trig-s0_314_1.5.npz",
+  "fail": 575,
+  "max_err": 32.36223191150431,
+  "conf_wrong_ticks": 161,
+  "sign_err_ticks": 89,
+  "first_conf_wrong": 282,
+  "max_err_over_sigma": 15.079540193239723
+ },
+ {
+  "file": "ev-trig-s0_314_2.5.npz",
+  "fail": 586,
+  "max_err": 28.169592177004535,
+  "conf_wrong_ticks": 195,
+  "sign_err_ticks": 50,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 12.55151587869531
+ },
+ {
+  "file": "ev-trig-s0_314_3.0.npz",
+  "fail": 630,
+  "max_err": 25.814580622805476,
+  "conf_wrong_ticks": 223,
+  "sign_err_ticks": 53,
+  "first_conf_wrong": 229,
+  "max_err_over_sigma": 12.449508430303453
+ },
+ {
+  "file": "ev-trig-s0_314_3.5.npz",
+  "fail": 800,
+  "max_err": 54.893753418305224,
+  "conf_wrong_ticks": 576,
+  "sign_err_ticks": 228,
+  "first_conf_wrong": 224,
+  "max_err_over_sigma": 34.248170855886436
+ },
+ {
+  "file": "ev-trig-s0_314_4.0.npz",
+  "fail": 647,
+  "max_err": 59.690218354674016,
+  "conf_wrong_ticks": 427,
+  "sign_err_ticks": 349,
+  "first_conf_wrong": 220,
+  "max_err_over_sigma": 36.971752799423406
+ },
+ {
+  "file": "ev-trig-s0_315_1.5.npz",
+  "fail": -1,
+  "max_err": 8.28954672602392,
+  "conf_wrong_ticks": 107,
+  "sign_err_ticks": 0,
+  "first_conf_wrong": 1092,
+  "max_err_over_sigma": 5.8354812377626795
+ },
+ {
+  "file": "ev-trig-s0_315_2.5.npz",
+  "fail": -1,
+  "max_err": 7.460069462914374,
+  "conf_wrong_ticks": 300,
+  "sign_err_ticks": 10,
+  "first_conf_wrong": 240,
+  "max_err_over_sigma": 4.566739617456059
+ },
+ {
+  "file": "ev-trig-s0_315_3.0.npz",
+  "fail": 1017,
+  "max_err": 44.3506273558682,
+  "conf_wrong_ticks": 548,
+  "sign_err_ticks": 81,
+  "first_conf_wrong": 229,
+  "max_err_over_sigma": 19.664276889977543
+ },
+ {
+  "file": "ev-trig-s0_315_3.5.npz",
+  "fail": 629,
+  "max_err": 27.42271251753226,
+  "conf_wrong_ticks": 309,
+  "sign_err_ticks": 32,
+  "first_conf_wrong": 220,
+  "max_err_over_sigma": 11.541102246151167
+ },
+ {
+  "file": "ev-trig-s0_315_4.0.npz",
+  "fail": 618,
+  "max_err": 26.688415182301625,
+  "conf_wrong_ticks": 325,
+  "sign_err_ticks": 58,
+  "first_conf_wrong": 216,
+  "max_err_over_sigma": 10.823547728102845
+ }
+]

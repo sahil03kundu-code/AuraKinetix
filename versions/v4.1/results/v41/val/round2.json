@@ -1,0 +1,149 @@
+{
+ "overrides": {},
+ "results": {
+  "nominal": {
+   "geoev+sup": {
+    "survived": 1.0,
+    "safe": 0.6071428571428571,
+    "est_th_deg": 1.3672122019954853,
+    "est_dth_degs": 69.70694761957013,
+    "track_violation": 0.0,
+    "calls_per_s": 0.0,
+    "interventions": 0.8070238095238096,
+    "false_interventions": 0.12315476190476192,
+    "n": 28
+   },
+   "v41+sup-s0": {
+    "survived": 0.9642857142857143,
+    "safe": 0.6785714285714286,
+    "est_th_deg": 1.2718887059267534,
+    "est_dth_degs": 67.47814882041503,
+    "track_violation": 0.03571428571428571,
+    "calls_per_s": 34.20503868654463,
+    "interventions": 0.8011936607536013,
+    "false_interventions": 0.14842261904761905,
+    "n": 28
+   }
+  },
+  "occlusion": {
+   "geoev+sup": {
+    "survived": 0.7916666666666666,
+    "safe": 0.25,
+    "est_th_deg": 1.504086672332268,
+    "est_dth_degs": 59.97148204175708,
+    "track_violation": 0.16666666666666666,
+    "calls_per_s": 0.0,
+    "interventions": 0.7797308265383761,
+    "false_interventions": 0.050555555555555555,
+    "n": 24
+   },
+   "v41+sup-s0": {
+    "survived": 0.875,
+    "safe": 0.3333333333333333,
+    "est_th_deg": 1.6920083191468205,
+    "est_dth_degs": 64.44874215360507,
+    "track_violation": 0.041666666666666664,
+    "calls_per_s": 35.168975115842656,
+    "interventions": 0.7590520810058718,
+    "false_interventions": 0.0742013888888889,
+    "n": 24
+   }
+  },
+  "dropped_events": {
+   "geoev+sup": {
+    "survived": 1.0,
+    "safe": 0.375,
+    "est_th_deg": 1.8888536493455925,
+    "est_dth_degs": 76.62966938005644,
+    "track_violation": 0.0,
+    "calls_per_s": 0.0,
+    "interventions": 0.8044791666666666,
+    "false_interventions": 0.14463541666666668,
+    "n": 16
+   },
+   "v41+sup-s0": {
+    "survived": 1.0,
+    "safe": 0.5625,
+    "est_th_deg": 1.845329249820305,
+    "est_dth_degs": 72.72501224997886,
+    "track_violation": 0.0,
+    "calls_per_s": 44.739583333333336,
+    "interventions": 0.8027604166666666,
+    "false_interventions": 0.14979166666666666,
+    "n": 16
+   }
+  },
+  "low_light": {
+   "geoev+sup": {
+    "survived": 1.0,
+    "safe": 0.5,
+    "est_th_deg": 1.9699393358117545,
+    "est_dth_degs": 73.90406246795314,
+    "track_violation": 0.0,
+    "calls_per_s": 0.0,
+    "interventions": 0.8046354166666666,
+    "false_interventions": 0.15817708333333333,
+    "n": 16
+   },
+   "v41+sup-s0": {
+    "survived": 1.0,
+    "safe": 0.75,
+    "est_th_deg": 1.748103842014785,
+    "est_dth_degs": 71.05229329291483,
+    "track_violation": 0.0,
+    "calls_per_s": 56.40625,
+    "interventions": 0.8005208333333333,
+    "false_interventions": 0.15083333333333332,
+    "n": 16
+   }
+  },
+  "combo": {
+   "geoev+sup": {
+    "survived": 0.3333333333333333,
+    "safe": 0.041666666666666664,
+    "est_th_deg": 25.86625203707054,
+    "est_dth_degs": 257.98687281434536,
+    "track_violation": 0.16666666666666666,
+    "calls_per_s": 0.0,
+    "interventions": 0.9620055276951586,
+    "false_interventions": 0.34385100558645915,
+    "n": 24
+   },
+   "v41+sup-s0": {
+    "survived": 0.4583333333333333,
+    "safe": 0.08333333333333333,
+    "est_th_deg": 13.719032968820102,
+    "est_dth_degs": 169.34915057762592,
+    "track_violation": 0.25,
+    "calls_per_s": 61.8296003953065,
+    "interventions": 0.9153427158914336,
+    "false_interventions": 0.3108126193557789,
+    "n": 24
+   }
+  },
+  "ood_plant": {
+   "geoev+sup": {
+    "survived": 0.75,
+    "safe": 0.5,
+    "est_th_deg": 1.1686962213329837,
+    "est_dth_degs": 53.410590540905346,
+    "track_violation": 0.25,
+    "calls_per_s": 0.0,
+    "interventions": 0.7798626809190672,
+    "false_interventions": 0.13082808242506813,
+    "n": 16
+   },
+   "v41+sup-s0": {
+    "survived": 0.6875,
+    "safe": 0.5,
+    "est_th_deg": 1.0129375067656676,
+    "est_dth_degs": 49.30067104379359,
+    "track_violation": 0.3125,
+    "calls_per_s": 32.58301415287697,
+    "interventions": 0.7764585227441605,
+    "false_interventions": 0.11851044420181589,
+    "n": 16
+   }
+  }
+ }
+}

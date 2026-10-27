@@ -1,0 +1,26 @@
+{
+ "nominal|geo+sup": {
+  "trials": 14,
+  "exact": true,
+  "survival_new": 1.0,
+  "survival_stored": 1.0
+ },
+ "nominal|v4+sup-s0": {
+  "trials": 14,
+  "exact": true,
+  "survival_new": 1.0,
+  "survival_stored": 1.0
+ },
+ "occlusion|geo+sup": {
+  "trials": 16,
+  "exact": true,
+  "survival_new": 0.4375,
+  "survival_stored": 0.4375
+ },
+ "occlusion|v4+sup-s0": {
+  "trials": 16,
+  "exact": true,
+  "survival_new": 0.6875,
+  "survival_stored": 0.6875
+ }
+}

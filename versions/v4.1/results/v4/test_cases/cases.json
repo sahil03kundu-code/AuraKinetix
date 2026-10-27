@@ -1,0 +1,246 @@
+[
+ {
+  "cond": "sign_flip",
+  "cfg": "ev-trig+shield-s0",
+  "kick": 1.5,
+  "trial": 6,
+  "fail_tick": 1176,
+  "actions": []
+ },
+ {
+  "cond": "sign_flip",
+  "cfg": "v4+sup-s0",
+  "kick": 1.5,
+  "trial": 6,
+  "fail_tick": null,
+  "actions": [
+   {
+    "k": 240,
+    "action": "inflate",
+    "reasons": [
+     "angle_mismatch",
+     "sign_mismatch"
+    ],
+    "score": 1.1790803612839587
+   },
+   {
+    "k": 241,
+    "action": "inflate",
+    "reasons": [
+     "angle_mismatch",
+     "sign_mismatch"
+    ],
+    "score": 1.4790803612839587
+   },
+   {
+    "k": 248,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.2570504167103955
+   }
+  ]
+ },
+ {
+  "cond": "occlusion",
+  "cfg": "v4+sup-s0",
+  "kick": 1.5,
+  "trial": 0,
+  "fail_tick": 704,
+  "actions": [
+   {
+    "k": 299,
+    "action": "inflate",
+    "reasons": [
+     "angle_mismatch",
+     "sign_mismatch"
+    ],
+    "score": 1.2
+   },
+   {
+    "k": 301,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.2
+   },
+   {
+    "k": 303,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.2
+   },
+   {
+    "k": 305,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.2
+   },
+   {
+    "k": 307,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.2
+   },
+   {
+    "k": 309,
+    "action": "inflate",
+    "reasons": [
+     "angle_mismatch",
+     "noise_burst"
+    ],
+    "score": 1.5
+   },
+   {
+    "k": 312,
+    "action": "inflate",
+    "reasons": [
+     "angle_mismatch"
+    ],
+    "score": 1.791607312921744
+   }
+  ]
+ },
+ {
+  "cond": "combo",
+  "cfg": "v4+sup-s0",
+  "kick": 1.5,
+  "trial": 0,
+  "fail_tick": 1001,
+  "actions": [
+   {
+    "k": 419,
+    "action": "inflate",
+    "reasons": [
+     "angle_mismatch",
+     "sign_mismatch"
+    ],
+    "score": 1.2727226781706822
+   },
+   {
+    "k": 779,
+    "action": "inflate",
+    "reasons": [
+     "angle_mismatch"
+    ],
+    "score": 1.0358972919858376
+   },
+   {
+    "k": 782,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 784,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 787,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 789,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 791,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 793,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 795,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 798,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 800,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 803,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 805,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 808,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 810,
+    "action": "inflate",
+    "reasons": [],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 812,
+    "action": "inflate",
+    "reasons": [
+     "stale_evidence"
+    ],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 814,
+    "action": "inflate",
+    "reasons": [
+     "stale_evidence"
+    ],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 816,
+    "action": "inflate",
+    "reasons": [
+     "stale_evidence"
+    ],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 821,
+    "action": "inflate",
+    "reasons": [
+     "stale_evidence"
+    ],
+    "score": 1.0888171157359103
+   },
+   {
+    "k": 823,
+    "action": "inflate",
+    "reasons": [
+     "stale_evidence"
+    ],
+    "score": 1.0888171157359103
+   }
+  ]
+ }
+]

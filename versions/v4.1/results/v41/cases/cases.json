@@ -1,0 +1,50 @@
+[
+ {
+  "cond": "occlusion",
+  "cfg": "v41+sup-s0",
+  "kick": 1.5,
+  "seed": 4008,
+  "fail_tick": 822,
+  "neural_calls": 27,
+  "state_share": {
+   "quiet": 0.2345078979343864,
+   "unobserved": 0.1275820170109356,
+   "fused": 0.6294046172539489,
+   "contradictory": 0.001215066828675577,
+   "corrupt": 0.007290400972053463,
+   "reinit": 0.0
+  }
+ },
+ {
+  "cond": "ood_plant",
+  "cfg": "v41+sup-s0",
+  "kick": 3.0,
+  "seed": 4000,
+  "fail_tick": 800,
+  "neural_calls": 26,
+  "state_share": {
+   "quiet": 0.23345817727840198,
+   "unobserved": 0.016229712858926344,
+   "fused": 0.6329588014981273,
+   "contradictory": 0.0,
+   "corrupt": 0.11735330836454431,
+   "reinit": 0.0
+  }
+ },
+ {
+  "cond": "combo",
+  "cfg": "v41+sup-s0",
+  "kick": 1.5,
+  "seed": 4001,
+  "fail_tick": 321,
+  "neural_calls": 32,
+  "state_share": {
+   "quiet": 0.0,
+   "unobserved": 0.9968944099378882,
+   "fused": 0.003105590062111801,
+   "contradictory": 0.0,
+   "corrupt": 0.0,
+   "reinit": 0.0
+  }
+ }
+]

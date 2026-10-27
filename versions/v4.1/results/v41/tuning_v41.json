@@ -1,0 +1,301 @@
+{
+ "supervisor_grid": [
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.221898382450651,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.1907444633077438,
+   "survival": 1.0,
+   "safe": 0.4375
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.101403431860816,
+   "survival": 0.875,
+   "safe": 0.5
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.1014768271659674,
+   "survival": 0.875,
+   "safe": 0.5
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.3519811971473914,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.3513480492154981,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.1892921979251474,
+   "survival": 1.0,
+   "safe": 0.4375
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.2211658857795749,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.2576420594033297,
+   "survival": 1.0,
+   "safe": 0.5625
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.2260945260439515,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.35117730832751,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "geoev",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.3513089557674829,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.2223822176056798,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.2225013427153937,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.100848322181276,
+   "survival": 0.875,
+   "safe": 0.5
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.1010886099215467,
+   "survival": 0.875,
+   "safe": 0.5
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.3514280316185523,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.3514245703904728,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.22176499054151,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.2220108109308503,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.2251892841808028,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.2258039574009358,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.3510043740532982,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "v41",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.3509935092750112,
+   "survival": 1.0,
+   "safe": 0.75
+  }
+ ],
+ "reference_no_supervisor": {
+  "geoev": {
+   "score": 1.2219008353181735,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  "v41": {
+   "score": 1.189372781152945,
+   "survival": 1.0,
+   "safe": 0.4375
+  }
+ },
+ "supervisor_by_family": {
+  "geoev": {
+   "gamma": 0.03,
+   "kappa": 2.0,
+   "stale_deg": 4.0
+  },
+  "v41": {
+   "gamma": 0.03,
+   "kappa": 2.0,
+   "stale_deg": 4.0
+  }
+ },
+ "note": "validation seeds 300-303, hits 1-4 rad/s, nominal; same objective/grid as V3/V4 shield tuning",
+ "pipeline_by_family": {
+  "v41": {
+   "min_gap": 10,
+   "max_interval": 50
+  },
+  "geoev": {}
+ },
+ "design_note": "Frozen before any test run. Chosen on validation seeds 300-331: min_gap 10 (<=100 neural calls/s) over 20; measurement inflation x1.4 / x1.6 from results/v41/geometry_calibration.json; all other evidence parameters are the EvidencePipeline defaults. Validation rounds: results/v41/val/round1 (pre-fix, exploratory), round2, round2_gap20."
+}
