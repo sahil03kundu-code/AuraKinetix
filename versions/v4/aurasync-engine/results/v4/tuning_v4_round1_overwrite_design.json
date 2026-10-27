@@ -1,0 +1,147 @@
+{
+ "reference": {
+  "ev-trig-s0": {
+   "score": 0.9905423555151356,
+   "survival": 0.9375,
+   "safe": 0.1875
+  },
+  "v4-s0": {
+   "score": 1.0896359341450381,
+   "survival": 0.9375,
+   "safe": 0.375
+  },
+  "geo": {
+   "score": 1.2215319789577106,
+   "survival": 1.0,
+   "safe": 0.5
+  }
+ },
+ "grid": [
+  {
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 0.7707599424711085,
+   "survival": 0.625,
+   "safe": 0.375
+  },
+  {
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 0.8683786400004446,
+   "survival": 0.6875,
+   "safe": 0.4375
+  },
+  {
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 0.580097366571515,
+   "survival": 0.5,
+   "safe": 0.25
+  },
+  {
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 0.6116538260525709,
+   "survival": 0.5,
+   "safe": 0.3125
+  },
+  {
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 0.6450372610548126,
+   "survival": 0.5,
+   "safe": 0.375
+  },
+  {
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 0.6448051279166163,
+   "survival": 0.5,
+   "safe": 0.375
+  },
+  {
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 0.9319891470289753,
+   "survival": 0.75,
+   "safe": 0.4375
+  },
+  {
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 0.934716712058584,
+   "survival": 0.75,
+   "safe": 0.4375
+  },
+  {
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 0.5836306209788117,
+   "survival": 0.5,
+   "safe": 0.25
+  },
+  {
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 0.6152506130508242,
+   "survival": 0.5,
+   "safe": 0.3125
+  },
+  {
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 0.6462680000548402,
+   "survival": 0.5,
+   "safe": 0.375
+  },
+  {
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 0.6475953997624946,
+   "survival": 0.5,
+   "safe": 0.375
+  }
+ ],
+ "supervisor": {
+  "gamma": 0.05,
+  "kappa": 0.0,
+  "stale_deg": 8.0
+ },
+ "note": "validation seeds 300-315, hits 1-4 rad/s; same objective and grid style as V3 shield tuning"
+}

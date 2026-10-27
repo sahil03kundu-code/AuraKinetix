@@ -1,0 +1,32 @@
+params: 464236
+step 200 loss 0.0553 60s
+step 400 loss 0.0284 118s
+step 600 loss 0.0244 179s
+step 800 loss 0.0419 243s
+step 1000 loss 0.0229 307s
+  val: {"30": {"mae_x_mm": 24.55, "mae_xd": 0.34, "mae_th_deg": 0.93, "mae_thd_degs": 23.99}, "60": {"mae_x_mm": 23.74, "mae_xd": 0.17, "mae_th_deg": 0.77, "mae_thd_degs": 15.68}, "120": {"mae_x_mm": 21.83, "mae_xd": 0.2, "mae_th_deg": 0.81, "mae_thd_degs": 20.11}}
+step 1200 loss 0.0284 396s
+step 1400 loss 0.0097 457s
+step 1600 loss 0.0159 517s
+step 1800 loss 0.0176 575s
+step 2000 loss 0.0260 630s
+  val: {"30": {"mae_x_mm": 14.67, "mae_xd": 0.2, "mae_th_deg": 0.91, "mae_thd_degs": 19.23}, "60": {"mae_x_mm": 11.88, "mae_xd": 0.15, "mae_th_deg": 0.87, "mae_thd_degs": 14.52}, "120": {"mae_x_mm": 9.27, "mae_xd": 0.22, "mae_th_deg": 0.84, "mae_thd_degs": 17.39}}
+step 2200 loss 0.0159 711s
+step 2400 loss 0.0171 769s
+step 2600 loss 0.0133 823s
+step 2800 loss 0.0198 881s
+step 3000 loss 0.0101 938s
+  val: {"30": {"mae_x_mm": 17.26, "mae_xd": 0.23, "mae_th_deg": 0.51, "mae_thd_degs": 20.44}, "60": {"mae_x_mm": 16.19, "mae_xd": 0.17, "mae_th_deg": 0.41, "mae_thd_degs": 15.89}, "120": {"mae_x_mm": 15.26, "mae_xd": 0.19, "mae_th_deg": 0.41, "mae_thd_degs": 15.27}}
+step 3200 loss 0.0092 1016s
+step 3400 loss 0.0144 1071s
+step 3600 loss 0.0105 1125s
+step 3800 loss 0.0062 1180s
+step 4000 loss 0.0062 1236s
+  val: {"30": {"mae_x_mm": 7.89, "mae_xd": 0.18, "mae_th_deg": 0.46, "mae_thd_degs": 18.45}, "60": {"mae_x_mm": 6.18, "mae_xd": 0.15, "mae_th_deg": 0.36, "mae_thd_degs": 14.82}, "120": {"mae_x_mm": 5.43, "mae_xd": 0.18, "mae_th_deg": 0.33, "mae_thd_degs": 14.8}}
+step 4200 loss 0.0058 1318s
+step 4400 loss 0.0061 1375s
+step 4600 loss 0.0065 1431s
+step 4800 loss 0.0039 1489s
+step 5000 loss 0.0059 1548s
+  val: {"30": {"mae_x_mm": 7.41, "mae_xd": 0.19, "mae_th_deg": 0.4, "mae_thd_degs": 17.86}, "60": {"mae_x_mm": 5.5, "mae_xd": 0.15, "mae_th_deg": 0.32, "mae_thd_degs": 14.41}, "120": {"mae_x_mm": 5.02, "mae_xd": 0.16, "mae_th_deg": 0.29, "mae_thd_degs": 14.1}}
+done 1575.4738755226135 best score 0.9338864664236705

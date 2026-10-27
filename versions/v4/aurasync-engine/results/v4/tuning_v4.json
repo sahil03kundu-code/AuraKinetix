@@ -1,0 +1,298 @@
+{
+ "reference": {
+  "ev-trig-s0": {
+   "score": 0.9905423555151356,
+   "survival": 0.9375,
+   "safe": 0.1875
+  },
+  "v4-s0": {
+   "score": 1.0927242523338632,
+   "survival": 1.0,
+   "safe": 0.25
+  },
+  "geo": {
+   "score": 1.2215319789577106,
+   "survival": 1.0,
+   "safe": 0.5
+  }
+ },
+ "grid": [
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.1900142003276268,
+   "survival": 1.0,
+   "safe": 0.4375
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.1900142003276268,
+   "survival": 1.0,
+   "safe": 0.4375
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.1945355707260472,
+   "survival": 1.0,
+   "safe": 0.4375
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.1945355707260472,
+   "survival": 1.0,
+   "safe": 0.4375
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.35247236572187,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.35247236572187,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.221165530265612,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.221165530265612,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.1007635907219369,
+   "survival": 0.9375,
+   "safe": 0.375
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.1007635907219369,
+   "survival": 0.9375,
+   "safe": 0.375
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.3191659841191135,
+   "survival": 1.0,
+   "safe": 0.6875
+  },
+  {
+   "family": "v4",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.3191659841191135,
+   "survival": 1.0,
+   "safe": 0.6875
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.22365397619273,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.2232857631971432,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.2291258809043486,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.2293845774808951,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.3525962179964104,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.03,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.3530283737092246,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.222805402431812,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 0.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.2222116613727845,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.2286300021224317,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 1.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.2287609349023643,
+   "survival": 1.0,
+   "safe": 0.5
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 4.0
+   },
+   "score": 1.352656892855097,
+   "survival": 1.0,
+   "safe": 0.75
+  },
+  {
+   "family": "geo",
+   "params": {
+    "gamma": 0.05,
+    "kappa": 2.0,
+    "stale_deg": 8.0
+   },
+   "score": 1.3531616639144701,
+   "survival": 1.0,
+   "safe": 0.75
+  }
+ ],
+ "supervisor_by_family": {
+  "v4": {
+   "gamma": 0.03,
+   "kappa": 2.0,
+   "stale_deg": 4.0
+  },
+  "geo": {
+   "gamma": 0.05,
+   "kappa": 2.0,
+   "stale_deg": 8.0
+  }
+ },
+ "note": "validation seeds 300-315, hits 1-4 rad/s; same objective and grid style as V3 shield tuning"
+}

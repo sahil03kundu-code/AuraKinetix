@@ -1,0 +1,5969 @@
+{
+ "conditions": {
+  "nominal": {
+   "ens-dense+shield": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 0.6160714285714286,
+    "survival_ci": [
+     0.5267857142857143,
+     0.7053571428571429
+    ],
+    "survival_seed_range": [
+     0.6160714285714286,
+     0.6160714285714286
+    ],
+    "safe": 0.44642857142857145,
+    "safe_ci": [
+     0.35714285714285715,
+     0.5357142857142857
+    ],
+    "safe_seed_range": [
+     0.44642857142857145,
+     0.44642857142857145
+    ],
+    "peak_deg": 18.652048738091025,
+    "est_th_deg": 5.367420409411018,
+    "est_th_seed_range": [
+     5.367420409411018,
+     5.367420409411018
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0,
+    "shield_modified": 0.3981753266144833,
+    "shield_infeasible": 0.0,
+    "shield_stale": 0.01812384317026436,
+    "ctrl_p99_ms": 5.123603699175874,
+    "ctrl_max_ms": 27.756162999139633
+   },
+   "ev-dense+shield": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.5476190476190476,
+    "survival_ci": [
+     0.4702380952380953,
+     0.6220238095238095
+    ],
+    "survival_seed_range": [
+     0.44642857142857145,
+     0.6785714285714286
+    ],
+    "safe": 0.306547619047619,
+    "safe_ci": [
+     0.25,
+     0.3630952380952381
+    ],
+    "safe_seed_range": [
+     0.22321428571428573,
+     0.4642857142857143
+    ],
+    "peak_deg": 24.79680447577055,
+    "est_th_deg": 6.088495061737076,
+    "est_th_seed_range": [
+     2.607874624876473,
+     9.842058712133484
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0,
+    "shield_modified": 0.38016710508113566,
+    "shield_infeasible": 0.0,
+    "shield_stale": 0.014546261172036747,
+    "ctrl_p99_ms": 4.9937648773993715,
+    "ctrl_max_ms": 61.100992003048304
+   },
+   "ev-dense": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.7023809523809523,
+    "survival_ci": [
+     0.6488095238095237,
+     0.7529761904761905
+    ],
+    "survival_seed_range": [
+     0.5982142857142857,
+     0.8839285714285714
+    ],
+    "safe": 0.17559523809523808,
+    "safe_ci": [
+     0.13095238095238096,
+     0.22321428571428573
+    ],
+    "safe_seed_range": [
+     0.08928571428571429,
+     0.25892857142857145
+    ],
+    "peak_deg": 26.508183305045087,
+    "est_th_deg": 5.03041995763366,
+    "est_th_seed_range": [
+     3.0218081452706125,
+     6.386184021341424
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-periodic+shield": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 0.4107142857142857,
+    "survival_ci": [
+     0.32142857142857145,
+     0.5
+    ],
+    "survival_seed_range": [
+     0.4107142857142857,
+     0.4107142857142857
+    ],
+    "safe": 0.19642857142857142,
+    "safe_ci": [
+     0.125,
+     0.26785714285714285
+    ],
+    "safe_seed_range": [
+     0.19642857142857142,
+     0.19642857142857142
+    ],
+    "peak_deg": 33.75687284224283,
+    "est_th_deg": 10.620331838346614,
+    "est_th_seed_range": [
+     10.620331838346614,
+     10.620331838346614
+    ],
+    "calls_per_s": 448.5275050290689,
+    "miss_rate": 0.0,
+    "shield_modified": 0.3848140104009009,
+    "shield_infeasible": 0.0,
+    "shield_stale": 0.03564945459172014,
+    "ctrl_p99_ms": 0.9302969288546596,
+    "ctrl_max_ms": 10.718281999288592
+   },
+   "ev-trig+shield": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.5476190476190476,
+    "survival_ci": [
+     0.4732142857142857,
+     0.6220238095238094
+    ],
+    "survival_seed_range": [
+     0.4107142857142857,
+     0.6875
+    ],
+    "safe": 0.32142857142857145,
+    "safe_ci": [
+     0.26183035714285713,
+     0.38690476190476186
+    ],
+    "safe_seed_range": [
+     0.19642857142857142,
+     0.45535714285714285
+    ],
+    "peak_deg": 24.287664234126705,
+    "est_th_deg": 6.378580182442472,
+    "est_th_seed_range": [
+     2.736968350502434,
+     10.620331838346614
+    ],
+    "calls_per_s": 448.0571554930719,
+    "miss_rate": 0.0,
+    "shield_modified": 0.3738826572593082,
+    "shield_infeasible": 5.717945199213211e-06,
+    "shield_stale": 0.033382790714480096,
+    "ctrl_p99_ms": 0.9491823506323273,
+    "ctrl_max_ms": 21.87934599351138
+   },
+   "ev-trig": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.738095238095238,
+    "survival_ci": [
+     0.6815476190476192,
+     0.7886904761904763
+    ],
+    "survival_seed_range": [
+     0.6160714285714286,
+     0.9017857142857143
+    ],
+    "safe": 0.16666666666666666,
+    "safe_ci": [
+     0.11607142857142858,
+     0.2202380952380952
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.24107142857142858
+    ],
+    "peak_deg": 25.35727521662378,
+    "est_th_deg": 4.963885546460355,
+    "est_th_seed_range": [
+     2.7774529827590184,
+     7.092651997548524
+    ],
+    "calls_per_s": 447.81186462598356,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 0.6071428571428571,
+    "survival_ci": [
+     0.5178571428571429,
+     0.6964285714285714
+    ],
+    "survival_seed_range": [
+     0.6071428571428571,
+     0.6071428571428571
+    ],
+    "safe": 0.09821428571428571,
+    "safe_ci": [
+     0.044642857142857144,
+     0.16071428571428573
+    ],
+    "safe_seed_range": [
+     0.09821428571428571,
+     0.09821428571428571
+    ],
+    "peak_deg": 26.359093454077616,
+    "est_th_deg": 5.352871821740261,
+    "est_th_seed_range": [
+     5.352871821740261,
+     5.352871821740261
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "eventonly-trig+shield": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 0.49107142857142855,
+    "survival_ci": [
+     0.4015625000000001,
+     0.5803571428571429
+    ],
+    "survival_seed_range": [
+     0.49107142857142855,
+     0.49107142857142855
+    ],
+    "safe": 0.26785714285714285,
+    "safe_ci": [
+     0.1875,
+     0.3482142857142857
+    ],
+    "safe_seed_range": [
+     0.26785714285714285,
+     0.26785714285714285
+    ],
+    "peak_deg": 26.283183523374834,
+    "est_th_deg": 7.332143140085991,
+    "est_th_seed_range": [
+     7.332143140085991,
+     7.332143140085991
+    ],
+    "calls_per_s": 448.5100472379275,
+    "miss_rate": 0.0,
+    "shield_modified": 0.4272141637697346,
+    "shield_infeasible": 0.0,
+    "shield_stale": 0.0,
+    "ctrl_p99_ms": 4.862837216423942,
+    "ctrl_max_ms": 23.49851499457145
+   },
+   "frame120+shield": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 0.6696428571428571,
+    "survival_ci": [
+     0.5803571428571429,
+     0.75
+    ],
+    "survival_seed_range": [
+     0.6696428571428571,
+     0.6696428571428571
+    ],
+    "safe": 0.5089285714285714,
+    "safe_ci": [
+     0.41964285714285715,
+     0.5982142857142857
+    ],
+    "safe_seed_range": [
+     0.5089285714285714,
+     0.5089285714285714
+    ],
+    "peak_deg": 20.719847401990396,
+    "est_th_deg": 4.098188076392333,
+    "est_th_seed_range": [
+     4.098188076392333,
+     4.098188076392333
+    ],
+    "shield_modified": 0.35000327221107225,
+    "shield_infeasible": 0.0,
+    "shield_stale": 0.0,
+    "ctrl_p99_ms": 0.8761877807773999,
+    "ctrl_max_ms": 12.69099699857179
+   },
+   "frame120": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.8452380952380951,
+    "survival_ci": [
+     0.7886904761904762,
+     0.8958333333333334
+    ],
+    "survival_seed_range": [
+     0.7857142857142857,
+     0.8928571428571429
+    ],
+    "safe": 0.4583333333333333,
+    "safe_ci": [
+     0.375,
+     0.5446428571428571
+    ],
+    "safe_seed_range": [
+     0.44642857142857145,
+     0.4642857142857143
+    ],
+    "peak_deg": 18.811749732602106,
+    "est_th_deg": 1.4119381587378943,
+    "est_th_seed_range": [
+     1.3254814751391766,
+     1.5345572260669829
+    ]
+   },
+   "frame30+shield": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 0.24107142857142858,
+    "survival_ci": [
+     0.16071428571428573,
+     0.32142857142857145
+    ],
+    "survival_seed_range": [
+     0.24107142857142858,
+     0.24107142857142858
+    ],
+    "safe": 0.23214285714285715,
+    "safe_ci": [
+     0.15178571428571427,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.23214285714285715,
+     0.23214285714285715
+    ],
+    "peak_deg": 36.45097218461375,
+    "est_th_deg": 9.456130166577013,
+    "est_th_seed_range": [
+     9.456130166577013,
+     9.456130166577013
+    ],
+    "shield_modified": 0.3708206368114841,
+    "shield_infeasible": 0.0,
+    "shield_stale": 0.0,
+    "ctrl_p99_ms": 0.886313125847664,
+    "ctrl_max_ms": 10.132415001862682
+   },
+   "frame30": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.5386904761904762,
+    "survival_ci": [
+     0.45535714285714285,
+     0.619047619047619
+    ],
+    "survival_seed_range": [
+     0.49107142857142855,
+     0.5982142857142857
+    ],
+    "safe": 0.13095238095238096,
+    "safe_ci": [
+     0.08035714285714286,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.11607142857142858,
+     0.16071428571428573
+    ],
+    "peak_deg": 27.571322593387322,
+    "est_th_deg": 6.062531307565316,
+    "est_th_seed_range": [
+     5.684722773990439,
+     6.7518560237796725
+    ]
+   },
+   "frame60": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 0.7321428571428571,
+    "survival_ci": [
+     0.6517857142857143,
+     0.8125
+    ],
+    "survival_seed_range": [
+     0.7321428571428571,
+     0.7321428571428571
+    ],
+    "safe": 0.3482142857142857,
+    "safe_ci": [
+     0.25892857142857145,
+     0.4375
+    ],
+    "safe_seed_range": [
+     0.3482142857142857,
+     0.3482142857142857
+    ],
+    "peak_deg": 22.167788634640733,
+    "est_th_deg": 3.5602424942606086,
+    "est_th_seed_range": [
+     3.5602424942606086,
+     3.5602424942606086
+    ]
+   },
+   "imu+shield": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.7142857142857143,
+    "safe_ci": [
+     0.625,
+     0.7946428571428571
+    ],
+    "safe_seed_range": [
+     0.7142857142857143,
+     0.7142857142857143
+    ],
+    "peak_deg": 10.83140879148618,
+    "est_th_deg": 0.06373570973320279,
+    "est_th_seed_range": [
+     0.06373570973320279,
+     0.06373570973320279
+    ],
+    "shield_modified": 0.38104910714285717,
+    "shield_infeasible": 0.0,
+    "shield_stale": 0.0,
+    "ctrl_p99_ms": 4.873854935394775,
+    "ctrl_max_ms": 21.42721899872413
+   },
+   "imu": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5714285714285714,
+    "safe_ci": [
+     0.48214285714285715,
+     0.6607142857142857
+    ],
+    "safe_seed_range": [
+     0.5714285714285714,
+     0.5714285714285714
+    ],
+    "peak_deg": 11.723618574262947,
+    "est_th_deg": 0.06180292061995191,
+    "est_th_seed_range": [
+     0.06180292061995191,
+     0.06180292061995191
+    ]
+   },
+   "oracle+shield": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.7142857142857143,
+    "safe_ci": [
+     0.625,
+     0.7946428571428571
+    ],
+    "safe_seed_range": [
+     0.7142857142857143,
+     0.7142857142857143
+    ],
+    "peak_deg": 10.76169786635606,
+    "est_th_deg": 0.0,
+    "est_th_seed_range": [
+     0.0,
+     0.0
+    ],
+    "shield_modified": 0.36976934523809524,
+    "shield_infeasible": 0.0,
+    "shield_stale": 0.0,
+    "ctrl_p99_ms": 4.7942523491656175,
+    "ctrl_max_ms": 16.666786999849137
+   },
+   "oracle": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5714285714285714,
+    "safe_ci": [
+     0.48214285714285715,
+     0.6607142857142857
+    ],
+    "safe_seed_range": [
+     0.5714285714285714,
+     0.5714285714285714
+    ],
+    "peak_deg": 11.615825028020586,
+    "est_th_deg": 0.0,
+    "est_th_seed_range": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "low_light": {
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.7916666666666666,
+    "survival_ci": [
+     0.6666666666666666,
+     0.9166666666666666
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.9375
+    ],
+    "safe": 0.20833333333333331,
+    "safe_ci": [
+     0.08333333333333333,
+     0.3333333333333333
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.3125
+    ],
+    "peak_deg": 22.689872791663753,
+    "est_th_deg": 5.155732586568428,
+    "est_th_seed_range": [
+     3.193171714930738,
+     6.266965850598718
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 25.88229320728063,
+    "est_th_deg": 7.312267220771318,
+    "est_th_seed_range": [
+     7.312267220771318,
+     7.312267220771318
+    ],
+    "calls_per_s": 448.4371075550014,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.875,
+    "survival_ci": [
+     0.6875,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     0.875
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0,
+     0.375
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "peak_deg": 23.373652755466452,
+    "est_th_deg": 6.21485656500111,
+    "est_th_seed_range": [
+     6.21485656500111,
+     6.21485656500111
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.8333333333333333,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     1.0
+    ],
+    "safe": 0.5208333333333333,
+    "safe_ci": [
+     0.27083333333333337,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5625
+    ],
+    "peak_deg": 15.239108679200829,
+    "est_th_deg": 1.8191707839193496,
+    "est_th_seed_range": [
+     1.137439683756016,
+     2.2042861083204772
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.5625,
+    "survival_ci": [
+     0.3125,
+     0.8125
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.5625
+    ],
+    "safe": 0.0625,
+    "safe_ci": [
+     0.0,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "peak_deg": 28.625621265394205,
+    "est_th_deg": 7.386944232319942,
+    "est_th_seed_range": [
+     7.386944232319942,
+     7.386944232319942
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   }
+  },
+  "hdr": {
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 60.264968910769745,
+    "est_th_deg": 21.33202530003943,
+    "est_th_seed_range": [
+     15.666897221267611,
+     25.508224486211013
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 45.41364665953749,
+    "est_th_deg": 16.334934572060334,
+    "est_th_seed_range": [
+     16.334934572060334,
+     16.334934572060334
+    ],
+    "calls_per_s": 444.40858841196194,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.3125,
+    "survival_ci": [
+     0.125,
+     0.5625
+    ],
+    "survival_seed_range": [
+     0.3125,
+     0.3125
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 31.995914921136897,
+    "est_th_deg": 10.14899251517819,
+    "est_th_seed_range": [
+     10.14899251517819,
+     10.14899251517819
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 75.3140082949408,
+    "est_th_deg": 16.727696259158172,
+    "est_th_seed_range": [
+     10.05555879893008,
+     27.919575118725348
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 45.986002071402744,
+    "est_th_deg": 11.954487949671751,
+    "est_th_seed_range": [
+     11.954487949671751,
+     11.954487949671751
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   }
+  },
+  "event_noise": {
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.75,
+    "survival_ci": [
+     0.5833333333333333,
+     0.8958333333333333
+    ],
+    "survival_seed_range": [
+     0.6875,
+     0.875
+    ],
+    "safe": 0.10416666666666666,
+    "safe_ci": [
+     0.020833333333333332,
+     0.20833333333333331
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.25
+    ],
+    "peak_deg": 27.58506796338865,
+    "est_th_deg": 5.984006576856686,
+    "est_th_seed_range": [
+     4.341502925420464,
+     7.515343555343268
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.0625,
+    "safe_ci": [
+     0.0,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "peak_deg": 31.7641715097054,
+    "est_th_deg": 7.595760289699561,
+    "est_th_seed_range": [
+     7.595760289699561,
+     7.595760289699561
+    ],
+    "calls_per_s": 448.8878393180464,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.875,
+    "survival_ci": [
+     0.6875,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     0.875
+    ],
+    "safe": 0.3125,
+    "safe_ci": [
+     0.125,
+     0.5625
+    ],
+    "safe_seed_range": [
+     0.3125,
+     0.3125
+    ],
+    "peak_deg": 21.397284652577426,
+    "est_th_deg": 5.27120255054671,
+    "est_th_seed_range": [
+     5.27120255054671,
+     5.27120255054671
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.8333333333333333,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     1.0
+    ],
+    "safe": 0.5208333333333333,
+    "safe_ci": [
+     0.29166666666666663,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5625
+    ],
+    "peak_deg": 14.209044430938636,
+    "est_th_deg": 0.6802947386685108,
+    "est_th_seed_range": [
+     0.6436134324249891,
+     0.7009103543782829
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 29.555780768911745,
+    "est_th_deg": 6.152450428786325,
+    "est_th_seed_range": [
+     6.152450428786325,
+     6.152450428786325
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   }
+  },
+  "thresh_mismatch": {
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.8333333333333333,
+    "survival_ci": [
+     0.7291666666666666,
+     0.9375
+    ],
+    "survival_seed_range": [
+     0.75,
+     0.875
+    ],
+    "safe": 0.10416666666666666,
+    "safe_ci": [
+     0.041666666666666664,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.25
+    ],
+    "peak_deg": 24.412451768178727,
+    "est_th_deg": 4.638900496582801,
+    "est_th_seed_range": [
+     3.481361275877499,
+     6.201850126400576
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.75,
+    "survival_ci": [
+     0.5,
+     0.9375
+    ],
+    "survival_seed_range": [
+     0.75,
+     0.75
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0,
+     0.375
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "peak_deg": 26.900020280601687,
+    "est_th_deg": 6.058120453316517,
+    "est_th_seed_range": [
+     6.058120453316517,
+     6.058120453316517
+    ],
+    "calls_per_s": 448.50368977594803,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.875,
+    "survival_ci": [
+     0.6875,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     0.875
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0,
+     0.375
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "peak_deg": 22.583596535349127,
+    "est_th_deg": 4.409196045402425,
+    "est_th_seed_range": [
+     4.409196045402425,
+     4.409196045402425
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.8333333333333333,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     1.0
+    ],
+    "safe": 0.5208333333333333,
+    "safe_ci": [
+     0.29166666666666663,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5625
+    ],
+    "peak_deg": 14.209044430938636,
+    "est_th_deg": 0.6802947386685108,
+    "est_th_seed_range": [
+     0.6436134324249891,
+     0.7009103543782829
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 29.555780768911745,
+    "est_th_deg": 6.152450428786325,
+    "est_th_seed_range": [
+     6.152450428786325,
+     6.152450428786325
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   }
+  },
+  "dropped_events": {
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.75,
+    "survival_ci": [
+     0.625,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.6875,
+     0.8125
+    ],
+    "safe": 0.25,
+    "safe_ci": [
+     0.10416666666666666,
+     0.41666666666666663
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.3125
+    ],
+    "peak_deg": 24.936864568715784,
+    "est_th_deg": 5.491123090357788,
+    "est_th_seed_range": [
+     4.471859308779747,
+     6.699374795319991
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.6875,
+    "survival_ci": [
+     0.4375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.6875,
+     0.6875
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 25.740895716389076,
+    "est_th_deg": 7.309175384435207,
+    "est_th_seed_range": [
+     7.309175384435207,
+     7.309175384435207
+    ],
+    "calls_per_s": 448.33116932736203,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0,
+     0.375
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "peak_deg": 23.68238500414757,
+    "est_th_deg": 5.886139958734649,
+    "est_th_seed_range": [
+     5.886139958734649,
+     5.886139958734649
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.8333333333333333,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     1.0
+    ],
+    "safe": 0.5208333333333333,
+    "safe_ci": [
+     0.29166666666666663,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5625
+    ],
+    "peak_deg": 14.209044430938636,
+    "est_th_deg": 0.6802947386685108,
+    "est_th_seed_range": [
+     0.6436134324249891,
+     0.7009103543782829
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 29.555780768911745,
+    "est_th_deg": 6.152450428786325,
+    "est_th_seed_range": [
+     6.152450428786325,
+     6.152450428786325
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   }
+  },
+  "occlusion": {
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.2708333333333333,
+    "survival_ci": [
+     0.10416666666666666,
+     0.4583333333333333
+    ],
+    "survival_seed_range": [
+     0.1875,
+     0.375
+    ],
+    "safe": 0.0625,
+    "safe_ci": [
+     0.0,
+     0.16666666666666666
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "peak_deg": 37.281495619611775,
+    "est_th_deg": 9.876687097012997,
+    "est_th_seed_range": [
+     7.2992203265489755,
+     12.244994530878241
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.1875,
+    "survival_ci": [
+     0.0,
+     0.375
+    ],
+    "survival_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 39.833615012720685,
+    "est_th_deg": 11.83461098676776,
+    "est_th_seed_range": [
+     11.83461098676776,
+     11.83461098676776
+    ],
+    "calls_per_s": 446.01587562707755,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.25,
+    "survival_ci": [
+     0.0625,
+     0.5
+    ],
+    "survival_seed_range": [
+     0.25,
+     0.25
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 35.60261381501982,
+    "est_th_deg": 9.84085809691129,
+    "est_th_seed_range": [
+     9.84085809691129,
+     9.84085809691129
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.5416666666666666,
+    "survival_ci": [
+     0.3958333333333333,
+     0.6875
+    ],
+    "survival_seed_range": [
+     0.4375,
+     0.625
+    ],
+    "safe": 0.22916666666666666,
+    "safe_ci": [
+     0.10416666666666666,
+     0.35416666666666663
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.25
+    ],
+    "peak_deg": 28.870937825735467,
+    "est_th_deg": 4.09199845946336,
+    "est_th_seed_range": [
+     3.2629223963554326,
+     5.478738019440908
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0625,
+    "survival_ci": [
+     0.0,
+     0.1875
+    ],
+    "survival_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 43.12027433201652,
+    "est_th_deg": 12.023849460871748,
+    "est_th_seed_range": [
+     12.023849460871748,
+     12.023849460871748
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   }
+  },
+  "ood_plant": {
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.375,
+    "survival_ci": [
+     0.1875,
+     0.5625
+    ],
+    "survival_seed_range": [
+     0.1875,
+     0.5625
+    ],
+    "safe": 0.020833333333333332,
+    "safe_ci": [
+     0.0,
+     0.0625
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0625
+    ],
+    "peak_deg": 36.14689466385887,
+    "est_th_deg": 5.945077434094587,
+    "est_th_seed_range": [
+     4.576358123812162,
+     7.711231896621435
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.3125,
+    "survival_ci": [
+     0.125,
+     0.5625
+    ],
+    "survival_seed_range": [
+     0.3125,
+     0.3125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 36.11566425163326,
+    "est_th_deg": 7.887040467071975,
+    "est_th_seed_range": [
+     7.887040467071975,
+     7.887040467071975
+    ],
+    "calls_per_s": 448.67679027009,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.5625,
+    "survival_ci": [
+     0.3125,
+     0.8125
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.5625
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 30.697266122144196,
+    "est_th_deg": 6.850538964016705,
+    "est_th_seed_range": [
+     6.850538964016705,
+     6.850538964016705
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.5625,
+    "survival_ci": [
+     0.35416666666666663,
+     0.7708333333333333
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.5625
+    ],
+    "safe": 0.25,
+    "safe_ci": [
+     0.08333333333333333,
+     0.41666666666666663
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.375
+    ],
+    "peak_deg": 26.088429414493948,
+    "est_th_deg": 2.189915772630532,
+    "est_th_seed_range": [
+     1.8020472572936512,
+     2.4424947069635308
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.375,
+    "survival_ci": [
+     0.125,
+     0.625
+    ],
+    "survival_seed_range": [
+     0.375,
+     0.375
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 32.514653312797996,
+    "est_th_deg": 9.334665915206216,
+    "est_th_seed_range": [
+     9.334665915206216,
+     9.334665915206216
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 14.444345418426526,
+    "est_th_deg": 0.06767584556089623,
+    "est_th_seed_range": [
+     0.06767584556089623,
+     0.06767584556089623
+    ]
+   },
+   "oracle": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 14.636232216629782,
+    "est_th_deg": 0.0,
+    "est_th_seed_range": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "snap": {
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.7291666666666666,
+    "survival_ci": [
+     0.6041666666666666,
+     0.8541666666666666
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.875
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0625,
+     0.33333333333333326
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.3125
+    ],
+    "peak_deg": 25.43603299538305,
+    "est_th_deg": 5.04284229142751,
+    "est_th_seed_range": [
+     3.054349500984192,
+     7.109352001116244
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.6875,
+    "survival_ci": [
+     0.4375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.6875,
+     0.6875
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 28.564244826089343,
+    "est_th_deg": 7.388403730984868,
+    "est_th_seed_range": [
+     7.388403730984868,
+     7.388403730984868
+    ],
+    "calls_per_s": 448.2670321640295,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.25,
+    "safe_ci": [
+     0.0625,
+     0.4375
+    ],
+    "safe_seed_range": [
+     0.25,
+     0.25
+    ],
+    "peak_deg": 23.3424412359527,
+    "est_th_deg": 4.070405637669445,
+    "est_th_seed_range": [
+     4.070405637669445,
+     4.070405637669445
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.875,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     1.0
+    ],
+    "safe": 0.4583333333333333,
+    "safe_ci": [
+     0.22916666666666666,
+     0.6875
+    ],
+    "safe_seed_range": [
+     0.375,
+     0.5
+    ],
+    "peak_deg": 15.7806852302631,
+    "est_th_deg": 0.7944164244887968,
+    "est_th_seed_range": [
+     0.7023802144391074,
+     0.8901728347861965
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.0625,
+    "safe_ci": [
+     0.0,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "peak_deg": 28.10845734373636,
+    "est_th_deg": 6.709270708245275,
+    "est_th_seed_range": [
+     6.709270708245275,
+     6.709270708245275
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.433956036672583,
+    "est_th_deg": 0.08045371647893465,
+    "est_th_seed_range": [
+     0.08045371647893465,
+     0.08045371647893465
+    ]
+   },
+   "oracle": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.342823161440089,
+    "est_th_deg": 0.0,
+    "est_th_seed_range": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "fast": {
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.1875,
+    "survival_ci": [
+     0.0625,
+     0.3333333333333333
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.375
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 37.43904524285135,
+    "est_th_deg": 7.860014177901869,
+    "est_th_seed_range": [
+     5.296104963221055,
+     11.60247316137323
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 44.736008504145715,
+    "est_th_deg": 14.396074768817824,
+    "est_th_seed_range": [
+     14.396074768817824,
+     14.396074768817824
+    ],
+    "calls_per_s": 447.80917468923286,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.125,
+    "survival_ci": [
+     0.0,
+     0.3125
+    ],
+    "survival_seed_range": [
+     0.125,
+     0.125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 35.29953754295395,
+    "est_th_deg": 7.365737641823827,
+    "est_th_seed_range": [
+     7.365737641823827,
+     7.365737641823827
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.25,
+    "survival_ci": [
+     0.08333333333333333,
+     0.4375
+    ],
+    "survival_seed_range": [
+     0.1875,
+     0.3125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 35.57343681785792,
+    "est_th_deg": 4.500528812081521,
+    "est_th_seed_range": [
+     3.1669008702408434,
+     6.290960345067508
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 40.84950133865199,
+    "est_th_deg": 13.132512659740481,
+    "est_th_seed_range": [
+     13.132512659740481,
+     13.132512659740481
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 23.967483842700094,
+    "est_th_deg": 0.0753604057596758,
+    "est_th_seed_range": [
+     0.0753604057596758,
+     0.0753604057596758
+    ]
+   },
+   "oracle": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 23.716078944797616,
+    "est_th_deg": 0.0,
+    "est_th_seed_range": [
+     0.0,
+     0.0
+    ]
+   }
+  }
+ },
+ "comparisons": {
+  "nominal": {
+   "ev-trig+shield vs ev-dense": {
+    "label": "Full v3 vs v2-style event stack",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.15476190476190474,
+     "ci": [
+      -0.2172619047619048,
+      -0.09226190476190475
+     ],
+     "cohen_h": -0.32133577878002706
+    },
+    "safe": {
+     "diff": 0.14583333333333334,
+     "ci": [
+      0.09523809523809525,
+      0.19940476190476192
+     ],
+     "cohen_h": 0.34081171127226495
+    },
+    "peak_deg": {
+     "diff": -2.220519070918382,
+     "ci": [
+      -3.7036491322984246,
+      -0.72334944084904
+     ],
+     "d_z": -0.28026261609331277
+    }
+   },
+   "ev-dense+shield vs ev-dense": {
+    "label": "Shield on the event stack (B)",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.15476190476190474,
+     "ci": [
+      -0.21733630952380953,
+      -0.08928571428571429
+     ],
+     "cohen_h": -0.32133577878002706
+    },
+    "safe": {
+     "diff": 0.13095238095238096,
+     "ci": [
+      0.08630952380952382,
+      0.18154761904761904
+     ],
+     "cohen_h": 0.3087463687607549
+    },
+    "peak_deg": {
+     "diff": -1.711378829274538,
+     "ci": [
+      -3.140100115364907,
+      -0.2611284814175638
+     ],
+     "d_z": -0.22180230638080936
+    }
+   },
+   "ev-trig+shield vs ev-dense+shield": {
+    "label": "Triggered vs dense correction, both shielded (C)",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -1.982541115402065e-18,
+     "ci": [
+      -0.029761904761904764,
+      0.02976190476190476
+     ],
+     "cohen_h": 0.0
+    },
+    "safe": {
+     "diff": 0.014880952380952384,
+     "ci": [
+      -0.029761904761904757,
+      0.05952380952380952
+     ],
+     "cohen_h": 0.03206534251151005
+    },
+    "peak_deg": {
+     "diff": -0.5091402416438445,
+     "ci": [
+      -1.8807853068510754,
+      0.819810181061669
+     ],
+     "d_z": -0.07127506335331588
+    }
+   },
+   "ev-trig+shield vs ev-periodic+shield": {
+    "label": "Trigger policy vs periodic at matched compute (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "d_z": 0.0
+    }
+   },
+   "ens-dense+shield vs ev-dense+shield": {
+    "label": "3-seed ensemble vs single model, both shielded (A)",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.06845238095238096,
+     "ci": [
+      0.03273809523809524,
+      0.10714285714285714
+     ],
+     "cohen_h": 0.1388974872355191
+    },
+    "safe": {
+     "diff": 0.1398809523809524,
+     "ci": [
+      0.07142857142857147,
+      0.21130952380952386
+     ],
+     "cohen_h": 0.2899236477000082
+    },
+    "peak_deg": {
+     "diff": -6.144755737679522,
+     "ci": [
+      -7.936721724478707,
+      -4.350470479479222
+     ],
+     "d_z": -0.637156505970411
+    }
+   },
+   "frame120+shield vs frame120": {
+    "label": "Shield on the 120 fps frame stack (B)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.22321428571428573,
+     "ci": [
+      -0.30357142857142855,
+      -0.14285714285714285
+     ],
+     "cohen_h": -0.557692515242004
+    },
+    "safe": {
+     "diff": 0.044642857142857144,
+     "ci": [
+      -0.017857142857142856,
+      0.10714285714285714
+     ],
+     "cohen_h": 0.08934754191920224
+    },
+    "peak_deg": {
+     "diff": 3.9914682125606893,
+     "ci": [
+      2.0476700522927356,
+      6.011549162749087
+     ],
+     "d_z": 0.3697181408244499
+    }
+   },
+   "ev-trig+shield vs frame120": {
+    "label": "Full v3 vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.29761904761904756,
+     "ci": [
+      -0.35714285714285715,
+      -0.24107142857142858
+     ],
+     "cohen_h": -0.6667644950997804
+    },
+    "safe": {
+     "diff": -0.13690476190476192,
+     "ci": [
+      -0.20535714285714285,
+      -0.06845238095238096
+     ],
+     "cohen_h": -0.28177713467975174
+    },
+    "peak_deg": {
+     "diff": 5.475914501524594,
+     "ci": [
+      3.772486476588424,
+      7.076066262933589
+     ],
+     "d_z": 0.6015668559480031
+    }
+   },
+   "ev-trig+shield vs frame30": {
+    "label": "Full v3 vs learned frame 30 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": 0.008928571428571426,
+     "ci": [
+      -0.03578869047619047,
+      0.056547619047619055
+     ],
+     "cohen_h": 0.017924274038791488
+    },
+    "safe": {
+     "diff": 0.19047619047619047,
+     "ci": [
+      0.13392857142857142,
+      0.2529761904761904
+     ],
+     "cohen_h": 0.4650356215489597
+    },
+    "peak_deg": {
+     "diff": -3.2836583592606203,
+     "ci": [
+      -5.114790173581934,
+      -1.4528515498912113
+     ],
+     "d_z": -0.334114321902887
+    }
+   },
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.14285714285714285,
+     "ci": [
+      -0.193452380952381,
+      -0.09226190476190478
+     ],
+     "cohen_h": -0.34542871631975336
+    },
+    "safe": {
+     "diff": -0.28273809523809523,
+     "ci": [
+      -0.3482142857142857,
+      -0.22023809523809526
+     ],
+     "cohen_h": -0.6225888459520167
+    },
+    "peak_deg": {
+     "diff": 7.696433572442976,
+     "ci": [
+      6.040951719026375,
+      9.325745593269994
+     ],
+     "d_z": 0.8713241494064962
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": 0.03571428571428571,
+     "ci": [
+      -0.005952380952380953,
+      0.08035714285714286
+     ],
+     "cohen_h": 0.07959892433723059
+    },
+    "safe": {
+     "diff": -0.008928571428571426,
+     "ci": [
+      -0.044642857142857144,
+      0.02678571428571429
+     ],
+     "cohen_h": -0.02370872366433463
+    },
+    "peak_deg": {
+     "diff": -1.1509080884213052,
+     "ci": [
+      -2.2196137605418786,
+      -0.12448493405988459
+     ],
+     "d_z": -0.19982279892801696
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.10714285714285716,
+     "ci": [
+      -0.16071428571428575,
+      -0.05357142857142858
+     ],
+     "cohen_h": -0.26582979198252277
+    },
+    "safe": {
+     "diff": -0.2916666666666667,
+     "ci": [
+      -0.36309523809523814,
+      -0.2202380952380952
+     ],
+     "cohen_h": -0.6462975696163513
+    },
+    "peak_deg": {
+     "diff": 6.5455254840216694,
+     "ci": [
+      4.778883067156188,
+      8.296005304592967
+     ],
+     "d_z": 0.6959400768462736
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.008928571428571428,
+     "ci": [
+      -0.13392857142857142,
+      0.11607142857142858
+     ],
+     "cohen_h": -0.01824630492863899
+    },
+    "safe": {
+     "diff": 0.08035714285714286,
+     "ci": [
+      0.008928571428571428,
+      0.16071428571428573
+     ],
+     "cohen_h": 0.2350489712842201
+    },
+    "peak_deg": {
+     "diff": 2.804762656363185,
+     "ci": [
+      -1.0527188909640175,
+      6.627289738632745
+     ],
+     "d_z": 0.13311745572868192
+    }
+   },
+   "imu vs ev-trig+shield": {
+    "label": "IMU + encoder vs full v3",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.45238095238095244,
+     "ci": [
+      0.3779761904761904,
+      0.5267857142857143
+     ],
+     "cohen_h": 1.4754136677866874
+    },
+    "safe": {
+     "diff": 0.25000000000000006,
+     "ci": [
+      0.18452380952380956,
+      0.3154761904761906
+     ],
+     "cohen_h": 0.5085547901957319
+    },
+    "peak_deg": {
+     "diff": -12.564045659863755,
+     "ci": [
+      -13.873184430103581,
+      -11.302284007284824
+     ],
+     "d_z": -1.8195718987124239
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.1547619047619048,
+     "ci": [
+      0.10416666666666667,
+      0.2113095238095238
+     ],
+     "cohen_h": 0.808649172686907
+    },
+    "safe": {
+     "diff": 0.11309523809523811,
+     "ci": [
+      0.06547619047619048,
+      0.1666666666666667
+     ],
+     "cohen_h": 0.22677765551598017
+    },
+    "peak_deg": {
+     "diff": -7.088131158339162,
+     "ci": [
+      -8.677585397238884,
+      -5.591734409744125
+     ],
+     "d_z": -0.852812646151183
+    }
+   }
+  },
+  "low_light": {
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.14583333333333334,
+     "ci": [
+      -0.27083333333333337,
+      -0.04166666666666667
+     ],
+     "cohen_h": -0.4426092310987366
+    },
+    "safe": {
+     "diff": -0.3125,
+     "ci": [
+      -0.5,
+      -0.125
+     ],
+     "cohen_h": -0.6645053178345808
+    },
+    "peak_deg": {
+     "diff": 7.450764112462923,
+     "ci": [
+      3.3887853322917985,
+      11.690894400450748
+     ],
+     "d_z": 0.8515867490024084
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.0625,
+     "ci": [
+      -0.1875,
+      0.0
+     ],
+     "cohen_h": -0.17293054604444968
+    },
+    "safe": {
+     "diff": -0.0625,
+     "ci": [
+      -0.1875,
+      0.0
+     ],
+     "cohen_h": -0.17293054604444924
+    },
+    "peak_deg": {
+     "diff": 3.3216681915220962,
+     "ci": [
+      0.5746244111135822,
+      7.428261642338299
+     ],
+     "d_z": 0.4277840571214162
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.1875,
+     "ci": [
+      -0.375,
+      0.0
+     ],
+     "cohen_h": -0.8956647938578652
+    },
+    "safe": {
+     "diff": -0.375,
+     "ci": [
+      -0.625,
+      -0.125
+     ],
+     "cohen_h": -0.8480620789814811
+    },
+    "peak_deg": {
+     "diff": 10.93004172316056,
+     "ci": [
+      5.463482251599902,
+      17.009312961694125
+     ],
+     "d_z": 0.9009043801290404
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": 0.0,
+     "ci": [
+      -0.25,
+      0.25
+     ],
+     "cohen_h": 0.0
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      -0.1875,
+      0.1875
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": -0.8130277397079192,
+     "ci": [
+      -6.624242517993403,
+      5.900268543277626
+     ],
+     "d_z": -0.0625975736387736
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.0625,
+     "ci": [
+      0.0,
+      0.16666666666666669
+     ],
+     "cohen_h": 0.5053605102841567
+    },
+    "safe": {
+     "diff": -0.020833333333333332,
+     "ci": [
+      -0.0625,
+      0.0
+     ],
+     "cohen_h": -0.04167873242257758
+    },
+    "peak_deg": {
+     "diff": -5.0783875122400435,
+     "ci": [
+      -8.692713507404918,
+      -2.132858385195722
+     ],
+     "d_z": -0.7258514949288513
+    }
+   }
+  },
+  "hdr": {
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": -15.04903938417105,
+     "ci": [
+      -15.545908257840791,
+      -14.650852531908766
+     ],
+     "d_z": -16.226850624620294
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": -0.6516359781784713,
+     "ci": [
+      -1.9951164043529777,
+      0.0600005612664506
+     ],
+     "d_z": -0.2505504884725075
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": -0.5283782252848956,
+     "ci": [
+      -1.8546020301390485,
+      0.17084761137739604
+     ],
+     "d_z": -0.20384583914480953
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.3125,
+     "ci": [
+      -0.5625,
+      -0.125
+     ],
+     "cohen_h": -1.1863995522992576
+    },
+    "safe": {
+     "diff": -0.125,
+     "ci": [
+      -0.3125,
+      0.0
+     ],
+     "cohen_h": -0.7227342478134157
+    },
+    "peak_deg": {
+     "diff": 14.069367716579066,
+     "ci": [
+      6.495695787258327,
+      22.084856474558492
+     ],
+     "d_z": 0.8575296491460508
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 1.0,
+     "ci": [
+      1.0,
+      1.0
+     ],
+     "cohen_h": 3.141592653589793
+    },
+    "safe": {
+     "diff": 0.5,
+     "ci": [
+      0.25,
+      0.75
+     ],
+     "cohen_h": 1.5707963267948968
+    },
+    "peak_deg": {
+     "diff": -65.15328712798001,
+     "ci": [
+      -67.07795198674916,
+      -63.267085823903855
+     ],
+     "d_z": -16.44916170308794
+    }
+   }
+  },
+  "event_noise": {
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.1875,
+     "ci": [
+      -0.35416666666666663,
+      -0.04166666666666668
+     ],
+     "cohen_h": -0.5418370409124411
+    },
+    "safe": {
+     "diff": -0.4166666666666667,
+     "ci": [
+      -0.6458333333333334,
+      -0.18750000000000003
+     ],
+     "cohen_h": -0.9552109059719581
+    },
+    "peak_deg": {
+     "diff": 13.376023532450013,
+     "ci": [
+      9.097354984308508,
+      17.78282085337034
+     ],
+     "d_z": 1.490826469926987
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.0625,
+     "ci": [
+      -0.1875,
+      0.0
+     ],
+     "cohen_h": -0.13171651935356032
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": 1.1344580952997358,
+     "ci": [
+      -2.7519311063020786,
+      5.179743487874567
+     ],
+     "d_z": 0.13427549082023243
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.375,
+     "ci": [
+      -0.625,
+      -0.125
+     ],
+     "cohen_h": -1.3181160716528177
+    },
+    "safe": {
+     "diff": -0.4375,
+     "ci": [
+      -0.6875,
+      -0.1875
+     ],
+     "cohen_h": -1.0654358165107394
+    },
+    "peak_deg": {
+     "diff": 18.618452809265584,
+     "ci": [
+      13.768675350670716,
+      23.651504146675183
+     ],
+     "d_z": 1.7563642368647083
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.1875,
+     "ci": [
+      -0.375,
+      0.0
+     ],
+     "cohen_h": -0.46366530448584187
+    },
+    "safe": {
+     "diff": -0.25,
+     "ci": [
+      -0.5,
+      -0.0625
+     ],
+     "cohen_h": -0.6810390420151003
+    },
+    "peak_deg": {
+     "diff": 9.23242876182824,
+     "ci": [
+      3.393443372007895,
+      15.583055208474285
+     ],
+     "d_z": 0.7191224395300068
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.0625,
+     "ci": [
+      0.0,
+      0.16666666666666669
+     ],
+     "cohen_h": 0.5053605102841567
+    },
+    "safe": {
+     "diff": -0.020833333333333332,
+     "ci": [
+      -0.0625,
+      0.0
+     ],
+     "cohen_h": -0.04167873242257758
+    },
+    "peak_deg": {
+     "diff": -4.048323263977851,
+     "ci": [
+      -7.662781552420104,
+      -1.5150444080852095
+     ],
+     "d_z": -0.611277043680661
+    }
+   }
+  },
+  "thresh_mismatch": {
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.10416666666666669,
+     "ci": [
+      -0.20833333333333337,
+      -3.469446951953614e-18
+     ],
+     "cohen_h": -0.3357081602837737
+    },
+    "safe": {
+     "diff": -0.4166666666666667,
+     "ci": [
+      -0.625,
+      -0.22916666666666669
+     ],
+     "cohen_h": -0.9552109059719581
+    },
+    "peak_deg": {
+     "diff": 10.20340733724009,
+     "ci": [
+      6.898166985608369,
+      13.697184768901883
+     ],
+     "d_z": 1.4620144811417253
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": 0.0,
+     "ci": [
+      -0.25,
+      0.25
+     ],
+     "cohen_h": 0.0
+    },
+    "safe": {
+     "diff": -0.0625,
+     "ci": [
+      -0.1875,
+      0.0
+     ],
+     "cohen_h": -0.15153275733873295
+    },
+    "peak_deg": {
+     "diff": -0.47450864653500485,
+     "ci": [
+      -3.2210678385272304,
+      1.9963176062993115
+     ],
+     "d_z": -0.0875182954668763
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.25,
+     "ci": [
+      -0.5,
+      -0.0625
+     ],
+     "cohen_h": -1.0471975511965979
+    },
+    "safe": {
+     "diff": -0.3125,
+     "ci": [
+      -0.5625,
+      -0.125
+     ],
+     "cohen_h": -0.6751315329370319
+    },
+    "peak_deg": {
+     "diff": 13.754301580161874,
+     "ci": [
+      8.665703385003521,
+      19.33319945014891
+     ],
+     "d_z": 1.1812967874350724
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.125,
+     "ci": [
+      -0.375,
+      0.125
+     ],
+     "cohen_h": -0.3244633033831823
+    },
+    "safe": {
+     "diff": 0.0625,
+     "ci": [
+      -0.125,
+      0.25
+     ],
+     "cohen_h": 0.15153275733873295
+    },
+    "peak_deg": {
+     "diff": 4.79093239178757,
+     "ci": [
+      -2.8051392634135275,
+      12.448046856862895
+     ],
+     "d_z": 0.29579684410922197
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.0625,
+     "ci": [
+      0.0,
+      0.16666666666666669
+     ],
+     "cohen_h": 0.5053605102841567
+    },
+    "safe": {
+     "diff": -0.020833333333333332,
+     "ci": [
+      -0.0625,
+      0.0
+     ],
+     "cohen_h": -0.04167873242257758
+    },
+    "peak_deg": {
+     "diff": -4.048323263977851,
+     "ci": [
+      -7.662781552420104,
+      -1.5150444080852095
+     ],
+     "d_z": -0.611277043680661
+    }
+   }
+  },
+  "dropped_events": {
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.1875,
+     "ci": [
+      -0.3125,
+      -0.08333333333333334
+     ],
+     "cohen_h": -0.5418370409124411
+    },
+    "safe": {
+     "diff": -0.27083333333333337,
+     "ci": [
+      -0.5,
+      -0.041666666666666685
+     ],
+     "cohen_h": -0.5652775080208765
+    },
+    "peak_deg": {
+     "diff": 10.727820137777151,
+     "ci": [
+      6.328443134577868,
+      15.001318509806268
+     ],
+     "d_z": 1.1803545228043337
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.0625,
+     "ci": [
+      -0.375,
+      0.1875
+     ],
+     "cohen_h": -0.13920200110265957
+    },
+    "safe": {
+     "diff": -0.125,
+     "ci": [
+      -0.3125,
+      0.0
+     ],
+     "cohen_h": -0.3244633033831822
+    },
+    "peak_deg": {
+     "diff": 0.31826561282343424,
+     "ci": [
+      -6.662869057924932,
+      6.3107100787905726
+     ],
+     "d_z": 0.023416579490681724
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.3125,
+     "ci": [
+      -0.5625,
+      -0.125
+     ],
+     "cohen_h": -1.1863995522992574
+    },
+    "safe": {
+     "diff": -0.375,
+     "ci": [
+      -0.625,
+      -0.125
+     ],
+     "cohen_h": -0.8480620789814811
+    },
+    "peak_deg": {
+     "diff": 12.595177015949265,
+     "ci": [
+      6.799280083868117,
+      18.95153996212573
+     ],
+     "d_z": 0.996441495249026
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.0625,
+     "ci": [
+      -0.375,
+      0.25
+     ],
+     "cohen_h": -0.15153275733873262
+    },
+    "safe": {
+     "diff": 0.0625,
+     "ci": [
+      0.0,
+      0.1875
+     ],
+     "cohen_h": 0.15153275733873295
+    },
+    "peak_deg": {
+     "diff": 1.7402450994180738,
+     "ci": [
+      -7.474342422223813,
+      10.653755126442789
+     ],
+     "d_z": 0.09293909062270253
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.0625,
+     "ci": [
+      0.0,
+      0.16666666666666669
+     ],
+     "cohen_h": 0.5053605102841567
+    },
+    "safe": {
+     "diff": -0.020833333333333332,
+     "ci": [
+      -0.0625,
+      0.0
+     ],
+     "cohen_h": -0.04167873242257758
+    },
+    "peak_deg": {
+     "diff": -4.048323263977851,
+     "ci": [
+      -7.662781552420104,
+      -1.5150444080852095
+     ],
+     "d_z": -0.611277043680661
+    }
+   }
+  },
+  "occlusion": {
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.27083333333333337,
+     "ci": [
+      -0.47916666666666663,
+      -0.08333333333333331
+     ],
+     "cohen_h": -0.5595491475224112
+    },
+    "safe": {
+     "diff": -0.16666666666666666,
+     "ci": [
+      -0.2708333333333333,
+      -0.08333333333333333
+     ],
+     "cohen_h": -0.49301724441791905
+    },
+    "peak_deg": {
+     "diff": 8.410557793876311,
+     "ci": [
+      3.1911306435063986,
+      13.901200560925973
+     ],
+     "d_z": 0.7504515317016067
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.0625,
+     "ci": [
+      -0.1875,
+      0.0
+     ],
+     "cohen_h": -0.15153275733873295
+    },
+    "safe": {
+     "diff": -0.0625,
+     "ci": [
+      -0.1875,
+      0.0
+     ],
+     "cohen_h": -0.5053605102841573
+    },
+    "peak_deg": {
+     "diff": 1.821492100827268,
+     "ci": [
+      -1.2145528481330634,
+      6.305313362865435
+     ],
+     "d_z": 0.21738886189929008
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.375,
+     "ci": [
+      -0.625,
+      -0.125
+     ],
+     "cohen_h": -0.8004593641050971
+    },
+    "safe": {
+     "diff": -0.25,
+     "ci": [
+      -0.5,
+      -0.0625
+     ],
+     "cohen_h": -1.0471975511965979
+    },
+    "peak_deg": {
+     "diff": 6.778548452959313,
+     "ci": [
+      1.147665803460701,
+      13.71172676702501
+     ],
+     "d_z": 0.5079696101327632
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": 0.0,
+     "ci": [
+      -0.3125,
+      0.3125
+     ],
+     "cohen_h": 0.0
+    },
+    "safe": {
+     "diff": -0.0625,
+     "ci": [
+      -0.25,
+      0.125
+     ],
+     "cohen_h": -0.21737373752925837
+    },
+    "peak_deg": {
+     "diff": 2.409509096873591,
+     "ci": [
+      -7.893163771001644,
+      12.680583071805081
+     ],
+     "d_z": 0.11153526716671289
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.45833333333333337,
+     "ci": [
+      0.3125,
+      0.6041666666666667
+     ],
+     "cohen_h": 1.4873662401842815
+    },
+    "safe": {
+     "diff": 0.27083333333333337,
+     "ci": [
+      0.125,
+      0.4166666666666667
+     ],
+     "cohen_h": 0.5724185720928204
+    },
+    "peak_deg": {
+     "diff": -18.71021665877468,
+     "ci": [
+      -21.748159308064448,
+      -15.40751440720314
+     ],
+     "d_z": -2.8008323939475095
+    }
+   }
+  },
+  "ood_plant": {
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.18750000000000003,
+     "ci": [
+      -0.33333333333333337,
+      -0.020833333333333343
+     ],
+     "cohen_h": -0.37800808631014404
+    },
+    "safe": {
+     "diff": -0.22916666666666666,
+     "ci": [
+      -0.41666666666666663,
+      -0.08333333333333333
+     ],
+     "cohen_h": -0.7575105571994785
+    },
+    "peak_deg": {
+     "diff": 10.058465249364929,
+     "ci": [
+      5.468171018717123,
+      15.094328416927583
+     ],
+     "d_z": 0.9789580326653433
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.0625,
+     "ci": [
+      -0.3125,
+      0.1875
+     ],
+     "cohen_h": -0.13171651935356032
+    },
+    "safe": {
+     "diff": -0.0625,
+     "ci": [
+      -0.1875,
+      0.0
+     ],
+     "cohen_h": -0.5053605102841573
+    },
+    "peak_deg": {
+     "diff": 0.8405506757225253,
+     "ci": [
+      -6.452573161730202,
+      7.898038480776404
+     ],
+     "d_z": 0.056353294113939245
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.25,
+     "ci": [
+      -0.5,
+      -0.0625
+     ],
+     "cohen_h": -0.5097246056637044
+    },
+    "safe": {
+     "diff": -0.125,
+     "ci": [
+      -0.3125,
+      0.0
+     ],
+     "cohen_h": -0.7227342478134157
+    },
+    "peak_deg": {
+     "diff": 12.73434657332236,
+     "ci": [
+      4.991940550729698,
+      20.274755170145333
+     ],
+     "d_z": 0.7878161465696897
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.1875,
+     "ci": [
+      -0.5625,
+      0.1875
+     ],
+     "cohen_h": -0.37800808631014404
+    },
+    "safe": {
+     "diff": 0.0625,
+     "ci": [
+      0.0,
+      0.1875
+     ],
+     "cohen_h": 0.5053605102841573
+    },
+    "peak_deg": {
+     "diff": 4.577847453766543,
+     "ci": [
+      -6.402887510698589,
+      14.960934828169837
+     ],
+     "d_z": 0.2006610526942827
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.4375,
+     "ci": [
+      0.22916666666666669,
+      0.6458333333333334
+     ],
+     "cohen_h": 1.445468495626831
+    },
+    "safe": {
+     "diff": 0.25,
+     "ci": [
+      0.10416666666666667,
+      0.41666666666666674
+     ],
+     "cohen_h": 0.5235987755982989
+    },
+    "peak_deg": {
+     "diff": -11.644083996067423,
+     "ci": [
+      -15.87623938099934,
+      -7.472744049000785
+     ],
+     "d_z": -1.298481585849412
+    }
+   }
+  },
+  "snap": {
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.20833333333333331,
+     "ci": [
+      -0.3125,
+      -0.08333333333333334
+     ],
+     "cohen_h": -0.5893167555989436
+    },
+    "safe": {
+     "diff": -0.2708333333333333,
+     "ci": [
+      -0.4583333333333333,
+      -0.125
+     ],
+     "cohen_h": -0.5917014463264166
+    },
+    "peak_deg": {
+     "diff": 9.655347765119956,
+     "ci": [
+      4.818232321577378,
+      13.313784936087444
+     ],
+     "d_z": 1.0688365737626873
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": 0.125,
+     "ci": [
+      -0.125,
+      0.375
+     ],
+     "cohen_h": 0.2590689433275737
+    },
+    "safe": {
+     "diff": -0.0625,
+     "ci": [
+      -0.1875,
+      0.0
+     ],
+     "cohen_h": -0.17293054604444924
+    },
+    "peak_deg": {
+     "diff": -1.7125903563934892,
+     "ci": [
+      -6.283543129746211,
+      2.569040535942476
+     ],
+     "d_z": -0.18326317510581838
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.3125,
+     "ci": [
+      -0.5625,
+      -0.125
+     ],
+     "cohen_h": -1.1863995522992574
+    },
+    "safe": {
+     "diff": -0.375,
+     "ci": [
+      -0.625,
+      -0.125
+     ],
+     "cohen_h": -0.8480620789814811
+    },
+    "peak_deg": {
+     "diff": 14.544636982213222,
+     "ci": [
+      8.38350610566628,
+      20.999835112313605
+     ],
+     "d_z": 1.0714451659919177
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.25,
+     "ci": [
+      -0.5,
+      0.0
+     ],
+     "cohen_h": -0.5498037017689659
+    },
+    "safe": {
+     "diff": -0.0625,
+     "ci": [
+      -0.25,
+      0.125
+     ],
+     "cohen_h": -0.15153275733873295
+    },
+    "peak_deg": {
+     "diff": 6.934393946530138,
+     "ci": [
+      -3.5189678579539816,
+      17.03939050474072
+     ],
+     "d_z": 0.32176133655312633
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.0625,
+     "ci": [
+      0.0,
+      0.125
+     ],
+     "cohen_h": 0.5053605102841567
+    },
+    "safe": {
+     "diff": 0.04166666666666667,
+     "ci": [
+      0.0,
+      0.10416666666666667
+     ],
+     "cohen_h": 0.08343008661061524
+    },
+    "peak_deg": {
+     "diff": -5.346729193590513,
+     "ci": [
+      -9.120459903647271,
+      -2.2029484627905607
+     ],
+     "d_z": -0.7358601071282455
+    }
+   }
+  },
+  "fast": {
+   "ev-dense vs frame120": {
+    "label": "Dense event vs learned frame 120 fps",
+    "seeds": [
+     0,
+     1,
+     2
+    ],
+    "survived": {
+     "diff": -0.0625,
+     "ci": [
+      -0.1875,
+      0.041666666666666664
+     ],
+     "cohen_h": -0.15153275733873295
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": 1.8656084249934273,
+     "ci": [
+      -2.054771156289348,
+      5.644324511113927
+     ],
+     "d_z": 0.23073624587879077
+    }
+   },
+   "ev-trig vs ev-dense": {
+    "label": "Triggered vs dense correction, no shield (C)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": 2.810273826839435,
+     "ci": [
+      -0.8172893231205816,
+      7.213424266749103
+     ],
+     "d_z": 0.31987889619062715
+    }
+   },
+   "ev-trig vs frame120": {
+    "label": "Triggered event vs learned frame 120 fps",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.25,
+     "ci": [
+      -0.5,
+      -0.0625
+     ],
+     "cohen_h": -1.0471975511965979
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": 11.031516589731483,
+     "ci": [
+      6.581862281511287,
+      15.479340561091968
+     ],
+     "d_z": 1.173006136687054
+    }
+   },
+   "ev-dense vs eventonly-dense": {
+    "label": "APS frame channel: event+APS vs event-only (D)",
+    "seeds": [
+     0
+    ],
+    "survived": {
+     "diff": -0.125,
+     "ci": [
+      -0.3125,
+      0.0
+     ],
+     "cohen_h": -0.7227342478134157
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": 6.626197134352331,
+     "ci": [
+      0.9901422636972974,
+      13.291076064204002
+     ],
+     "d_z": 0.515324466872691
+    }
+   },
+   "imu vs frame120": {
+    "label": "IMU + encoder vs learned frame 120 fps",
+    "seeds": "all",
+    "survived": {
+     "diff": 0.5625,
+     "ci": [
+      0.3541666666666667,
+      0.7708333333333334
+     ],
+     "cohen_h": 1.19873030853533
+    },
+    "safe": {
+     "diff": 0.0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "cohen_h": 0.0
+    },
+    "peak_deg": {
+     "diff": -11.605952975157827,
+     "ci": [
+      -14.91166878652161,
+      -8.486339753176077
+     ],
+     "d_z": -1.7509007858346495
+    }
+   }
+  }
+ },
+ "envelope": {
+  "nominal": {
+   "oracle": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5714285714285714,
+    "safe_ci": [
+     0.48214285714285715,
+     0.6607142857142857
+    ],
+    "safe_seed_range": [
+     0.5714285714285714,
+     0.5714285714285714
+    ],
+    "peak_deg": 11.615825028020586,
+    "est_th_deg": 0.0,
+    "est_th_seed_range": [
+     0.0,
+     0.0
+    ]
+   },
+   "imu": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5714285714285714,
+    "safe_ci": [
+     0.48214285714285715,
+     0.6607142857142857
+    ],
+    "safe_seed_range": [
+     0.5714285714285714,
+     0.5714285714285714
+    ],
+    "peak_deg": 11.723618574262947,
+    "est_th_deg": 0.06180292061995191,
+    "est_th_seed_range": [
+     0.06180292061995191,
+     0.06180292061995191
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.7023809523809523,
+    "survival_ci": [
+     0.6488095238095237,
+     0.7529761904761905
+    ],
+    "survival_seed_range": [
+     0.5982142857142857,
+     0.8839285714285714
+    ],
+    "safe": 0.17559523809523808,
+    "safe_ci": [
+     0.13095238095238096,
+     0.22321428571428573
+    ],
+    "safe_seed_range": [
+     0.08928571428571429,
+     0.25892857142857145
+    ],
+    "peak_deg": 26.508183305045087,
+    "est_th_deg": 5.03041995763366,
+    "est_th_seed_range": [
+     3.0218081452706125,
+     6.386184021341424
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.738095238095238,
+    "survival_ci": [
+     0.6815476190476192,
+     0.7886904761904763
+    ],
+    "survival_seed_range": [
+     0.6160714285714286,
+     0.9017857142857143
+    ],
+    "safe": 0.16666666666666666,
+    "safe_ci": [
+     0.11607142857142858,
+     0.2202380952380952
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.24107142857142858
+    ],
+    "peak_deg": 25.35727521662378,
+    "est_th_deg": 4.963885546460355,
+    "est_th_seed_range": [
+     2.7774529827590184,
+     7.092651997548524
+    ],
+    "calls_per_s": 447.81186462598356,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 112,
+    "n_seeds": 1,
+    "survival": 0.6071428571428571,
+    "survival_ci": [
+     0.5178571428571429,
+     0.6964285714285714
+    ],
+    "survival_seed_range": [
+     0.6071428571428571,
+     0.6071428571428571
+    ],
+    "safe": 0.09821428571428571,
+    "safe_ci": [
+     0.044642857142857144,
+     0.16071428571428573
+    ],
+    "safe_seed_range": [
+     0.09821428571428571,
+     0.09821428571428571
+    ],
+    "peak_deg": 26.359093454077616,
+    "est_th_deg": 5.352871821740261,
+    "est_th_seed_range": [
+     5.352871821740261,
+     5.352871821740261
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.8452380952380951,
+    "survival_ci": [
+     0.7886904761904762,
+     0.8958333333333334
+    ],
+    "survival_seed_range": [
+     0.7857142857142857,
+     0.8928571428571429
+    ],
+    "safe": 0.4583333333333333,
+    "safe_ci": [
+     0.375,
+     0.5446428571428571
+    ],
+    "safe_seed_range": [
+     0.44642857142857145,
+     0.4642857142857143
+    ],
+    "peak_deg": 18.811749732602106,
+    "est_th_deg": 1.4119381587378943,
+    "est_th_seed_range": [
+     1.3254814751391766,
+     1.5345572260669829
+    ]
+   },
+   "frame30": {
+    "n_trials": 112,
+    "n_seeds": 3,
+    "survival": 0.5386904761904762,
+    "survival_ci": [
+     0.45535714285714285,
+     0.619047619047619
+    ],
+    "survival_seed_range": [
+     0.49107142857142855,
+     0.5982142857142857
+    ],
+    "safe": 0.13095238095238096,
+    "safe_ci": [
+     0.08035714285714286,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.11607142857142858,
+     0.16071428571428573
+    ],
+    "peak_deg": 27.571322593387322,
+    "est_th_deg": 6.062531307565316,
+    "est_th_seed_range": [
+     5.684722773990439,
+     6.7518560237796725
+    ]
+   }
+  },
+  "low_light": {
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.7916666666666666,
+    "survival_ci": [
+     0.6666666666666666,
+     0.9166666666666666
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.9375
+    ],
+    "safe": 0.20833333333333331,
+    "safe_ci": [
+     0.08333333333333333,
+     0.3333333333333333
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.3125
+    ],
+    "peak_deg": 22.689872791663753,
+    "est_th_deg": 5.155732586568428,
+    "est_th_seed_range": [
+     3.193171714930738,
+     6.266965850598718
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 25.88229320728063,
+    "est_th_deg": 7.312267220771318,
+    "est_th_seed_range": [
+     7.312267220771318,
+     7.312267220771318
+    ],
+    "calls_per_s": 448.4371075550014,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.875,
+    "survival_ci": [
+     0.6875,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     0.875
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0,
+     0.375
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "peak_deg": 23.373652755466452,
+    "est_th_deg": 6.21485656500111,
+    "est_th_seed_range": [
+     6.21485656500111,
+     6.21485656500111
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.8333333333333333,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     1.0
+    ],
+    "safe": 0.5208333333333333,
+    "safe_ci": [
+     0.27083333333333337,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5625
+    ],
+    "peak_deg": 15.239108679200829,
+    "est_th_deg": 1.8191707839193496,
+    "est_th_seed_range": [
+     1.137439683756016,
+     2.2042861083204772
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.5625,
+    "survival_ci": [
+     0.3125,
+     0.8125
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.5625
+    ],
+    "safe": 0.0625,
+    "safe_ci": [
+     0.0,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "peak_deg": 28.625621265394205,
+    "est_th_deg": 7.386944232319942,
+    "est_th_seed_range": [
+     7.386944232319942,
+     7.386944232319942
+    ]
+   }
+  },
+  "hdr": {
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 60.264968910769745,
+    "est_th_deg": 21.33202530003943,
+    "est_th_seed_range": [
+     15.666897221267611,
+     25.508224486211013
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 45.41364665953749,
+    "est_th_deg": 16.334934572060334,
+    "est_th_seed_range": [
+     16.334934572060334,
+     16.334934572060334
+    ],
+    "calls_per_s": 444.40858841196194,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.3125,
+    "survival_ci": [
+     0.125,
+     0.5625
+    ],
+    "survival_seed_range": [
+     0.3125,
+     0.3125
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 31.995914921136897,
+    "est_th_deg": 10.14899251517819,
+    "est_th_seed_range": [
+     10.14899251517819,
+     10.14899251517819
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 75.3140082949408,
+    "est_th_deg": 16.727696259158172,
+    "est_th_seed_range": [
+     10.05555879893008,
+     27.919575118725348
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 45.986002071402744,
+    "est_th_deg": 11.954487949671751,
+    "est_th_seed_range": [
+     11.954487949671751,
+     11.954487949671751
+    ]
+   }
+  },
+  "event_noise": {
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.75,
+    "survival_ci": [
+     0.5833333333333333,
+     0.8958333333333333
+    ],
+    "survival_seed_range": [
+     0.6875,
+     0.875
+    ],
+    "safe": 0.10416666666666666,
+    "safe_ci": [
+     0.020833333333333332,
+     0.20833333333333331
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.25
+    ],
+    "peak_deg": 27.58506796338865,
+    "est_th_deg": 5.984006576856686,
+    "est_th_seed_range": [
+     4.341502925420464,
+     7.515343555343268
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.0625,
+    "safe_ci": [
+     0.0,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "peak_deg": 31.7641715097054,
+    "est_th_deg": 7.595760289699561,
+    "est_th_seed_range": [
+     7.595760289699561,
+     7.595760289699561
+    ],
+    "calls_per_s": 448.8878393180464,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.875,
+    "survival_ci": [
+     0.6875,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     0.875
+    ],
+    "safe": 0.3125,
+    "safe_ci": [
+     0.125,
+     0.5625
+    ],
+    "safe_seed_range": [
+     0.3125,
+     0.3125
+    ],
+    "peak_deg": 21.397284652577426,
+    "est_th_deg": 5.27120255054671,
+    "est_th_seed_range": [
+     5.27120255054671,
+     5.27120255054671
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.8333333333333333,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     1.0
+    ],
+    "safe": 0.5208333333333333,
+    "safe_ci": [
+     0.29166666666666663,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5625
+    ],
+    "peak_deg": 14.209044430938636,
+    "est_th_deg": 0.6802947386685108,
+    "est_th_seed_range": [
+     0.6436134324249891,
+     0.7009103543782829
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 29.555780768911745,
+    "est_th_deg": 6.152450428786325,
+    "est_th_seed_range": [
+     6.152450428786325,
+     6.152450428786325
+    ]
+   }
+  },
+  "thresh_mismatch": {
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.8333333333333333,
+    "survival_ci": [
+     0.7291666666666666,
+     0.9375
+    ],
+    "survival_seed_range": [
+     0.75,
+     0.875
+    ],
+    "safe": 0.10416666666666666,
+    "safe_ci": [
+     0.041666666666666664,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.25
+    ],
+    "peak_deg": 24.412451768178727,
+    "est_th_deg": 4.638900496582801,
+    "est_th_seed_range": [
+     3.481361275877499,
+     6.201850126400576
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.75,
+    "survival_ci": [
+     0.5,
+     0.9375
+    ],
+    "survival_seed_range": [
+     0.75,
+     0.75
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0,
+     0.375
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "peak_deg": 26.900020280601687,
+    "est_th_deg": 6.058120453316517,
+    "est_th_seed_range": [
+     6.058120453316517,
+     6.058120453316517
+    ],
+    "calls_per_s": 448.50368977594803,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.875,
+    "survival_ci": [
+     0.6875,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     0.875
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0,
+     0.375
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "peak_deg": 22.583596535349127,
+    "est_th_deg": 4.409196045402425,
+    "est_th_seed_range": [
+     4.409196045402425,
+     4.409196045402425
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.8333333333333333,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     1.0
+    ],
+    "safe": 0.5208333333333333,
+    "safe_ci": [
+     0.29166666666666663,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5625
+    ],
+    "peak_deg": 14.209044430938636,
+    "est_th_deg": 0.6802947386685108,
+    "est_th_seed_range": [
+     0.6436134324249891,
+     0.7009103543782829
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 29.555780768911745,
+    "est_th_deg": 6.152450428786325,
+    "est_th_seed_range": [
+     6.152450428786325,
+     6.152450428786325
+    ]
+   }
+  },
+  "dropped_events": {
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.75,
+    "survival_ci": [
+     0.625,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.6875,
+     0.8125
+    ],
+    "safe": 0.25,
+    "safe_ci": [
+     0.10416666666666666,
+     0.41666666666666663
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.3125
+    ],
+    "peak_deg": 24.936864568715784,
+    "est_th_deg": 5.491123090357788,
+    "est_th_seed_range": [
+     4.471859308779747,
+     6.699374795319991
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.6875,
+    "survival_ci": [
+     0.4375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.6875,
+     0.6875
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 25.740895716389076,
+    "est_th_deg": 7.309175384435207,
+    "est_th_seed_range": [
+     7.309175384435207,
+     7.309175384435207
+    ],
+    "calls_per_s": 448.33116932736203,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0,
+     0.375
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "peak_deg": 23.68238500414757,
+    "est_th_deg": 5.886139958734649,
+    "est_th_seed_range": [
+     5.886139958734649,
+     5.886139958734649
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.8333333333333333,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.875,
+     1.0
+    ],
+    "safe": 0.5208333333333333,
+    "safe_ci": [
+     0.29166666666666663,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5625
+    ],
+    "peak_deg": 14.209044430938636,
+    "est_th_deg": 0.6802947386685108,
+    "est_th_seed_range": [
+     0.6436134324249891,
+     0.7009103543782829
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 29.555780768911745,
+    "est_th_deg": 6.152450428786325,
+    "est_th_seed_range": [
+     6.152450428786325,
+     6.152450428786325
+    ]
+   }
+  },
+  "occlusion": {
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.160721166960787,
+    "est_th_deg": 0.05841928368776059,
+    "est_th_seed_range": [
+     0.05841928368776059,
+     0.05841928368776059
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.2708333333333333,
+    "survival_ci": [
+     0.10416666666666666,
+     0.4583333333333333
+    ],
+    "survival_seed_range": [
+     0.1875,
+     0.375
+    ],
+    "safe": 0.0625,
+    "safe_ci": [
+     0.0,
+     0.16666666666666666
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "peak_deg": 37.281495619611775,
+    "est_th_deg": 9.876687097012997,
+    "est_th_seed_range": [
+     7.2992203265489755,
+     12.244994530878241
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.1875,
+    "survival_ci": [
+     0.0,
+     0.375
+    ],
+    "survival_seed_range": [
+     0.1875,
+     0.1875
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 39.833615012720685,
+    "est_th_deg": 11.83461098676776,
+    "est_th_seed_range": [
+     11.83461098676776,
+     11.83461098676776
+    ],
+    "calls_per_s": 446.01587562707755,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.25,
+    "survival_ci": [
+     0.0625,
+     0.5
+    ],
+    "survival_seed_range": [
+     0.25,
+     0.25
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 35.60261381501982,
+    "est_th_deg": 9.84085809691129,
+    "est_th_seed_range": [
+     9.84085809691129,
+     9.84085809691129
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.5416666666666666,
+    "survival_ci": [
+     0.3958333333333333,
+     0.6875
+    ],
+    "survival_seed_range": [
+     0.4375,
+     0.625
+    ],
+    "safe": 0.22916666666666666,
+    "safe_ci": [
+     0.10416666666666666,
+     0.35416666666666663
+    ],
+    "safe_seed_range": [
+     0.1875,
+     0.25
+    ],
+    "peak_deg": 28.870937825735467,
+    "est_th_deg": 4.09199845946336,
+    "est_th_seed_range": [
+     3.2629223963554326,
+     5.478738019440908
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0625,
+    "survival_ci": [
+     0.0,
+     0.1875
+    ],
+    "survival_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 43.12027433201652,
+    "est_th_deg": 12.023849460871748,
+    "est_th_seed_range": [
+     12.023849460871748,
+     12.023849460871748
+    ]
+   }
+  },
+  "ood_plant": {
+   "oracle": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 14.636232216629782,
+    "est_th_deg": 0.0,
+    "est_th_seed_range": [
+     0.0,
+     0.0
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 14.444345418426526,
+    "est_th_deg": 0.06767584556089623,
+    "est_th_seed_range": [
+     0.06767584556089623,
+     0.06767584556089623
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.375,
+    "survival_ci": [
+     0.1875,
+     0.5625
+    ],
+    "survival_seed_range": [
+     0.1875,
+     0.5625
+    ],
+    "safe": 0.020833333333333332,
+    "safe_ci": [
+     0.0,
+     0.0625
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0625
+    ],
+    "peak_deg": 36.14689466385887,
+    "est_th_deg": 5.945077434094587,
+    "est_th_seed_range": [
+     4.576358123812162,
+     7.711231896621435
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.3125,
+    "survival_ci": [
+     0.125,
+     0.5625
+    ],
+    "survival_seed_range": [
+     0.3125,
+     0.3125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 36.11566425163326,
+    "est_th_deg": 7.887040467071975,
+    "est_th_seed_range": [
+     7.887040467071975,
+     7.887040467071975
+    ],
+    "calls_per_s": 448.67679027009,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.5625,
+    "survival_ci": [
+     0.3125,
+     0.8125
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.5625
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 30.697266122144196,
+    "est_th_deg": 6.850538964016705,
+    "est_th_seed_range": [
+     6.850538964016705,
+     6.850538964016705
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.5625,
+    "survival_ci": [
+     0.35416666666666663,
+     0.7708333333333333
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.5625
+    ],
+    "safe": 0.25,
+    "safe_ci": [
+     0.08333333333333333,
+     0.41666666666666663
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.375
+    ],
+    "peak_deg": 26.088429414493948,
+    "est_th_deg": 2.189915772630532,
+    "est_th_seed_range": [
+     1.8020472572936512,
+     2.4424947069635308
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.375,
+    "survival_ci": [
+     0.125,
+     0.625
+    ],
+    "survival_seed_range": [
+     0.375,
+     0.375
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 32.514653312797996,
+    "est_th_deg": 9.334665915206216,
+    "est_th_seed_range": [
+     9.334665915206216,
+     9.334665915206216
+    ]
+   }
+  },
+  "snap": {
+   "oracle": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.342823161440089,
+    "est_th_deg": 0.0,
+    "est_th_seed_range": [
+     0.0,
+     0.0
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 1.0,
+    "survival_ci": [
+     1.0,
+     1.0
+    ],
+    "survival_seed_range": [
+     1.0,
+     1.0
+    ],
+    "safe": 0.5,
+    "safe_ci": [
+     0.25,
+     0.75
+    ],
+    "safe_seed_range": [
+     0.5,
+     0.5
+    ],
+    "peak_deg": 10.433956036672583,
+    "est_th_deg": 0.08045371647893465,
+    "est_th_seed_range": [
+     0.08045371647893465,
+     0.08045371647893465
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.7291666666666666,
+    "survival_ci": [
+     0.6041666666666666,
+     0.8541666666666666
+    ],
+    "survival_seed_range": [
+     0.5625,
+     0.875
+    ],
+    "safe": 0.1875,
+    "safe_ci": [
+     0.0625,
+     0.33333333333333326
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.3125
+    ],
+    "peak_deg": 25.43603299538305,
+    "est_th_deg": 5.04284229142751,
+    "est_th_seed_range": [
+     3.054349500984192,
+     7.109352001116244
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.6875,
+    "survival_ci": [
+     0.4375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.6875,
+     0.6875
+    ],
+    "safe": 0.125,
+    "safe_ci": [
+     0.0,
+     0.3125
+    ],
+    "safe_seed_range": [
+     0.125,
+     0.125
+    ],
+    "peak_deg": 28.564244826089343,
+    "est_th_deg": 7.388403730984868,
+    "est_th_seed_range": [
+     7.388403730984868,
+     7.388403730984868
+    ],
+    "calls_per_s": 448.2670321640295,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.25,
+    "safe_ci": [
+     0.0625,
+     0.4375
+    ],
+    "safe_seed_range": [
+     0.25,
+     0.25
+    ],
+    "peak_deg": 23.3424412359527,
+    "est_th_deg": 4.070405637669445,
+    "est_th_seed_range": [
+     4.070405637669445,
+     4.070405637669445
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.9375,
+    "survival_ci": [
+     0.875,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     1.0
+    ],
+    "safe": 0.4583333333333333,
+    "safe_ci": [
+     0.22916666666666666,
+     0.6875
+    ],
+    "safe_seed_range": [
+     0.375,
+     0.5
+    ],
+    "peak_deg": 15.7806852302631,
+    "est_th_deg": 0.7944164244887968,
+    "est_th_seed_range": [
+     0.7023802144391074,
+     0.8901728347861965
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.625,
+    "survival_ci": [
+     0.375,
+     0.875
+    ],
+    "survival_seed_range": [
+     0.625,
+     0.625
+    ],
+    "safe": 0.0625,
+    "safe_ci": [
+     0.0,
+     0.1875
+    ],
+    "safe_seed_range": [
+     0.0625,
+     0.0625
+    ],
+    "peak_deg": 28.10845734373636,
+    "est_th_deg": 6.709270708245275,
+    "est_th_seed_range": [
+     6.709270708245275,
+     6.709270708245275
+    ]
+   }
+  },
+  "fast": {
+   "oracle": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 23.716078944797616,
+    "est_th_deg": 0.0,
+    "est_th_seed_range": [
+     0.0,
+     0.0
+    ]
+   },
+   "imu": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.8125,
+    "survival_ci": [
+     0.625,
+     1.0
+    ],
+    "survival_seed_range": [
+     0.8125,
+     0.8125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 23.967483842700094,
+    "est_th_deg": 0.0753604057596758,
+    "est_th_seed_range": [
+     0.0753604057596758,
+     0.0753604057596758
+    ]
+   },
+   "ev-dense": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.1875,
+    "survival_ci": [
+     0.0625,
+     0.3333333333333333
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.375
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 37.43904524285135,
+    "est_th_deg": 7.860014177901869,
+    "est_th_seed_range": [
+     5.296104963221055,
+     11.60247316137323
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "ev-trig": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 44.736008504145715,
+    "est_th_deg": 14.396074768817824,
+    "est_th_seed_range": [
+     14.396074768817824,
+     14.396074768817824
+    ],
+    "calls_per_s": 447.80917468923286,
+    "miss_rate": 0.0
+   },
+   "eventonly-dense": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.125,
+    "survival_ci": [
+     0.0,
+     0.3125
+    ],
+    "survival_seed_range": [
+     0.125,
+     0.125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 35.29953754295395,
+    "est_th_deg": 7.365737641823827,
+    "est_th_seed_range": [
+     7.365737641823827,
+     7.365737641823827
+    ],
+    "calls_per_s": 1000.0,
+    "miss_rate": 0.0
+   },
+   "frame120": {
+    "n_trials": 16,
+    "n_seeds": 3,
+    "survival": 0.25,
+    "survival_ci": [
+     0.08333333333333333,
+     0.4375
+    ],
+    "survival_seed_range": [
+     0.1875,
+     0.3125
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 35.57343681785792,
+    "est_th_deg": 4.500528812081521,
+    "est_th_seed_range": [
+     3.1669008702408434,
+     6.290960345067508
+    ]
+   },
+   "frame30": {
+    "n_trials": 16,
+    "n_seeds": 1,
+    "survival": 0.0,
+    "survival_ci": [
+     0.0,
+     0.0
+    ],
+    "survival_seed_range": [
+     0.0,
+     0.0
+    ],
+    "safe": 0.0,
+    "safe_ci": [
+     0.0,
+     0.0
+    ],
+    "safe_seed_range": [
+     0.0,
+     0.0
+    ],
+    "peak_deg": 40.84950133865199,
+    "est_th_deg": 13.132512659740481,
+    "est_th_seed_range": [
+     13.132512659740481,
+     13.132512659740481
+    ]
+   }
+  }
+ },
+ "event_vs_frame120": {
+  "nominal": {
+   "event_minus_frame120_survival": -0.14285714285714285,
+   "ci": [
+    -0.193452380952381,
+    -0.09226190476190478
+   ],
+   "verdict": "frame wins"
+  },
+  "low_light": {
+   "event_minus_frame120_survival": -0.14583333333333334,
+   "ci": [
+    -0.27083333333333337,
+    -0.04166666666666667
+   ],
+   "verdict": "frame wins"
+  },
+  "hdr": {
+   "event_minus_frame120_survival": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "verdict": "no significant difference"
+  },
+  "event_noise": {
+   "event_minus_frame120_survival": -0.1875,
+   "ci": [
+    -0.35416666666666663,
+    -0.04166666666666668
+   ],
+   "verdict": "frame wins"
+  },
+  "thresh_mismatch": {
+   "event_minus_frame120_survival": -0.10416666666666669,
+   "ci": [
+    -0.20833333333333337,
+    -3.469446951953614e-18
+   ],
+   "verdict": "frame wins"
+  },
+  "dropped_events": {
+   "event_minus_frame120_survival": -0.1875,
+   "ci": [
+    -0.3125,
+    -0.08333333333333334
+   ],
+   "verdict": "frame wins"
+  },
+  "occlusion": {
+   "event_minus_frame120_survival": -0.27083333333333337,
+   "ci": [
+    -0.47916666666666663,
+    -0.08333333333333331
+   ],
+   "verdict": "frame wins"
+  },
+  "ood_plant": {
+   "event_minus_frame120_survival": -0.18750000000000003,
+   "ci": [
+    -0.33333333333333337,
+    -0.020833333333333343
+   ],
+   "verdict": "frame wins"
+  },
+  "snap": {
+   "event_minus_frame120_survival": -0.20833333333333331,
+   "ci": [
+    -0.3125,
+    -0.08333333333333334
+   ],
+   "verdict": "frame wins"
+  },
+  "fast": {
+   "event_minus_frame120_survival": -0.0625,
+   "ci": [
+    -0.1875,
+    0.041666666666666664
+   ],
+   "verdict": "no significant difference"
+  }
+ }
+}

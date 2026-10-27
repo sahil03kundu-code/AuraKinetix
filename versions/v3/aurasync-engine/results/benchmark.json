@@ -1,0 +1,306 @@
+{
+ "latency": {
+  "encode_median_ms": 0.23457449970010202,
+  "observer_median_ms": 1.576904499415832,
+  "total_median_ms": 1.8349114998272853,
+  "total_p99_ms": 3.8185925694233394,
+  "fits_1khz_budget_fraction": 0.0,
+  "params": 273372
+ },
+ "events": {
+  "closed_loop_mae_th_deg": 2.2689259967358013,
+  "closed_loop_mae_x_mm": 15.925178113380106,
+  "mean_event_rate_keps": 6.532857142857143,
+  "peak_event_rate_keps": 20.0
+ },
+ "sweep": {
+  "oracle": [
+   {
+    "kick": 1.0,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 4.039854878338998,
+    "settle_s": 0.9045
+   },
+   {
+    "kick": 1.5,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 6.274020949543617,
+    "settle_s": null
+   },
+   {
+    "kick": 2.0,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 8.635113176490208,
+    "settle_s": null
+   },
+   {
+    "kick": 2.5,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 11.144565944793005,
+    "settle_s": null
+   },
+   {
+    "kick": 3.0,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 13.834031836946922,
+    "settle_s": null
+   },
+   {
+    "kick": 3.5,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 16.745806576240795,
+    "settle_s": null
+   },
+   {
+    "kick": 4.0,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 19.936472998977564,
+    "settle_s": null
+   }
+  ],
+  "aurasync-event": [
+   {
+    "kick": 1.0,
+    "survival": 1.0,
+    "safe": 0.25,
+    "peak_deg": 14.631119909455084,
+    "settle_s": null
+   },
+   {
+    "kick": 1.5,
+    "survival": 1.0,
+    "safe": 0.125,
+    "peak_deg": 22.84703725932183,
+    "settle_s": null
+   },
+   {
+    "kick": 2.0,
+    "survival": 0.875,
+    "safe": 0.125,
+    "peak_deg": 25.279323585867203,
+    "settle_s": null
+   },
+   {
+    "kick": 2.5,
+    "survival": 0.75,
+    "safe": 0.125,
+    "peak_deg": 26.941129777537284,
+    "settle_s": null
+   },
+   {
+    "kick": 3.0,
+    "survival": 0.75,
+    "safe": 0.375,
+    "peak_deg": 25.73525857437884,
+    "settle_s": null
+   },
+   {
+    "kick": 3.5,
+    "survival": 0.375,
+    "safe": 0.375,
+    "peak_deg": 28.21098272759227,
+    "settle_s": null
+   },
+   {
+    "kick": 4.0,
+    "survival": 0.125,
+    "safe": 0.125,
+    "peak_deg": 35.14834800523515,
+    "settle_s": null
+   }
+  ],
+  "frame-120fps": [
+   {
+    "kick": 1.0,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 4.2124484974616365,
+    "settle_s": 0.9103333333333333
+   },
+   {
+    "kick": 1.5,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 6.614417398625356,
+    "settle_s": null
+   },
+   {
+    "kick": 2.0,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 9.194564559313454,
+    "settle_s": null
+   },
+   {
+    "kick": 2.5,
+    "survival": 1.0,
+    "safe": 0.625,
+    "peak_deg": 11.985404484558725,
+    "settle_s": null
+   },
+   {
+    "kick": 3.0,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 15.043754938919811,
+    "settle_s": null
+   },
+   {
+    "kick": 3.5,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 18.437523319582123,
+    "settle_s": null
+   },
+   {
+    "kick": 4.0,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 22.26746784295799,
+    "settle_s": null
+   }
+  ],
+  "frame-60fps": [
+   {
+    "kick": 1.0,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 4.786304864525544,
+    "settle_s": 0.914
+   },
+   {
+    "kick": 1.5,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 7.2997191300447275,
+    "settle_s": null
+   },
+   {
+    "kick": 2.0,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 10.131220392724192,
+    "settle_s": null
+   },
+   {
+    "kick": 2.5,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 13.071439546879425,
+    "settle_s": null
+   },
+   {
+    "kick": 3.0,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 16.401580381573034,
+    "settle_s": null
+   },
+   {
+    "kick": 3.5,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 20.595141679246915,
+    "settle_s": null
+   },
+   {
+    "kick": 4.0,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 25.452115997444878,
+    "settle_s": null
+   }
+  ],
+  "frame-30fps": [
+   {
+    "kick": 1.0,
+    "survival": 1.0,
+    "safe": 1.0,
+    "peak_deg": 10.116919377887404,
+    "settle_s": null
+   },
+   {
+    "kick": 1.5,
+    "survival": 1.0,
+    "safe": 0.25,
+    "peak_deg": 14.472952557124874,
+    "settle_s": null
+   },
+   {
+    "kick": 2.0,
+    "survival": 1.0,
+    "safe": 0.0,
+    "peak_deg": 23.253223633233354,
+    "settle_s": null
+   },
+   {
+    "kick": 2.5,
+    "survival": 0.875,
+    "safe": 0.0,
+    "peak_deg": 31.904821768388715,
+    "settle_s": null
+   },
+   {
+    "kick": 3.0,
+    "survival": 0.5,
+    "safe": 0.0,
+    "peak_deg": 36.01363949942198,
+    "settle_s": null
+   },
+   {
+    "kick": 3.5,
+    "survival": 0.375,
+    "safe": 0.0,
+    "peak_deg": 36.24266061625874,
+    "settle_s": null
+   },
+   {
+    "kick": 4.0,
+    "survival": 0.0,
+    "safe": 0.0,
+    "peak_deg": 42.461492895579624,
+    "settle_s": null
+   }
+  ]
+ },
+ "snap": {
+  "oracle": {
+   "survival": 1.0,
+   "safe": 1.0,
+   "peak_deg": 8.935911021928217
+  },
+  "aurasync-event": {
+   "survival": 1.0,
+   "safe": 0.125,
+   "peak_deg": 24.262049602319316
+  },
+  "frame-120fps": {
+   "survival": 1.0,
+   "safe": 1.0,
+   "peak_deg": 9.440162702491758
+  },
+  "frame-60fps": {
+   "survival": 1.0,
+   "safe": 1.0,
+   "peak_deg": 10.214880148141882
+  },
+  "frame-30fps": {
+   "survival": 1.0,
+   "safe": 0.0,
+   "peak_deg": 19.585230932181567
+  }
+ },
+ "config": {
+  "trials_per_point": 8,
+  "safe_envelope_deg": 12.0,
+  "frame_assumptions": "true pose+velocity at capture; latency = readout+inference",
+  "event_assumptions": "1 ms (one tick) compute delay; learned estimate, no ground truth"
+ }
+}
