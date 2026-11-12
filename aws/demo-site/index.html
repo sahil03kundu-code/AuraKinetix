@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AuraKinetix: an open research prototype exploring event-camera perception, evidence-aware estimation, and safety-supervised control.">
+  <meta name="theme-color" content="#080f20">
+  <title>AuraKinetix — Event-Driven Recovery Research</title>
+  <style>
+    :root {color-scheme:dark;--bg:#080f20;--panel:#111d34;--line:#2b3d5c;--muted:#a8b9d2;--text:#eef4ff;--aqua:#7ee7dc;--blue:#8aaeff;--gold:#e8c587}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 75% 0%,#122c4e 0%,transparent 42%),var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--aqua)}a:focus-visible{outline:3px solid var(--aqua);outline-offset:3px} .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+    header{border-bottom:1px solid #ffffff18}nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:21px 0;flex-wrap:wrap}
+    .brand{font-weight:800;font-size:1.17rem;letter-spacing:.02em;color:var(--text);text-decoration:none}.brand i{font-style:normal;color:var(--aqua);margin-right:8px}
+    .links{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem}.links a{color:#d5e1f3;text-decoration:none}.links a:hover{text-decoration:underline}
+    .hero{padding:96px 0 72px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}.eyebrow{font-size:.79rem;color:var(--aqua);letter-spacing:.16em;text-transform:uppercase;font-weight:750}
+    h1{font-size:clamp(2.8rem,6vw,5.7rem);letter-spacing:-.065em;line-height:1.07;margin:17px 0 25px}h1 span{color:var(--aqua)}
+    p.lead{font-size:1.14rem;max-width:670px;color:#cbd8ed;margin-bottom:27px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}.button{display:inline-flex;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:12px;border:1px solid #6ccfc7;color:var(--bg);background:var(--aqua)}
+    .button.secondary{color:var(--text);background:#142440;border-color:#597194}
+    .diagram{padding:25px 24px;border:1px solid var(--line);background:linear-gradient(155deg,#142a45,#0d1729);border-radius:23px;box-shadow:0 20px 70px #0003}
+    .diagram .hd{color:var(--aqua);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+    .node{padding:12px 16px;border:1px solid #426486;background:#182c48;border-radius:10px;font-size:.98rem;font-weight:650}.node small{display:block;color:var(--muted);font-size:.73rem;font-weight:400}
+    .arrow{text-align:center;color:var(--aqua);font-size:1.3rem;margin:3px}
+    .notice{padding:17px 20px;border:1px solid #6f5b39;background:#2a241b;border-radius:12px;color:#f7dfb7;margin:16px 0 45px;font-size:.94rem}
+    section{padding:44px 0}h2{font-size:clamp(1.7rem,3.2vw,2.5rem);letter-spacing:-.035em;margin:0 0 11px}.sub{color:var(--muted);max-width:760px;margin:0 0 29px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:25px;background:var(--panel);border:1px solid var(--line);border-radius:18px}.card strong{color:var(--aqua);font-size:.8rem;letter-spacing:.08em}.card h3{font-size:1.2rem;margin:10px 0}.card p{color:var(--muted);margin:0}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:20px}.list{padding:24px;background:var(--panel);border-radius:16px;border:1px solid var(--line)}.list h3{margin:0 0 10px}.list p{margin:8px 0;color:var(--muted)}
+    footer{margin-top:54px;border-top:1px solid var(--line);padding:28px 0 50px;color:var(--muted);font-size:.87rem}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding:65px 0 28px}.grid,.two{grid-template-columns:1fr}.diagram{max-width:490px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header><nav class="wrap" aria-label="Main navigation">
+    <a class="brand" href="#top"><i aria-hidden="true">◆</i>AuraKinetix</a>
+    <div class="links"><a href="#system">System</a><a href="#evidence">Evidence</a><a href="#limitations">Limitations</a><a href="https://github.com/sahil03kundu-code/AuraKinetix">GitHub ↗</a></div>
+  </nav></header>
+  <main id="top" class="wrap">
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Open research prototype · Simulation-first</div>
+        <h1>Sense sooner.<br><span>Recover smarter.</span></h1>
+        <p class="lead">AuraKinetix investigates event-camera perception and evidence-aware state estimation for fast-changing physical systems. The research pipeline combines simulated sensor events, physics-based estimation, and safety-aware control.</p>
+        <div class="actions"><a class="button" href="https://github.com/sahil03kundu-code/AuraKinetix">Explore source code ↗</a><a class="button secondary" href="https://github.com/sahil03kundu-code/AuraKinetix/actions">Inspect CI evidence ↗</a></div>
+      </div>
+      <aside class="diagram" aria-label="Conceptual system pipeline">
+        <div class="hd">Research system architecture</div>
+        <div class="node">Event-camera sensing <small>Synthetic event streams and time surfaces</small></div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="node">Evidence-aware observer <small>Geometry, uncertainty and contradiction gates</small></div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="node">Safety-supervised controller <small>Control decisions in a simulated plant</small></div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="node">Reproducible evaluation <small>Fault injection, CI tests, paired benchmarks</small></div>
+      </aside>
+    </div>
+    <div class="notice" role="note"><strong>Research status:</strong> This is a public project showcase, not a live control system. The linked code runs simulations. Sub-millisecond physical recovery, real-hardware safety, and superior full V4.2 performance have not been established by the published CI checks.</div>
+    <section id="system">
+      <h2>How the research system works</h2><p class="sub">Designed to test whether rapid sensor evidence can support more robust estimation and controlled recovery—without assuming the measurements are always trustworthy.</p>
+      <div class="grid">
+        <article class="card"><strong>01 / PERCEPTION</strong><h3>Event-driven sensing</h3><p>Asynchronous event-camera simulation provides changes in the scene rather than relying only on periodic frames.</p></article>
+        <article class="card"><strong>02 / ESTIMATION</strong><h3>Evidence before confidence</h3><p>The observer distinguishes quiet, unobserved, contradictory, and corrupt evidence while tracking uncertainty.</p></article>
+        <article class="card"><strong>03 / CONTROL</strong><h3>Recovery under constraints</h3><p>An LQR controller and safety-shield model are exercised against a simulated unstable cart-pole plant.</p></article>
+      </div>
+    </section>
+    <section id="evidence">
+      <h2>Evidence, not marketing claims</h2><p class="sub">The repository exposes the tests and experimental methods so reviewers can inspect what has and has not been demonstrated.</p>
+      <div class="two">
+        <div class="list"><h3>What can be inspected</h3><p>Unit and integration tests, seeded sensor-fault simulations, registered pilot comparisons, dependency/SBOM scans, CPU timing audit and source-release verification.</p><p><a href="https://github.com/sahil03kundu-code/AuraKinetix/actions">View test workflows and artifacts ↗</a></p></div>
+        <div class="list"><h3>Evaluation methodology</h3><p>Fixed seeds, paired D versus D-ev geometry/evidence baselines, documented confidence intervals and a distinct final holdout that is not used for early tuning.</p><p><a href="https://github.com/sahil03kundu-code/AuraKinetix/blob/main/versions/v4.2/docs/SCIENTIFIC_PROTOCOL.md">Read the scientific protocol ↗</a></p></div>
+      </div>
+    </section>
+    <section id="limitations">
+      <h2>Current limitations</h2>
+      <p class="sub">This website is a static research showcase. It does not perform inference or control a physical device. Full neural-assisted model comparisons, long-horizon held-out results, physical hardware trials, and production deployment safeguards remain ongoing work.</p>
+      <p><a href="https://github.com/sahil03kundu-code/AuraKinetix/issues/21">Track the documented readiness gaps ↗</a></p>
+    </section>
+  </main>
+  <footer><div class="wrap">AuraKinetix · Research prototype and reproducibility showcase · <a href="https://github.com/sahil03kundu-code/AuraKinetix">Source and documentation</a></div></footer>
+</body>
+</html>
