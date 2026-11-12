@@ -32,6 +32,8 @@ ENV PATH="/opt/venv/bin:$PATH" \
     OMP_NUM_THREADS=1 \
     MKL_NUM_THREADS=1
 COPY --from=builder /opt/venv /opt/venv
+RUN /opt/venv/bin/pip uninstall -y setuptools
+RUN rm -rf /usr/local/lib/python3.11/site-packages/setuptools /usr/local/lib/python3.11/site-packages/setuptools-79.0.1.dist-info /usr/local/lib/python3.11/site-packages/pkg_resources
 
 # Non-root user; the working tree and the mount points are owned by it.
 RUN useradd --create-home --uid 10001 aura \
