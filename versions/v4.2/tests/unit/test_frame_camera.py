@@ -119,3 +119,80 @@ def test_zero_latency_capture_applies_inference_in_zoh_mode():
     assert len(pipeline.pending) == 0
     assert len(pipeline.frames) == N_FRAMES
     model.assert_called_once()
+
+
+def test_capture_applies_non_nominal_sensor_response():
+    model = model_stub()
+    pipeline = LearnedFramePipeline(
+        model, fps=30, latency=0.002, read_noise=0.0
+    )
+    conditions = SensorConditions(name="dim", brightness=0.5)
+    pipeline.set_conditions(conditions)
+    pipeline.reset(np.zeros(4))
+    image = pipeline.hist[-1].copy()
+    stack = pipeline._capture()
+    expected = conditions.frame_sensor(image).astype(np.float32)
+    np.testing.assert_allclose(stack[0], expected, atol=1e-6)
+
+
+def test_capture_waits_for_latency_before_using_estimator():
+    expected = [0.15, 0.0, 0.0, 0.0]
+    model = model_stub(expected)
+    pipeline = LearnedFramePipeline(
+        model, fps=30, latency=0.003, mode="zoh", read_noise=0.0
+    )
+    pipeline.reset(np.zeros(4))
+    for tick in range(3):
+        pipeline.update(
+            k=tick, t=tick * 0.001,
+            s_true=np.zeros(4), surface=None, u=0.0,
+        )
+        model.assert_not_called()
+    assert len(pipeline.pending) == 1
+    pipeline.update(
+        k=3, t=0.003, s_true=np.zeros(4), surface=None, u=0.0
+    )
+    model.assert_called_once()
+    assert len(pipeline.pending) == 0
+    np.testing.assert_allclose(pipeline.estimate(), expected, atol=1e-6)
+
+
+def test_physics_mode_replays_controls_after_delayed_frame():
+    from aurasync.physics import rk4_step
+
+    measured = [0.1, 0.0, 0.04, 0.0]
+    model = model_stub(measured)
+    pipeline = LearnedFramePipeline(
+        model, fps=30, latency=0.002, mode="physics", read_noise=0.0
+    )
+    pipeline.reset(np.zeros(4))
+    controls = (0.0, 0.1, -0.1)
+    for tick, u in enumerate(controls):
+        pipeline.update(
+            k=tick, t=tick * 0.001,
+            s_true=np.zeros(4), surface=None, u=u,
+        )
+    expected = np.asarray(measured, dtype=np.float64)
+    for u in controls[-2:]:
+        expected = rk4_step(expected, u, 0.001, pipeline.p)
+    np.testing.assert_allclose(
+        pipeline.estimate(), expected, rtol=1e-6, atol=1e-6
+    )
+    model.assert_called_once()
+
+
+def test_pipeline_uses_true_plant_length_for_rendering():
+    from types import SimpleNamespace
+    from unittest.mock import patch
+
+    pipeline = LearnedFramePipeline(
+        model_stub(), fps=30, latency=0.005, read_noise=0.0
+    )
+    pipeline.p_true = SimpleNamespace(l=0.4)
+    with patch.object(pipeline.renderer, "render", wraps=pipeline.renderer.render) as render:
+        pipeline.reset(np.zeros(4))
+        assert render.call_args.args[1] == 0.4
+        pipeline.update(
+            k=0, t=0.0, s_true=np.zeros(4), surface=None, u=0.0
+        )
+        assert render.call_args.args[1] == 0.4
