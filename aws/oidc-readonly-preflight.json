@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "AuraKinetix: minimal GitHub Actions OIDC read-only identity for AWS connectivity preflight only. Does not deploy workload resources.",
+  "Description": "AuraKinetix: restricted GitHub Actions OIDC STS identity role, referencing an EXISTING account OIDC provider; no workload resources.",
   "Parameters": {
     "GitHubOwner": {
       "Type": "String",
@@ -14,15 +14,6 @@
     }
   },
   "Resources": {
-    "GitHubOIDCProvider": {
-      "Type": "AWS::IAM::OIDCProvider",
-      "Properties": {
-        "Url": "https://token.actions.githubusercontent.com",
-        "ClientIdList": [
-          "sts.amazonaws.com"
-        ]
-      }
-    },
     "GitHubReadOnlyPreflightRole": {
       "Type": "AWS::IAM::Role",
       "Properties": {
@@ -35,10 +26,7 @@
               "Effect": "Allow",
               "Principal": {
                 "Federated": {
-                  "Fn::GetAtt": [
-                    "GitHubOIDCProvider",
-                    "Arn"
-                  ]
+                  "Fn::Sub": "arn:${AWS::Partition}:iam::${AWS::AccountId}:oidc-provider/token.actions.githubusercontent.com"
                 }
               },
               "Action": "sts:AssumeRoleWithWebIdentity",
@@ -58,7 +46,7 @@
   },
   "Outputs": {
     "RoleArn": {
-      "Description": "Set GitHub repository variable AWS_READONLY_ROLE_ARN to this role ARN when you approve connectivity setup",
+      "Description": "After the existing GitHub OIDC provider and role are manually verified, set GitHub repository variable AWS_READONLY_ROLE_ARN to this role ARN",
       "Value": {
         "Fn::GetAtt": [
           "GitHubReadOnlyPreflightRole",

@@ -11,7 +11,7 @@ production readiness.
 ## What exists in the repository
 
 - `aws/oidc-readonly-preflight.json` — CloudFormation defines only an IAM
-  GitHub OIDC identity provider and a role with **no attached permissions**.
+  GitHub IAM role with **no attached permissions**, referencing a separately configured EXISTING GitHub OIDC identity provider.
   The trust requires `sts.amazonaws.com` audience and this repository's
   `main` branch. Both repository and owner are parameterized with exact
   defaults; do not change them to wildcards.
@@ -32,16 +32,17 @@ production readiness.
 3. Confirm cost monitoring and billing alerts (including credit consumption)
    before enabling future AWS services. A $0 billing balance alone is not a
    hard spending limit; credits may be consumed by a running resource.
-4. Check IAM Identity Providers to avoid creating a duplicate
-   `token.actions.githubusercontent.com` provider. The template as written
-   **creates a new provider**, so DO NOT deploy it if this provider already
-   exists. Review/import/revise the stack instead.
-5. Manually review the CloudFormation change set. Creating IAM resources
+4. Verify AWS IAM Identity Providers contains the GitHub OIDC provider URL
+   `https://token.actions.githubusercontent.com` with client ID `sts.amazonaws.com`.
+   **This template deliberately does NOT create the identity provider.** If
+   missing, an account administrator must separately create it with careful
+   review before the role stack can be deployed. Avoid duplicate providers.
+5. Manually review the CloudFormation change set. Creating the IAM role
    requires `CAPABILITY_IAM`. Do not deploy anything without explicit
    review and approval. IAM roles/identity provider are not application
    compute infrastructure.
 
-Once a reviewed role exists, set the role ARN as the GitHub repository
+After the existing OIDC provider is verified and the role has been deployed with explicit approval, set the role ARN as the GitHub repository
 **variable** `AWS_READONLY_ROLE_ARN` (not an AWS key and not a secret).
 Trigger the identity workflow on `main` manually, and inspect the GitHub
 Actions outcome. It is gated to that exact repository and branch.
@@ -67,3 +68,12 @@ See `versions/v4.2/docs/PRE_AWS_READINESS.md` and issue #21. The full
 four-method held-out comparison, validated neural checkpoints, long-horizon
 fault evidence, and production release approval remain separate blockers.
 Do not equate an AWS OIDC authentication success with production readiness.
+
+## Public demo link vs AWS console
+
+The AWS Console and CloudFormation pages are **private administration links**, not
+public project demos. This repository currently contains a simulation engine and
+CI pipelines; **no hosted dashboard, API, or public AWS URL exists yet**. A demo
+requires choosing a specific user-facing artifact (for example, a static
+simulation-results dashboard) and approving hosting, account access, monitoring,
+and costs. Do not claim deployment or invent an endpoint.
