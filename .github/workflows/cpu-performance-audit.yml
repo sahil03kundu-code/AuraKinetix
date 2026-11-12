@@ -53,6 +53,8 @@ jobs:
                   metrics = result[name]
                   assert metrics["samples"] == 40
                   assert 0 <= metrics["median_ms"] <= metrics["p95_ms"] <= metrics["max_ms"]
+              assert result["process_peak_rss_mib"] is not None
+              assert result["process_peak_rss_mib"] > 0
           print("Timing report schema valid; no hardware claims made")
           PY
       - name: Upload timing audit
