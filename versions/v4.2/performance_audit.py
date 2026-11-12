@@ -11,6 +11,11 @@ import platform
 import time
 from pathlib import Path
 
+try:
+    import resource  # Unix process peak resident set; not available on native Windows
+except ImportError:  # pragma: no cover - Windows fallback
+    resource = None
+
 import numpy as np
 
 from aurasync.controller import LQRController
@@ -65,6 +70,16 @@ def describe_ns(samples):
     }
 
 
+
+def process_peak_rss_mib():
+    """Peak memory of the entire benchmark Python process, not one pipeline."""
+    if resource is None:
+        return None
+    # ru_maxrss is KiB on Linux, bytes on macOS (document runner semantics).
+    rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    return float(rss / (1024 if platform.system() == "Linux" else 1024 ** 2))
+
+
 def measure(kind, seed, ticks):
     plant = PlantParams()
     controller = TimedController(LQRController(plant))
@@ -87,6 +102,7 @@ def measure(kind, seed, ticks):
         "controller": describe_ns(controller.timings_ns),
         "estimator_update": describe_ns(pipeline.timings_ns),
         "simulated_ticks": len(result["s"]),
+        "process_peak_rss_mib": process_peak_rss_mib(),
     }
 
 
@@ -103,7 +119,11 @@ def main():
         "python": platform.python_version(),
         "cpu_count_visible": os.cpu_count(),
         "method": "Python wall-clock method timings on GitHub-hosted CPU, no hardware I/O",
-        "limits": "Not a real-time guarantee, hardware benchmark, or detect-to-act latency measurement.",
+        "limits": (
+            "Not a real-time guarantee, hardware benchmark, or detect-to-act latency measurement. "
+            "Peak RSS covers the entire Python process, accumulates across both pipeline runs, "
+            "and cannot be attributed to a single estimator."
+        ),
         "results": [measure(kind, seed=107, ticks=args.ticks)
                     for kind in ("geometry", "evidence")],
     }
