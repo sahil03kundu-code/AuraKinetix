@@ -136,10 +136,11 @@ class EventCamera:
             count += int(n_neg[mn].sum())
 
         if self.drop_prob > 0:   # readout losses: the pixel resets but the event never arrives
-            for arr in (out_p, out_n):
+            for arr, crossings in ((out_p, n_pos), (out_n, n_neg)):
                 fired = ~np.isnan(arr)
                 lost = fired & (self.rng.random(arr.shape) < self.drop_prob)
-                count -= int(lost.sum()); arr[lost] = np.nan
+                count -= int(crossings[lost].sum())
+                arr[lost] = np.nan
 
         # background-activity noise (leak / shot noise)
         p_noise = self.noise_rate * dt
