@@ -2,7 +2,7 @@
 
 import pytest
 
-from performance_audit import TimedController, TimedPipeline, describe_ns
+from performance_audit import TimedController, TimedPipeline, describe_ns, process_peak_rss_mib
 
 
 def test_latency_summary_uses_milliseconds_and_ordered_percentiles():
@@ -44,3 +44,8 @@ def test_pipeline_wrapper_delegates_and_times_update():
     pipeline.update(0, 0.0, [1], None, 0.0)
     assert pipeline.estimate() == [1]
     assert len(pipeline.timings_ns) == 1
+
+
+def test_process_peak_rss_is_nonnegative_when_supported():
+    rss = process_peak_rss_mib()
+    assert rss is None or (isinstance(rss, float) and rss > 0)
