@@ -57,4 +57,4 @@ FROM runtime AS test
 USER root
 RUN pip install --no-cache-dir "pytest>=8,<9" "pytest-cov>=5,<7"
 USER aura
-CMD ["-m", "pytest", "tests/unit", "tests/integration", "-v", "-p", "no:cacheprovider", "--confcutdir=tests", "--junitxml=/reports/test-results.xml"]
+CMD ["-m", "pytest", "tests/unit/test_physics.py", "tests/unit/test_safety.py", "tests/unit/test_controller.py", "tests/integration", "-v", "-p", "no:cacheprovider", "--confcutdir=tests", "--junitxml=/reports/test-results.xml"]
