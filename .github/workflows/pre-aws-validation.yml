@@ -1,0 +1,68 @@
+name: AuraKinetix Pre-AWS Validation
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/pre-aws-validation.yml"
+  push:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/pre-aws-validation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  paired-simulation-audit:
+    name: Paired Simulation Audit (CPU)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: versions/v4.2
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install scientific and CPU-only neural dependencies
+        run: |
+          python -m pip install numpy scipy matplotlib pytest
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Validate audit implementation
+        run: python -m pytest tests/unit/test_validation_audit.py -q --confcutdir=tests -o addopts=
+      - name: Run paired validation seeds
+        run: python validation_audit.py --split validation --seeds 3 --ticks 30 --output audit-validation.json
+      - name: Run disjoint held-out seeds
+        run: python validation_audit.py --split heldout --seeds 3 --ticks 30 --output audit-heldout.json
+      - name: Check report format and seed separation
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          v = json.loads(Path("audit-validation.json").read_text())
+          t = json.loads(Path("audit-heldout.json").read_text())
+          assert v["schema_version"] == t["schema_version"] == 1
+          assert v["split"] == "validation" and t["split"] == "heldout"
+          assert len(v["episodes"]) == len(t["episodes"]) == 12
+          assert not ({r["seed"] for r in v["episodes"]} & {r["seed"] for r in t["episodes"]})
+          for report in (v, t):
+              assert len(report["summary"]) == 4
+              assert all(len(s["exploratory_ci95"]) == 2 for s in report["summary"])
+          print("Paired validation and held-out report checks passed")
+          PY
+      - name: Upload reproducible simulation reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pre-aws-validation-reports
+          path: |
+            versions/v4.2/audit-validation.json
+            versions/v4.2/audit-heldout.json
+          if-no-files-found: warn
