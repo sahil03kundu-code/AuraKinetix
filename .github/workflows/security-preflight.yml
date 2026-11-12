@@ -1,0 +1,37 @@
+name: AuraKinetix Security Preflight
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-security:
+    name: Credential and Workflow Guardrails
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run security scanner regression tests
+        run: python -m unittest tools.test_security_preflight -v
+      - name: Scan source tree and workflow permissions
+        run: python tools/security_preflight.py --root . --output security-preflight.json
+      - name: Upload security preflight report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pre-aws-security-preflight
+          path: security-preflight.json
+          if-no-files-found: warn
