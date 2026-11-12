@@ -45,7 +45,7 @@ class IMUPipeline:
         self.bias = self.rng.normal(0, self.bs)
         self.x = np.concatenate([np.asarray(s0, float), [0.0, 0.0]])
         self.P = np.diag([1e-6, 1e-4, 1e-6, 1e-4, self.bs ** 2, 10.0])
-        self.buf = deque([np.asarray(s0, float)] * (self.delay_ticks + 1), maxlen=self.delay_ticks + 1)
+        self.buf = deque((np.array(s0, dtype=float, copy=True) for _ in range(self.delay_ticks + 1)), maxlen=self.delay_ticks + 1)
         self.cov_buf = deque([self.P[:4, :4].copy()] * (self.delay_ticks + 1), maxlen=self.delay_ticks + 1)
 
     def _f(self, x, u):
