@@ -37,6 +37,7 @@ jobs:
       - name: Run unit and integration tests
         run: |
           mkdir -p docker-reports
+          sudo chown 10001:10001 docker-reports
           docker run --rm --init \
             --cpus=2 --memory=3g \
             --mount "type=bind,source=${{ github.workspace }}/docker-reports,target=/reports" \
