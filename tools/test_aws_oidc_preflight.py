@@ -12,25 +12,26 @@ class AwsOidcPreflightTests(unittest.TestCase):
         cls.template = json.loads((ROOT / "aws/oidc-readonly-preflight.json").read_text())
         cls.probe = (ROOT / ".github/workflows/aws-identity-probe.yml").read_text()
 
-    def test_template_creates_only_oidc_provider_and_unprivileged_role(self):
+    def test_template_only_uses_existing_oidc_provider_and_unprivileged_role(self):
         resources = self.template["Resources"]
         self.assertEqual(
             {x["Type"] for x in resources.values()},
-            {"AWS::IAM::OIDCProvider", "AWS::IAM::Role"},
+            {"AWS::IAM::Role"},
         )
         role = resources["GitHubReadOnlyPreflightRole"]["Properties"]
         self.assertFalse("Policies" in role or "ManagedPolicyArns" in role)
         self.assertLessEqual(role["MaxSessionDuration"], 3600)
 
     def test_oidc_trust_is_exact_repo_main_and_sts_audience(self):
-        oidc = self.template["Resources"]["GitHubOIDCProvider"]["Properties"]
-        self.assertEqual(oidc["Url"], "https://token.actions.githubusercontent.com")
-        self.assertEqual(oidc["ClientIdList"], ["sts.amazonaws.com"])
         stmts = self.template["Resources"]["GitHubReadOnlyPreflightRole"][
             "Properties"]["AssumeRolePolicyDocument"]["Statement"]
         self.assertEqual(len(stmts), 1)
         stmt = stmts[0]
         self.assertEqual(stmt["Action"], "sts:AssumeRoleWithWebIdentity")
+        self.assertEqual(
+            stmt["Principal"]["Federated"],
+            {"Fn::Sub": "arn:${AWS::Partition}:iam::${AWS::AccountId}:oidc-provider/token.actions.githubusercontent.com"},
+        )
         self.assertEqual(
             stmt["Condition"]["StringEquals"]["token.actions.githubusercontent.com:aud"],
             "sts.amazonaws.com",
