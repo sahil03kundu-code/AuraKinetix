@@ -61,7 +61,23 @@ jobs:
       - name: Generate reproducible CycloneDX SBOM
         run: cyclonedx-py environment --output-format JSON --output-reproducible --output-file dependency-sbom.cdx.json
       - name: Audit installed dependencies against known advisories
-        run: pip-audit --format json --output dependency-audit.json
+        run: |
+          set +e
+          pip-audit --format json --output dependency-audit.json
+          status=$?
+          set -e
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("dependency-audit.json").read_text())
+          findings = [(pkg["name"], pkg["version"], v["id"])
+                      for pkg in report["dependencies"] for v in pkg.get("vulns", [])]
+          print("Disclosed advisory IDs (not credentials):")
+          for name, version, advisory in findings:
+              print(name, version, advisory)
+          print("Vulnerability count:", len(findings))
+          PY
+          exit "$status"
       - name: Validate security artifact schema
         run: |
           python - <<'PY'
