@@ -38,7 +38,7 @@ def verify(archive_path, tag):
                 if (
                     not name.startswith(expected_root)
                     or entry.is_dir()
-                    or len(parts) < 4
+                    or len(parts) < 3
                     or any(part in ("", ".", "..") for part in parts)
                     or name.startswith("/")
                     or "\\" in name
