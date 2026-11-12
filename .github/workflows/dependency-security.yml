@@ -35,14 +35,23 @@ jobs:
           python-version: "3.11"
       - name: Install runtime and audit tools
         run: |
-          python -m pip install --upgrade pip "setuptools>=84.1.0"
-          python -m pip install -r requirements-docker.txt
-          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
-          python -m pip install "pip-audit>=2.7,<3" "cyclonedx-bom>=6,<8"
+          python -m pip install --upgrade "pip==26.3" "setuptools==84.2.1"
+          python -m pip install "torch==2.15.0+cpu" --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install --no-deps -r requirements-ci-py311-ubuntu24.lock
       - name: Check dependency consistency and snapshot versions
         run: |
           python -m pip check
           python -m pip freeze --all > dependency-environment.freeze.txt
+          python - <<'PY'
+          from pathlib import Path
+          expected = sorted(line for raw in Path("requirements-ci-py311-ubuntu24.lock").read_text().splitlines()
+                            if (line := raw.strip()) and not line.startswith("#"))
+          actual = sorted(Path("dependency-environment.freeze.txt").read_text().splitlines())
+          assert expected == actual, (
+              "Installed environment differs from pinned CI snapshot; inspect artifact, review and update lock explicitly."
+          )
+          print("Exact dependency versions match reviewed CI lock.")
+          PY
           python - <<'PY'
           import json, platform, sys
           from pathlib import Path
