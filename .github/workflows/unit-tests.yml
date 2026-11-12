@@ -1,5 +1,4 @@
-
-name: AuraKinetix Custom Unit Tests
+﻿name: AuraKinetix Custom Unit Tests
 
 on:
   push:
@@ -12,8 +11,8 @@ permissions:
   contents: read
 
 jobs:
-  physics-unit-tests:
-    name: Physics Unit Tests
+  custom-unit-tests:
+    name: Physics and Safety Unit Tests
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
@@ -33,10 +32,9 @@ jobs:
       - name: Install test dependencies
         run: python -m pip install numpy pytest pytest-cov
 
-
-      - name: Run physics unit tests with coverage
+      - name: Run all custom unit tests with coverage
         run: |
-          python -m pytest tests/unit/test_physics.py -v --confcutdir=tests --junitxml=unit-test-results.xml --cov=aurasync.physics --cov-report=xml:coverage.xml --cov-report=term-missing
+          python -m pytest tests/unit/ -v --confcutdir=tests --junitxml=unit-test-results.xml --cov=aurasync.physics --cov=aurasync.safety --cov-report=xml:coverage.xml --cov-report=term-missing
 
       - name: Upload unit test reports
         if: always()
