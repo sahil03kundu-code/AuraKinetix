@@ -1,0 +1,63 @@
+name: AuraKinetix CPU Performance Audit
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/cpu-performance-audit.yml"
+  push:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/cpu-performance-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu-audit:
+    name: GitHub Runner CPU Timing (Not Hardware)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: versions/v4.2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install CPU dependencies
+        run: |
+          python -m pip install numpy scipy matplotlib pytest
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Verify timing report contracts
+        run: python -m pytest tests/unit/test_performance_audit.py -q --confcutdir=tests -o addopts=
+      - name: Collect non-hardware timing metrics
+        run: python performance_audit.py --ticks 40 --output cpu-performance.json
+      - name: Validate report fields
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("cpu-performance.json").read_text())
+          assert report["schema_version"] == 1
+          assert "Not a real-time guarantee" in report["limits"]
+          assert {x["pipeline"] for x in report["results"]} == {"geometry", "evidence"}
+          for result in report["results"]:
+              for name in ("controller", "estimator_update"):
+                  metrics = result[name]
+                  assert metrics["samples"] == 40
+                  assert 0 <= metrics["median_ms"] <= metrics["p95_ms"] <= metrics["max_ms"]
+          print("Timing report schema valid; no hardware claims made")
+          PY
+      - name: Upload timing audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: cpu-performance-audit
+          path: versions/v4.2/cpu-performance.json
+          if-no-files-found: error
