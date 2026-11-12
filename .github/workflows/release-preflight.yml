@@ -6,6 +6,8 @@ on:
     paths:
       - "tools/release_preflight.py"
       - "tools/test_release_preflight.py"
+      - "tools/verify_release_archive.py"
+      - "tools/test_verify_release_archive.py"
       - ".github/workflows/release-preflight.yml"
       - ".github/workflows/release.yml"
   push:
@@ -33,7 +35,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Run release safety tests
-        run: python -m unittest tools.test_release_preflight -v
+        run: python -m unittest tools.test_release_preflight tools.test_verify_release_archive -v
       - name: Build version 4.2.0 local dry-run archive
         run: python tools/release_preflight.py --root . --tag v4.2.0 --output dist/AuraKinetix-v4.2.0.zip
       - name: Check archive excludes unsafe paths
@@ -48,9 +50,15 @@ jobs:
           assert all(not f.endswith(('.pt', '.pth', '.ckpt', '.pem')) for f in entries)
           print(f"Dry run contains {len(entries)} approved source-only files")
           PY
+      - name: Independently verify release archive and generate checksum
+        run: |
+          python -m tools.verify_release_archive --archive dist/AuraKinetix-v4.2.0.zip --tag v4.2.0 --checksum-output dist/AuraKinetix-v4.2.0.zip.sha256
+          cd dist && sha256sum -c AuraKinetix-v4.2.0.zip.sha256
       - name: Upload dry-run artifact (never publish)
         uses: actions/upload-artifact@v4
         with:
           name: release-preflight-source-archive
-          path: dist/AuraKinetix-v4.2.0.zip
+          path: |
+            dist/AuraKinetix-v4.2.0.zip
+            dist/AuraKinetix-v4.2.0.zip.sha256
           if-no-files-found: error
