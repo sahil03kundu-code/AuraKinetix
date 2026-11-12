@@ -94,28 +94,73 @@ class SafetyShield:
         lo = -hm + (1 - gm) * (hm + cur)
         return self._interval(a0, a1, lo, hi), (a0, a1, lo, hi)
 
+
+
     def filter(self, s, Sigma, u_nom):
         """Returns (u_safe, mode). mode: 'pass', 'modified', 'soft_dropped', 'infeasible'."""
-        (sl, sh), _ = self._bounds(s, Sigma, self.psi, self.psi_max)          # soft
-        (pl, ph), pk = self._bounds(s, Sigma, self.psi, self.psi_hard, self.gamma_hard)   # hard
-        (cl, ch), ck = self._bounds(s, Sigma, self.chi, self.chi_max, self.gamma_hard)    # hard
-        (rl, rh), _ = self._bounds(s, Sigma, self.chi, self.chi_soft)         # track reserve for soft stage
+
+        if not np.isfinite(u_nom):
+            raise ValueError("Nominal actuator force must be finite")
+
+        s = np.asarray(s, dtype=float)
+        Sigma = np.asarray(Sigma, dtype=float)
+
+        if s.shape != (4,):
+            raise ValueError("state must contain exactly 4 values")
+
+        if Sigma.shape != (4, 4):
+            raise ValueError("covariance must be a 4x4 matrix")
+
+        if not np.all(np.isfinite(s)):
+            raise ValueError("state must contain only finite values")
+
+        if not np.all(np.isfinite(Sigma)):
+            raise ValueError("covariance must contain only finite values")
+
+
+        (sl, sh), _ = self._bounds(
+            s, Sigma, self.psi, self.psi_max
+        )
+        (pl, ph), pk = self._bounds(
+            s, Sigma, self.psi, self.psi_hard, self.gamma_hard
+        )
+        (cl, ch), ck = self._bounds(
+            s, Sigma, self.chi, self.chi_max, self.gamma_hard
+        )
+        (rl, rh), _ = self._bounds(
+            s, Sigma, self.chi, self.chi_soft
+        )
+
         ul, uh = -self.u_max, self.u_max
-        L, H = max(sl, rl, pl, cl, ul), min(sh, rh, ph, ch, uh)
+        L = max(sl, rl, pl, cl, ul)
+        H = min(sh, rh, ph, ch, uh)
+
         a = abs(self.psi(s))
-        if a > self.soft_gate * self.psi_max:      # soft target out of reach: stop chasing it ...
+
+        if a > self.soft_gate * self.psi_max:
             self.soft_off = True
-        elif a <= self.psi_max and abs(s[1]) < 0.3 and abs(s[3]) < 0.5:   # ... until settled again (latch)
+        elif (
+            a <= self.psi_max
+            and abs(s[1]) < 0.3
+            and abs(s[3]) < 0.5
+        ):
             self.soft_off = False
+
         if self.soft_off:
             L, H = 1.0, -1.0
+
         if L <= H:
             u = float(np.clip(u_nom, L, H))
-            return u, ("pass" if abs(u - u_nom) < 1e-9 else "modified")
-        L, H = max(pl, cl, ul), min(ph, ch, uh)
+            return u, (
+                "pass" if abs(u - u_nom) < 1e-9 else "modified"
+            )
+
+        L = max(pl, cl, ul)
+        H = min(ph, ch, uh)
+
         if L <= H:
             return float(np.clip(u_nom, L, H)), "soft_dropped"
-        # hard limits conflict: no command can be certified -> do no harm, defer to the nominal controller
+
         return float(np.clip(u_nom, ul, uh)), "infeasible"
 
 

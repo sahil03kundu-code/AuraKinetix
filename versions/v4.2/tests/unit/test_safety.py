@@ -164,5 +164,87 @@ class TestSafetyIntervals(unittest.TestCase):
 
         self.assertEqual(controller.stats["ticks"], 1)
 
+    def test_nan_force_is_rejected(self):
+        import numpy as np
+
+        shield = SafetyShield()
+        state = np.zeros(4)
+        covariance = np.zeros((4, 4))
+
+        with self.assertRaises(ValueError):
+            shield.filter(
+                state,
+                covariance,
+                float("nan")
+            )
+
+    def test_infinite_forces_are_rejected(self):
+        import numpy as np
+
+        shield = SafetyShield()
+        state = np.zeros(4)
+        covariance = np.zeros((4, 4))
+
+        for invalid_force in [float("inf"), float("-inf")]:
+            with self.subTest(force=invalid_force):
+                with self.assertRaises(ValueError):
+                    shield.filter(
+                        state, covariance, invalid_force
+                    )
+
+    def test_invalid_state_and_covariance_shapes(self):
+        import numpy as np
+
+        shield = SafetyShield()
+        valid_state = np.zeros(4)
+        valid_covariance = np.zeros((4, 4))
+
+        for length in [3, 5]:
+            with self.subTest(state_length=length):
+                with self.assertRaisesRegex(
+                    ValueError, "state"
+                ):
+                    shield.filter(
+                        np.zeros(length),
+                        valid_covariance,
+                        0.0
+                    )
+
+        for shape in [(3, 3), (5, 5)]:
+            with self.subTest(covariance_shape=shape):
+                with self.assertRaisesRegex(
+                    ValueError, "covariance"
+                ):
+                    shield.filter(
+                        valid_state,
+                        np.zeros(shape),
+                        0.0
+                    )
+
+    def test_nonfinite_state_and_covariance_rejected(self):
+        import numpy as np
+
+        valid_state = np.zeros(4)
+        valid_covariance = np.zeros((4, 4))
+
+        for bad_value in [np.nan, np.inf, -np.inf]:
+            with self.subTest(value=bad_value, input="state"):
+                state = valid_state.copy()
+                state[2] = bad_value
+
+                with self.assertRaisesRegex(ValueError, "state"):
+                    SafetyShield().filter(
+                        state, valid_covariance, 0.0
+                    )
+
+            with self.subTest(value=bad_value, input="covariance"):
+                covariance = valid_covariance.copy()
+                covariance[2, 2] = bad_value
+
+                with self.assertRaisesRegex(ValueError, "covariance"):
+                    SafetyShield().filter(
+                        valid_state, covariance, 0.0
+                    )
+
 if __name__ == "__main__":
     unittest.main()
