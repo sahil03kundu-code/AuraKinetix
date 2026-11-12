@@ -1,0 +1,56 @@
+name: AuraKinetix Release Preflight
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "tools/release_preflight.py"
+      - "tools/test_release_preflight.py"
+      - ".github/workflows/release-preflight.yml"
+      - ".github/workflows/release.yml"
+  push:
+    branches: [main]
+    paths:
+      - "tools/release_preflight.py"
+      - "tools/test_release_preflight.py"
+      - ".github/workflows/release-preflight.yml"
+      - ".github/workflows/release.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dry-run:
+    name: Source-Only Release Dry Run
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run release safety tests
+        run: python -m unittest tools.test_release_preflight -v
+      - name: Build version 4.2.0 local dry-run archive
+        run: python tools/release_preflight.py --root . --tag v4.2.0 --output dist/AuraKinetix-v4.2.0.zip
+      - name: Check archive excludes unsafe paths
+        run: |
+          python - <<'PY'
+          from zipfile import ZipFile
+          name = 'dist/AuraKinetix-v4.2.0.zip'
+          with ZipFile(name) as a:
+              entries = a.namelist()
+          assert entries
+          assert all('/checkpoints/' not in f and '/results/' not in f and '/data/' not in f for f in entries)
+          assert all(not f.endswith(('.pt', '.pth', '.ckpt', '.pem')) for f in entries)
+          print(f"Dry run contains {len(entries)} approved source-only files")
+          PY
+      - name: Upload dry-run artifact (never publish)
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-preflight-source-archive
+          path: dist/AuraKinetix-v4.2.0.zip
+          if-no-files-found: error
