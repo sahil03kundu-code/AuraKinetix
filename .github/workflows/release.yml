@@ -42,12 +42,18 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install numpy scipy matplotlib
+          python -m pip install numpy scipy matplotlib pytest
           python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
 
-      - name: Run unit tests
+      - name: Run version-appropriate tests
         working-directory: ${{ steps.version.outputs.dir }}
-        run: python -m unittest discover -s tests -v
+        shell: bash
+        run: |
+          if [[ "${{ steps.version.outputs.dir }}" == "versions/v4.2" ]]; then
+            python -m pytest tests/unit tests/integration -q --confcutdir=tests -o addopts=
+          else
+            python -m unittest discover -s tests -v
+          fi
 
   package:
     name: Package Validated Version
@@ -58,13 +64,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create release ZIP
+      - name: Create source-only release ZIP
         shell: bash
         run: |
-          TAG="${GITHUB_REF_NAME}"
-          VERSION_DIR="versions/${TAG%.*}"
-          mkdir -p dist
-          zip -r "dist/AuraKinetix-${TAG}.zip" "$VERSION_DIR"
+          python tools/release_preflight.py --root . --tag "${GITHUB_REF_NAME}" --output "dist/AuraKinetix-${GITHUB_REF_NAME}.zip"
 
       - name: Upload release package
         uses: actions/upload-artifact@v4
