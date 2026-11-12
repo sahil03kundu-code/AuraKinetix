@@ -1,0 +1,62 @@
+name: AuraKinetix Docker CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/docker-ci.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/docker-ci.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  docker-test:
+    name: Docker Build and Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build Docker test image
+        run: |
+          docker build \
+            --target test \
+            --build-arg INSTALL_TORCH=0 \
+            -t aurakinetix:v4.2-test \
+            versions/v4.2
+
+      - name: Run unit and integration tests
+        run: |
+          mkdir -p docker-reports
+          docker run --rm --init \
+            --cpus=2 --memory=3g \
+            --mount "type=bind,source=${{ github.workspace }}/docker-reports,target=/reports" \
+            aurakinetix:v4.2-test
+
+      - name: Build runtime image
+        run: |
+          docker build \
+            --target runtime \
+            --build-arg INSTALL_TORCH=0 \
+            -t aurakinetix:v4.2-runtime \
+            versions/v4.2
+
+      - name: Verify runtime startup
+        run: docker run --rm --init --cpus=2 --memory=3g aurakinetix:v4.2-runtime
+
+      - name: Upload JUnit test report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: docker-test-results
+          path: docker-reports/test-results.xml
+          if-no-files-found: warn

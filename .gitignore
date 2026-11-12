@@ -7,3 +7,15 @@ data/
 .ipynb_checkpoints/
 desktop.ini
 Thumbs.db
+
+# AuraKinetix V4.2 - local datasets, checkpoints and generated reports
+/versions/v4.2/checkpoints/
+/versions/v4.2/results/
+/versions/v4.2/results_phase1/
+/versions/v4.2/data/
+/versions/v4.2/docker-reports/
+/versions/v4.2/reports/
+/versions/v4.2/.coverage
+/versions/v4.2/coverage.xml
+/versions/v4.2/unit-test-results.xml
+/versions/v4.2/integration-test-results.xml

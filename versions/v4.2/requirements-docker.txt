@@ -1,0 +1,7 @@
+# Runtime dependencies for the V4.2 container (torch is installed separately, CPU wheel index).
+# Version ranges, not exact pins: no lock file exists yet. After the first successful build, run
+#   docker run --rm --entrypoint pip aurakinetix:v4.2 freeze > requirements-docker.lock
+# and install from the lock for bit-for-bit reproducibility.
+numpy>=1.26,<3
+scipy>=1.11,<2
+matplotlib>=3.8,<4

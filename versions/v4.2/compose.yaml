@@ -1,0 +1,29 @@
+# Run from versions/v4.2:   docker compose run --rm tests
+# Resource limits suit an 8 GB host; raise PROCS together with cpus if you have more cores.
+name: aurakinetix
+
+x-common: &common
+  init: true                 # proper signal handling / zombie reaping
+  cpus: 2
+  mem_limit: 3g
+  read_only: false
+
+services:
+  tests:
+    <<: *common
+    build: { context: ., target: test }
+    image: aurakinetix:v4.2-test
+    volumes:
+      - ./reports:/reports                       # JUnit XML comes out here
+
+  sim:
+    <<: *common
+    build: { context: ., target: runtime }
+    image: aurakinetix:v4.2
+    environment:
+      PROCS: "2"
+    volumes:
+      - ./checkpoints:/app/checkpoints:ro        # trained weights, read-only
+      - ./data:/app/data                         # recorded datasets (large, never in the image)
+      - ./results:/app/results                   # benchmark outputs written here
+    # example: docker compose run --rm sim benchmark_v41.py

@@ -1,0 +1,29 @@
+# Keep the build context small and the image free of data, weights and results.
+# Build context = versions/v4.2 (see docs/DOCKER.md).
+.git
+.github
+**/__pycache__
+**/*.pyc
+.venv
+.pytest_cache
+.coverage
+coverage.xml
+*-test-results.xml
+reports
+
+# Large / generated / irreplaceable: mount at run time instead of copying.
+data
+checkpoints
+results
+results_phase1
+**/*.npz
+**/*.pt
+**/*.pth
+**/*_state.pt
+
+# Not needed at run time
+docs
+*.md
+Dockerfile
+compose.yaml
+.dockerignore
