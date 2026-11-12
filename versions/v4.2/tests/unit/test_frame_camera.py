@@ -129,6 +129,8 @@ def test_capture_applies_non_nominal_sensor_response():
     conditions = SensorConditions(name="dim", brightness=0.5)
     pipeline.set_conditions(conditions)
     pipeline.reset(np.zeros(4))
+    assert pipeline.noise > 0.0  # Low light correctly enables read noise.
+    pipeline.noise = 0.0  # Isolate deterministic sensor-response mapping.
     image = pipeline.hist[-1].copy()
     stack = pipeline._capture()
     expected = conditions.frame_sensor(image).astype(np.float32)
