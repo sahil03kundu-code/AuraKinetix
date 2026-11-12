@@ -9,6 +9,10 @@ from unittest.mock import Mock
 import numpy as np
 import pytest
 
+# The slim Docker smoke-test image intentionally excludes PyTorch.
+# Full integration CI installs CPU PyTorch and executes these tests.
+pytest.importorskip("torch", reason="cross-pipeline simulation requires CPU PyTorch")
+
 from aurasync.conditions import NOMINAL, PRESETS
 from aurasync.physics import PlantParams
 from aurasync.simulate import run_episode
