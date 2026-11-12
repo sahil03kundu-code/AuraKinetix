@@ -69,11 +69,19 @@ jobs:
         run: |
           python tools/release_preflight.py --root . --tag "${GITHUB_REF_NAME}" --output "dist/AuraKinetix-${GITHUB_REF_NAME}.zip"
 
+      - name: Verify source archive and write SHA-256 manifest
+        shell: bash
+        run: |
+          python -m tools.verify_release_archive --archive "dist/AuraKinetix-${GITHUB_REF_NAME}.zip" --tag "${GITHUB_REF_NAME}" --checksum-output "dist/AuraKinetix-${GITHUB_REF_NAME}.zip.sha256"
+          cd dist && sha256sum -c "AuraKinetix-${GITHUB_REF_NAME}.zip.sha256"
+
       - name: Upload release package
         uses: actions/upload-artifact@v4
         with:
           name: release-package
-          path: dist/*.zip
+          path: |
+            dist/*.zip
+            dist/*.sha256
           if-no-files-found: error
 
   release:
@@ -96,5 +104,7 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: AuraKinetix ${{ github.ref_name }}
           generate_release_notes: true
-          files: dist/*.zip
+          files: |
+            dist/*.zip
+            dist/*.sha256
           fail_on_unmatched_files: true
