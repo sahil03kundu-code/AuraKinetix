@@ -1,0 +1,89 @@
+name: AuraKinetix Dependency Security and SBOM
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/dependency-security.yml"
+  push:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/dependency-security.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  dependency-audit:
+    name: CPU Dependency Audit and CycloneDX SBOM
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: versions/v4.2
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up CPython
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install runtime and audit tools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-docker.txt
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install "pip-audit>=2.7,<3" "cyclonedx-bom>=6,<8"
+      - name: Check dependency consistency and snapshot versions
+        run: |
+          python -m pip check
+          python -m pip freeze --all > dependency-environment.freeze.txt
+          python - <<'PY'
+          import json, platform, sys
+          from pathlib import Path
+          import importlib.metadata as m
+          names = ("numpy", "scipy", "matplotlib", "torch", "pip-audit", "cyclonedx-bom")
+          report = {
+              "schema_version": 1,
+              "python": platform.python_version(),
+              "platform": platform.platform(),
+              "executable": sys.executable,
+              "requirements_policy": "Version ranges, not a hash-pinned lock; freeze is an environment snapshot.",
+              "packages": {name: m.version(name) for name in names},
+          }
+          Path("dependency-environment.json").write_text(json.dumps(report, indent=2) + "\n")
+          PY
+      - name: Generate reproducible CycloneDX SBOM
+        run: cyclonedx-py environment --output-format JSON --output-reproducible --output-file dependency-sbom.cdx.json
+      - name: Audit installed dependencies against known advisories
+        run: pip-audit --format json --output dependency-audit.json
+      - name: Validate security artifact schema
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          audit = json.loads(Path("dependency-audit.json").read_text())
+          sbom = json.loads(Path("dependency-sbom.cdx.json").read_text())
+          env = json.loads(Path("dependency-environment.json").read_text())
+          assert isinstance(audit.get("dependencies"), list)
+          assert sbom["bomFormat"] == "CycloneDX"
+          assert isinstance(sbom.get("components"), list) and sbom["components"]
+          assert env["python"].startswith("3.11.")
+          print("Dependency audit, SBOM and environment manifests validated")
+          PY
+      - name: Upload dependency audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pre-aws-dependency-security
+          path: |
+            versions/v4.2/dependency-audit.json
+            versions/v4.2/dependency-sbom.cdx.json
+            versions/v4.2/dependency-environment.json
+            versions/v4.2/dependency-environment.freeze.txt
+          if-no-files-found: warn
