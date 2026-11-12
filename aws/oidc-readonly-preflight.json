@@ -1,0 +1,70 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "AuraKinetix: minimal GitHub Actions OIDC read-only identity for AWS connectivity preflight only. Does not deploy workload resources.",
+  "Parameters": {
+    "GitHubOwner": {
+      "Type": "String",
+      "Default": "sahil03kundu-code",
+      "AllowedPattern": "^[A-Za-z0-9_.-]+$"
+    },
+    "GitHubRepository": {
+      "Type": "String",
+      "Default": "AuraKinetix",
+      "AllowedPattern": "^[A-Za-z0-9_.-]+$"
+    }
+  },
+  "Resources": {
+    "GitHubOIDCProvider": {
+      "Type": "AWS::IAM::OIDCProvider",
+      "Properties": {
+        "Url": "https://token.actions.githubusercontent.com",
+        "ClientIdList": [
+          "sts.amazonaws.com"
+        ]
+      }
+    },
+    "GitHubReadOnlyPreflightRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "Description": "GitHub Actions main-branch OIDC identity verification; no AWS API permissions beyond STS identity introspection",
+        "MaxSessionDuration": 3600,
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Federated": {
+                  "Fn::GetAtt": [
+                    "GitHubOIDCProvider",
+                    "Arn"
+                  ]
+                }
+              },
+              "Action": "sts:AssumeRoleWithWebIdentity",
+              "Condition": {
+                "StringEquals": {
+                  "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
+                  "token.actions.githubusercontent.com:sub": {
+                    "Fn::Sub": "repo:${GitHubOwner}/${GitHubRepository}:ref:refs/heads/main"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "RoleArn": {
+      "Description": "Set GitHub repository variable AWS_READONLY_ROLE_ARN to this role ARN when you approve connectivity setup",
+      "Value": {
+        "Fn::GetAtt": [
+          "GitHubReadOnlyPreflightRole",
+          "Arn"
+        ]
+      }
+    }
+  }
+}
