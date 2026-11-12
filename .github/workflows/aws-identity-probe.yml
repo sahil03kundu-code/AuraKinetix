@@ -1,0 +1,45 @@
+name: AuraKinetix AWS Read-Only Identity Probe
+
+# Manual-only: this workflow never starts from a push or pull request.
+# No resources are deployed; STS GetCallerIdentity does not require a role policy.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  identity-only:
+    name: Verify GitHub to AWS OIDC Identity
+    if: github.ref == 'refs/heads/main' && github.repository == 'sahil03kundu-code/AuraKinetix'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Require explicitly configured preflight role
+        env:
+          ROLE: ${{ vars.AWS_READONLY_ROLE_ARN }}
+        run: |
+          if [[ ! "$ROLE" =~ ^arn:aws:iam::[0-9]{12}:role/.+ ]]; then
+            echo "::error::Set AWS_READONLY_ROLE_ARN to the manually approved OIDC preflight role ARN."
+            exit 1
+          fi
+      - name: Obtain short-lived identity without stored AWS keys
+        uses: aws-actions/configure-aws-credentials@v5
+        with:
+          role-to-assume: ${{ vars.AWS_READONLY_ROLE_ARN }}
+          aws-region: us-east-1
+          role-session-name: aurakinetix-readonly-preflight
+          mask-aws-account-id: true
+      - name: Verify identity, without creating any resources
+        run: |
+          aws sts get-caller-identity --output json > identity.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          obj = json.loads(Path("identity.json").read_text())
+          assert obj["Account"].isdigit() and len(obj["Account"]) == 12
+          assert ":assumed-role/" in obj["Arn"]
+          print("AWS OIDC STS identity verified. No resources created.")
+          PY
+          rm -f identity.json
