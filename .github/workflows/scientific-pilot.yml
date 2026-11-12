@@ -1,0 +1,67 @@
+name: AuraKinetix Registered Scientific Pilot
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/scientific-pilot.yml"
+  push:
+    branches: [main]
+    paths:
+      - "versions/v4.2/**"
+      - ".github/workflows/scientific-pilot.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  registered-pilot:
+    name: Paired Scientific Pilot (No Hardware Claims)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: versions/v4.2
+    steps:
+      - name: Checkout exact source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up CPython
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install CPU simulation requirements
+        run: |
+          python -m pip install -r requirements-docker.txt pytest
+          python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Verify protocol and seed gate
+        run: python -m pytest tests/unit/test_scientific_benchmark.py -q --confcutdir=tests -o addopts=
+      - name: Run registered short pilot only
+        run: python scientific_benchmark.py --split pilot --seeds 2 --ticks 40 --output registered-pilot.json
+      - name: Verify provenance and unmeasured results
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result = json.loads(Path("registered-pilot.json").read_text())
+          assert result["split"] == "pilot"
+          assert result["seeds"] == [2000, 2001]
+          assert result["methods"] == ["D", "D-ev"]
+          assert len(result["episodes"]) == 8
+          assert len(result["summary"]) == 4
+          assert all(r["D"]["false_intervention_rate"] is None
+                     and r["D-ev"]["cpu_cost_ms"] is None
+                     for r in result["episodes"])
+          assert len(result["missing_methods"]) == 2
+          print("Registered short scientific PILOT schema validated")
+          PY
+      - name: Upload pilot evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pre-aws-registered-scientific-pilot
+          path: versions/v4.2/registered-pilot.json
+          if-no-files-found: warn
