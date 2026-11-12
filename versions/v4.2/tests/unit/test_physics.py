@@ -1,4 +1,4 @@
-﻿"""Deterministic unit tests for the AuraKinetix physics engine."""
+"""Deterministic unit tests for the AuraKinetix physics engine."""
 
 import sys
 import unittest
@@ -55,6 +55,28 @@ class TestPhysics(unittest.TestCase):
         self.assertTrue(np.isfinite(A).all())
         self.assertTrue(np.isfinite(B).all())
 
+
+    def test_perturbed_parameters_stay_within_bounds(self):
+        rng = np.random.default_rng(42)
+        original = PlantParams()
+
+        for _ in range(100):
+            changed = original.perturbed(rng, frac=0.3)
+
+            self.assertGreaterEqual(changed.M, original.M * 0.7)
+            self.assertLessEqual(changed.M, original.M * 1.3)
+
+            self.assertGreaterEqual(changed.m, original.m * 0.7)
+            self.assertLessEqual(changed.m, original.m * 1.3)
+
+            self.assertGreaterEqual(changed.l, original.l * 0.9)
+            self.assertLessEqual(changed.l, original.l * 1.1)
+
+            self.assertGreater(changed.M, 0)
+            self.assertGreater(changed.m, 0)
+            self.assertGreater(changed.l, 0)
+
+        self.assertEqual(original, PlantParams())
 
 if __name__ == "__main__":
     unittest.main()

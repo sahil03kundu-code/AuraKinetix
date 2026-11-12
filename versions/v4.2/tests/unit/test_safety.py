@@ -246,5 +246,48 @@ class TestSafetyIntervals(unittest.TestCase):
                         valid_state, covariance, 0.0
                     )
 
+    def test_pipeline_fallback_age_and_covariance(self):
+        import numpy as np
+        from unittest.mock import Mock
+        from aurasync.safety import ShieldedController
+
+        class LegacyPipeline:
+            delay_ticks = 3
+
+        sigma = np.array([0.1, 0.2, 0.3, 0.4])
+
+        controller = ShieldedController(
+            Mock(), SafetyShield(), LegacyPipeline(),
+            sigma_const=sigma
+        )
+
+        self.assertEqual(controller._age(), 3)
+        np.testing.assert_allclose(
+            controller._cov(),
+            np.diag(sigma ** 2)
+        )
+
+    def test_soft_constraints_remain_disabled_during_recovery(self):
+        import numpy as np
+
+        shield = SafetyShield()
+        covariance = np.zeros((4, 4))
+
+        # Enter recovery mode with a large pole angle.
+        dangerous = np.array([
+            0.0, 0.0, np.radians(25), 0.0
+        ])
+        shield.filter(dangerous, covariance, 0.0)
+        self.assertTrue(shield.soft_off)
+
+        # Reduce the angle, but keep angular velocity too high
+        # to satisfy the recovery/reset conditions.
+        recovering = np.array([
+            0.0, 0.0, 0.0, 1.0
+        ])
+        shield.filter(recovering, covariance, 0.0)
+
+        self.assertTrue(shield.soft_off)
+
 if __name__ == "__main__":
     unittest.main()
