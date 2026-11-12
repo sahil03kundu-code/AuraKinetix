@@ -1,0 +1,49 @@
+name: AuraKinetix Public Demo Preflight
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "aws/demo-site/**"
+      - "amplify.yml"
+      - "tools/test_aws_demo_site.py"
+      - ".github/workflows/aws-demo-preflight.yml"
+  push:
+    branches: [main]
+    paths:
+      - "aws/demo-site/**"
+      - "amplify.yml"
+      - "tools/test_aws_demo_site.py"
+      - ".github/workflows/aws-demo-preflight.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  demo-static-audit:
+    name: Validate Static Showcase (No AWS Deployment)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate site, links and deployment configuration
+        run: python -m unittest tools.test_aws_demo_site -v
+      - name: Build static deployment artifact without AWS access
+        run: |
+          mkdir -p dist
+          cp aws/demo-site/index.html dist/index.html
+          test -s dist/index.html
+      - name: Upload portable static showcase
+        uses: actions/upload-artifact@v4
+        with:
+          name: aurakinetix-aws-static-showcase
+          path: dist/index.html
+          if-no-files-found: error
