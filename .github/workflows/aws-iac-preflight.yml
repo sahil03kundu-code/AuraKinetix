@@ -1,0 +1,40 @@
+name: AuraKinetix AWS IaC Preflight
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "aws/**"
+      - "tools/test_aws_oidc_preflight.py"
+      - ".github/workflows/aws-iac-preflight.yml"
+  push:
+    branches: [main]
+    paths:
+      - "aws/**"
+      - "tools/test_aws_oidc_preflight.py"
+      - ".github/workflows/aws-iac-preflight.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint-aws-infrastructure:
+    name: Static CloudFormation Safety Checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install CloudFormation linter
+        run: python -m pip install "cfn-lint>=1.0,<2.0"
+      - name: Validate template without accessing AWS
+        run: cfn-lint -- aws/oidc-readonly-preflight.json
+      - name: Check OIDC least privilege and workflow contracts
+        run: python -m unittest tools.test_aws_oidc_preflight -v
