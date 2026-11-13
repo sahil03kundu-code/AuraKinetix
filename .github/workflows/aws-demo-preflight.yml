@@ -9,6 +9,8 @@ on:
       - "tools/test_aws_demo_site.py"
       - "tools/build_amplify_manifest.py"
       - "tools/test_build_amplify_manifest.py"
+      - "tools/verify_amplify_deployment.py"
+      - "tools/test_verify_amplify_deployment.py"
       - ".github/workflows/aws-demo-preflight.yml"
   push:
     branches: [main]
@@ -37,7 +39,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Validate site, links and deployment configuration
-        run: python -m unittest tools.test_aws_demo_site tools.test_build_amplify_manifest -v
+        run: python -m unittest tools.test_aws_demo_site tools.test_build_amplify_manifest tools.test_verify_amplify_deployment -v
       - name: Build static deployment artifact without AWS access
         run: |
           mkdir -p dist
