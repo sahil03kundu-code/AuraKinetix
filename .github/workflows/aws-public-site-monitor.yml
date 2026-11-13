@@ -1,0 +1,40 @@
+name: AuraKinetix AWS Public Site Monitoring
+
+on:
+  # Read-only external HTTP check twice per day, not on each git push.
+  schedule:
+    - cron: "23 2,14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aurakinetix-public-site-check
+  cancel-in-progress: false
+
+jobs:
+  verify-live-site:
+    name: Public HTTPS and Content Smoke Check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout approved repository source
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up CPython
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Offline monitoring contract regression
+        run: python -m unittest tools.test_check_amplify_showcase -v
+      - name: Read-only HTTPS and content verification
+        run: python tools/check_amplify_showcase.py --attempts 2 --output amplify-public-probe.json
+      - name: Retain probe report, including on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: aws-amplify-public-smoke-check
+          path: amplify-public-probe.json
+          if-no-files-found: warn
