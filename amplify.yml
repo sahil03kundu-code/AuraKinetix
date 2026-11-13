@@ -5,6 +5,7 @@ frontend:
       commands:
         - mkdir -p dist
         - cp aws/demo-site/index.html dist/index.html
+        - python3 tools/build_amplify_manifest.py --html dist/index.html --output dist/deployment-manifest.json
   artifacts:
     baseDirectory: dist
     files:

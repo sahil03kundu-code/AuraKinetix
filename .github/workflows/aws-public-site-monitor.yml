@@ -29,6 +29,10 @@ jobs:
           python-version: "3.11"
       - name: Offline monitoring contract regression
         run: python -m unittest tools.test_check_amplify_showcase -v
+      - name: Validate public provenance verifier contract
+        run: python -m unittest tools.test_build_amplify_manifest tools.test_verify_amplify_deployment -v
+      - name: Verify served content matches published commit manifest
+        run: python -m tools.verify_amplify_deployment
       - name: Read-only HTTPS and content verification
         run: python tools/check_amplify_showcase.py --attempts 2 --output amplify-public-probe.json
       - name: Retain probe report, including on failure

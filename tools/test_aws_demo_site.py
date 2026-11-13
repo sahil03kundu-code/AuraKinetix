@@ -64,6 +64,8 @@ class AwsDemoSiteTests(unittest.TestCase):
     def test_amplify_builds_only_static_showcase(self):
         self.assertIn("version: 1", self.spec)
         self.assertIn("cp aws/demo-site/index.html dist/index.html", self.spec)
+        self.assertIn("tools/build_amplify_manifest.py", self.spec)
+        self.assertIn("dist/deployment-manifest.json", self.spec)
         self.assertIn("baseDirectory: dist", self.spec)
         self.assertIn("'**/*'", self.spec)
 

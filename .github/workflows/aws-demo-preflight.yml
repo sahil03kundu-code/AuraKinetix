@@ -7,6 +7,10 @@ on:
       - "aws/demo-site/**"
       - "amplify.yml"
       - "tools/test_aws_demo_site.py"
+      - "tools/build_amplify_manifest.py"
+      - "tools/test_build_amplify_manifest.py"
+      - "tools/verify_amplify_deployment.py"
+      - "tools/test_verify_amplify_deployment.py"
       - ".github/workflows/aws-demo-preflight.yml"
   push:
     branches: [main]
@@ -35,15 +39,27 @@ jobs:
         with:
           python-version: "3.11"
       - name: Validate site, links and deployment configuration
-        run: python -m unittest tools.test_aws_demo_site -v
+        run: python -m unittest tools.test_aws_demo_site tools.test_build_amplify_manifest tools.test_verify_amplify_deployment -v
       - name: Build static deployment artifact without AWS access
         run: |
           mkdir -p dist
           cp aws/demo-site/index.html dist/index.html
           test -s dist/index.html
+          python tools/build_amplify_manifest.py --html dist/index.html --output dist/deployment-manifest.json
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          from tools.build_amplify_manifest import validate_manifest
+          m = json.loads(Path('dist/deployment-manifest.json').read_text())
+          assert m['git_commit'] == os.environ['GITHUB_SHA']
+          assert validate_manifest(m, Path('dist/index.html').read_bytes())
+          print('Provenance matches exact checkout SHA')
+          PY
       - name: Upload portable static showcase
         uses: actions/upload-artifact@v4
         with:
           name: aurakinetix-aws-static-showcase
-          path: dist/index.html
+          path: |
+            dist/index.html
+            dist/deployment-manifest.json
           if-no-files-found: error
