@@ -1,0 +1,59 @@
+name: AuraKinetix AWS Rollback Rehearsal
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "aws/demo-site/**"
+      - "tools/amplify_rollback_rehearsal.py"
+      - "tools/test_amplify_rollback_rehearsal.py"
+      - ".github/workflows/aws-rollback-rehearsal.yml"
+  push:
+    branches: [main]
+    paths:
+      - "aws/demo-site/**"
+      - "tools/amplify_rollback_rehearsal.py"
+      - "tools/test_amplify_rollback_rehearsal.py"
+      - ".github/workflows/aws-rollback-rehearsal.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-rehearsal:
+    name: Offline Static Rollback (No AWS Resource Changes)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate recovery contract
+        run: python -m unittest tools.test_amplify_rollback_rehearsal -v
+      - name: Rehearse corrupted candidate and exact restoration
+        run: python tools/amplify_rollback_rehearsal.py --report rollback-rehearsal.json
+      - name: Check machine-readable outcome
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("rollback-rehearsal.json").read_text())
+          assert report["status"] == "pass"
+          assert report["negative_candidate_rejected"]
+          assert report["restoration_identical"]
+          assert len(report["sha256"]) == 64
+          print("Offline rollback recovery evidence validated.")
+          PY
+      - name: Archive rehearsal evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: amplify-offline-rollback-rehearsal
+          path: rollback-rehearsal.json
+          if-no-files-found: warn
