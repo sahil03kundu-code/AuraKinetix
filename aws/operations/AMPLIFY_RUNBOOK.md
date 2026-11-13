@@ -52,6 +52,20 @@ required; workflow failure alone does not prove email delivery.
    public-site check. Record incident start, detection time, suspected cause,
    failed deployment, recovery deployment, verification and cost impact.
 
+## Offline rollback rehearsal (not a cloud rollback)
+
+The workflow `.github/workflows/aws-rollback-rehearsal.yml` uses an exact
+snapshot of the current reviewed static HTML, stores its SHA-256 manifest,
+constructs a deliberately broken candidate, verifies that content validation
+rejects it, then restores the known-good bytes and checks the digest. Tests
+also verify that tampered snapshots cannot be restored.
+
+This is useful **disaster-recovery preparation**, but no previous AWS deployment
+is fetched, no Amplify version is reverted, and no live rollback is performed.
+The actual AWS rollback procedure above requires human approval, console
+access, and evaluation of hosting/build costs. Preserve a reviewed Git SHA
+and matching Amplify deployment record before any real production recovery.
+
 ## Safe release checklist
 
 - [ ] Latest `main` CI checks pass, including static demo preflight
