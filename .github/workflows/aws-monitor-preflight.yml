@@ -1,0 +1,42 @@
+name: AuraKinetix AWS Monitor Preflight
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "tools/check_amplify_showcase.py"
+      - "tools/test_check_amplify_showcase.py"
+      - ".github/workflows/aws-public-site-monitor.yml"
+      - ".github/workflows/aws-monitor-preflight.yml"
+      - "aws/operations/**"
+  push:
+    branches: [main]
+    paths:
+      - "tools/check_amplify_showcase.py"
+      - "tools/test_check_amplify_showcase.py"
+      - ".github/workflows/aws-public-site-monitor.yml"
+      - ".github/workflows/aws-monitor-preflight.yml"
+      - "aws/operations/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-probe-contract:
+    name: Offline Probe Tests (No AWS Credentials)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate probe without external requests
+        run: python -m unittest tools.test_check_amplify_showcase -v
+      - name: Check Python source parses
+        run: python -m py_compile tools/check_amplify_showcase.py
